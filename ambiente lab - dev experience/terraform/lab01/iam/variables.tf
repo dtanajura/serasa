@@ -1,7 +1,7 @@
 # variables.tf
 # Conta Nova
 variable "accessKey" {
-     default = "AKIAUY3NNLEEEDDPBS7J"
+     default = ""
 }
 variable "secretKey" {
      default = ""
