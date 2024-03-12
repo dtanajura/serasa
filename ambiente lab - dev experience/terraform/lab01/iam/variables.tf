@@ -4,7 +4,7 @@ variable "accessKey" {
      default = "AKIAUY3NNLEEEDDPBS7J"
 }
 variable "secretKey" {
-     default = "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"
+     default = ""
 }
 # Conta antiga
 /*
@@ -12,7 +12,7 @@ variable "accessKey" {
      default = "AKIAXFGPJWBLFHYQQ7P7"
 }
 variable "secretKey" {
-     default = "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"
+     default = ""
 }
 */
 variable "region" {

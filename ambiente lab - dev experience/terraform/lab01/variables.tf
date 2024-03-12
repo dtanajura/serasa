@@ -3,7 +3,7 @@ variable "accessKey" {
      default = "AKIAXFGPJWBLFHYQQ7P7"
 }
 variable "secretKey" {
-     default = "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"
+     default = ""
 }
 variable "bucketName" {
   default =  "nomeBucketDevHubLab01"
