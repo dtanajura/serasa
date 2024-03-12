@@ -1,0 +1,2 @@
+
+aws route53 change-resource-record-sets --hosted-zone-id Z02213961OS7JOHYQB9CU --change-batch "{\"Changes\": [{\"Action\": \"DELETE\",\"ResourceRecordSet\": {\"Name\": \"cname-dev-hub-portal-qa.nikeeksdev.br.experian.eeca.\",\"Type\": \"TXT\",\"AliasTarget\": {\"HostedZoneId\": \"xxxxyyyyzzzwww\",\"DNSName\": \"my-test-elb-xxxxxx.region.elb.amazonaws.com.\",\"EvaluateTargetHealth\": true}}}]}"

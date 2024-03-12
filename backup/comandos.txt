@@ -1,0 +1,7 @@
+aws backup list-backup-plans --profile digital-paas-prod --no-verify-ssl
+aws backup get-backup-plan --backup-plan-id "df0b3777-42f6-4fcf-afc9-0b7c79e64870" --profile digital-paas-prod --no-verify-ssl
+aws backup update-backup-plan --backup-plan-id "df0b3777-42f6-4fcf-afc9-0b7c79e64870" --backup-plan backup-plan.json --cli-input-json --profile digital-paas-prod --no-verify-ssl
+
+aws backup list-backup-plans --profile legado
+aws backup get-backup-plan --backup-plan-id "791258fa-cbc3-4c10-b0b9-a25bb58027e3" --profile legado
+aws backup update-backup-plan --backup-plan-id "791258fa-cbc3-4c10-b0b9-a25bb58027e3" --cli-input-json file://json-backup.json  --profile legado

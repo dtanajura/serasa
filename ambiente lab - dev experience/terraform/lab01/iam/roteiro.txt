@@ -1,0 +1,82 @@
+workspaces
+
+01 - conectar no banco de origem
+    acessar o servidor mongodb-account-iam-a
+    Fazer logon no banco:
+    mongo -u admin -p AccV#952b
+    Verificar se o banco está no cluster:
+mongodb-account-iam:PRIMARY> show databases
+account                      76.144GB
+adChanges                     2.780GB
+admin                         0.000GB
+config                        0.001GB
+digitalCertificateWebhook     0.000GB
+=======================================
+iam                        2065.243GB
+=======================================
+iamSaml                       0.001GB
+idcdb                         0.000GB
+local                         1.605GB
+otp                           1.022GB
+partner                       0.000GB
+sms                           0.000GB
+verifyId                      0.000GB
+
+Testar os endpoints
+
+Criar instância do DMS para iniciar a migração dos dados
+
+aws dms describe-endpoints --no-verify-ssl --output text --query 'Endpoints[].EndpointArn' --filter Name='endpoint-id',Values='destination-migracao-mongodb-digital-persona-video-loan-sendgrid'
+aws dms describe-replication-instances --no-verify-ssl --output text --query 'ReplicationInstances[].ReplicationInstanceArn' --filter Name='replication-instance-id',Values='migracao-mongo-instance'
+aws dms test-connection --replication-instance-arn $(aws dms describe-replication-instances --no-verify-ssl --output text --query 'ReplicationInstances[].ReplicationInstanceArn' --filter Name='replication-instance-id',Values='migracao-mongo-instance') --endpoint-arn $(aws dms describe-endpoints --no-verify-ssl --output text --query 'Endpoints[].EndpointArn' --filter Name='endpoint-id',Values='destination-migracao-mongodb-digital-persona-video-loan-sendgrid') --no-verify-ssl
+
+for (let dbname of dbNames) { db.getSiblingDB(dbname) .getCollectionNames() .forEach(coll => { let size = db.getCollection(coll).stats(1024).storageSize; if (size > 1) print(dbname + " : " + coll + " : " + size); }); };
+iam : AccessToken : 903634616
+iam : ApplicationTemp : 32
+iam : AuthLegacyClientConfig : 32
+iam : AuthStrongHistoric : 3739260
+iam : AuthenticationFactorsSettings : 36
+iam : BusinessCredential : 86204
+iam : BusinessGroup : 4
+iam : BusinessUserCredential : 144244
+iam : ClientCredential : 1084
+iam : ClientIdGearr : 36
+iam : CorporateGroup : 44
+iam : Customer : 21608
+iam : DuplicatedUserCredential : 976
+iam : Event : 2275396
+iam : EventURIs : 36
+iam : EventURIsBackup : 32
+iam : EventWebhookDocument : 769404
+iam : FraudNetBlackList : 1040
+iam : FraudNetHistory : 19292540
+iam : Group : 32
+iam : Group2 : 4144
+iam : GroupTemp : 1776
+iam : HistoryIam : 7415680
+iam : IdentificApiKeyConfig : 36
+iam : IdleConfig : 40
+iam : IncorrectPassawordAttempts : 19232
+iam : LegacyCredentialAssociateHistory : 23956
+iam : LegacyLogonSession : 24520
+iam : LoginAttempts : 194012
+iam : LogonAuthorizeEventHistory : 4992304
+iam : LogonCacheDocument : 1268
+iam : MainframeChannel : 32
+iam : PasswordLevelTrack : 13540
+iam : PasswordVaultStore : 842820
+iam : ProcessedIdleCredential : 15228
+iam : Product : 12
+iam : RefreshToken : 287635016
+iam : SAMLBusinessConfig : 32
+iam : ScopeRestriction : 32
+iam : ShieldLogonControl : 3072
+iam : TokenExchange : 20001092
+iam : TokenGenerateConfiguration : 32
+iam : TokenKey : 32
+iam : UserCredential : 6689996
+iam : UserCredentialEmailDuplicated : 240
+iam : UserHistoric : 490836
+iam : sessionEcsHistoric : 2355204
+iam : sessions : 94908
+iam : system.profile : 406440

@@ -1,0 +1,37 @@
+{
+    "BackupPlan": {
+        "BackupPlanName": "Backup-Geral",
+        "Rules": [
+            {
+                "RuleName": "Daily-Backups",
+                "TargetBackupVaultName": "Backup-Vault-Digital",
+                "ScheduleExpression": "cron(0 3 ? * 1-6 *)",
+                "StartWindowMinutes": 300,
+                "CompletionWindowMinutes": 10080,
+                "Lifecycle": {
+                    "DeleteAfterDays": 7
+                }
+            },
+            {
+                "RuleName": "Weekly-Backup",
+                "TargetBackupVaultName": "Backup-Vault-Digital",
+                "ScheduleExpression": "cron(0 3 ? * 7 *)",
+                "StartWindowMinutes": 300,
+                "CompletionWindowMinutes": 10080,
+                "Lifecycle": {
+                    "DeleteAfterDays": 14
+                }
+            },
+            {
+                "RuleName": "Monthly-Backup",
+                "TargetBackupVaultName": "Backup-Vault-Digital",
+                "ScheduleExpression": "cron(0 3 ? * 7L *)",
+                "StartWindowMinutes": 300,
+                "CompletionWindowMinutes": 10080,
+                "Lifecycle": {
+                    "DeleteAfterDays": 120
+                }
+            }
+        ]
+    }
+}

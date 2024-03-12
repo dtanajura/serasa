@@ -1,0 +1,12 @@
+sudo wget https://repo.zabbix.com/zabbix/6.4/rhel/8/x86_64/zabbix-release-6.4-1.el8.noarch.rpm
+sudo wget https://repo.zabbix.com/zabbix/6.4/rhel/8/x86_64/zabbix-agent2-plugin-mongodb-6.4.3-release1.el8.x86_64.rpm
+sudo rpm -Uvh zabbix-release-6.4-1.el8.noarch.rpm
+sudo systemctl stop zabbix-agent2
+sudo yum update zabbix-agent2 -y
+sudo yum localinstall zabbix-agent2-plugin-mongodb-6.4.3-release1.el8.x86_64.rpm -y
+sudo yum remove zabbix-agent2-plugin-* -y
+sudo yum remove zabbix-agent2-plugin-mongodb-6.0.18-release1.el8.x86_64 -y
+rpm -qa | grep zabbix
+sudo yum remove zabbix-agent2-plugin-postgresql-6.0.18-release1.el8.x86_64 -y
+sudo systemctl restart zabbix-agent2
+sudo systemctl status zabbix-agent2
