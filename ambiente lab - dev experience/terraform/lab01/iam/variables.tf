@@ -9,7 +9,7 @@ variable "secretKey" {
 # Conta antiga
 /*
 variable "accessKey" {
-     default = "AKIAXFGPJWBLFHYQQ7P7"
+     default = ""
 }
 variable "secretKey" {
      default = ""
