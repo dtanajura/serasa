@@ -1,0 +1,33 @@
+{
+  "Version": "2012-10-17",
+  "Id": "key-consolepolicy-3",
+  "Statement": [
+    {
+      "Sid": "Enable IAM User Permissions",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::146737708860:root"
+      },
+      "Action": "kms:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "AllowDecryptForMSKWarriorsRoleViaSecretsManager",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::146737708860:role/BURoleForMSKWarriors"
+      },
+      "Action": [
+        "kms:Decrypt",
+        "kms:GenerateDataKey",
+        "kms:DescribeKey"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "kms:ViaService": "secretsmanager.sa-east-1.amazonaws.com"
+        }
+      }
+    }
+  ]
+}

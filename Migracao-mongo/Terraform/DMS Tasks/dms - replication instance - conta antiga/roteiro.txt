@@ -1,0 +1,13 @@
+aws dms describe-endpoints --no-verify-ssl  --query "Endpoints[?EndpointIdentifier=='source-migracao-mongodb-mongodb-account-iam-adChanges'].EndpointArn"
+aws dms describe-endpoints --no-verify-ssl  --query "Endpoints[?EndpointIdentifier=='destination-migracao-mongodb-digital-security-services-adChanges'].EndpointArn"
+
+aws dms describe-endpoints --no-verify-ssl  --query 'Endpoints[*].[EndpointArn]' --filters Name=endpoint-id,Values=source-migracao-mongodb-mongodb-account-iam-adChanges
+aws dms describe-endpoints --no-verify-ssl  --query 'Endpoints[*].[EndpointArn]' --filters Name=endpoint-id,Values=destination-migracao-mongodb-digital-security-services-adChanges
+
+source_endpoint_arn = "arn:aws:dms:sa-east-1:492208500822:endpoint:RZ3GJCAJVHTWTYC5Q72Y42KGARTZSB5KYUG2YAI"
+target_endpoint_arn = "arn:aws:dms:sa-east-1:492208500822:endpoint:4BFUDTVPG7SIWKVLR4CEKAENMKOVWGDX22IDXPY"
+source_endpoint_arn = "arn:aws:dms:sa-east-1:492208500822:endpoint:USC6JOYHBNTJGWFHN65CDO6UC5NN2GAIHH5RR5I"
+target_endpoint_arn = "arn:aws:dms:sa-east-1:492208500822:endpoint:7XVS53AN3BZWMBKBP2HJA4G4K3QHENPR4C4HQ7Q"
+source_endpoint_arn = "arn:aws:dms:sa-east-1:492208500822:endpoint:H3LQ7E6LUOVGUCKV7S6GGD5ZE56RRPOMXFFE6PQ"
+target_endpoint_arn = "arn:aws:dms:sa-east-1:492208500822:endpoint:MN6735O4DZF7A6KEQC55HOGALYKTT4JJWKI3O4I"
+

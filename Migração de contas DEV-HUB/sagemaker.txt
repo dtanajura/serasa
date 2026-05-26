@@ -1,0 +1,27 @@
+[16:16] Castro, Paulo
+
+https://docs.aws.amazon.com/sagemaker/latest/dg/ex1-prepare.html
+
+Step 2: Create a Jupyter Notebook - Amazon SageMaker
+
+Create a Jupyter notebook in the SageMaker notebook instance.
+
+[16:20] Castro, Paulo
+
+https://towardsdatascience.com/the-complete-guide-to-jupyter-notebooks-for-data-science-8ff3591f69a4
+
+[16:20] Castro, Paulo
+
+https://colab.google/
+
+colab.google
+
+[16:26] Campos, Thiago
+
+https://code.experian.local/projects/SCIB/repos/catalogo-infra-metabase-api/browse
+
+[16:27] Castro, Paulo
+
+https://docs.jupyter.org/en/latest/projects/architecture/content-architecture.html
+
+Architecture — Jupyter Documentation 4.1.1 alpha documentation

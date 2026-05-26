@@ -1,0 +1,5 @@
+[
+    {"Key":"VPCId","Value":"vpc-02fafde418156c503"},
+    {"Key":"DissociateServiceNamesList","Value":"com.amazonaws.region.ecr.dkr"},
+    {"Key":"AssociateServiceNamesList","Value":"com.amazonaws.region.ec2,com.amazonaws.region.logs,com.amazonaws.region.ecr.api"}
+]

@@ -1,0 +1,11 @@
+Apontar a aplicação para o cluster anterior (com a replicação reversa)
+No caso de não funcionar:
+    Desligar todo cluster - desativando a inicialização do Mongo 
+        systemctl disable mongod
+        shutdown -h 0
+    Ligar servidores B e C - resentando o /var/lib/Mongo
+    Restaura a imagem do disco /var/lib/mongo do nó A
+        ligar o servidor
+        ligar o mongo 
+    Adiciona os nós B e C no cluster (resync)
+        ligar o mongo nos dois servidores

@@ -1,0 +1,153 @@
+# https://pages.experian.local/spaces/DDSE/pages/1267765967/DATAHUB+2.1.2.4.2+TAG+AWS
+Tags relevantes:
+AppID
+CostString: 1800.BR.123.456789
+Environment: prd, hml, uat, stg, sbx, dev
+
+Asset_Category: 
+Valores aceitos: Productive data, Development or Staging or Sandbox, Model development, Logs, Embbeded, Metadata, Cache, Backup, N/A (Mandatory for S3 Buckets and Databases)
+
+Data_Category: 
+Valores aceitos: Registry, Behavioral, Negative, Positive, Financial, N/A
+
+Data_Type:
+Valores aceitos: PP, LP, PP/LP, N/A
+
+adDomain: Mandatory for EC2 - br.experian.local
+BU
+CreatedBy
+Layer: Gold, Silver, Bronze
+map-migrated
+Project
+Name
+Squad
+
+Account: eec-aws-br-eits-datahub-dev (730335661246)
+$profile_aws = "datahubdev"
+# Login:
+okta-aws-cli web --profile datahubdev --aws-region sa-east-1 --aws-session-duration 36000
+
+# Clone do repositório
+cd /tmp
+git clone ssh://git@code.experian.local/nikesre/iac-eec-aws-br-eits-datahub-dev.git
+
+# Criação da branch
+cd .\iac-eec-aws-br-eits-datahub-dev\
+git checkout -b c96531a/revisao-tags-31.10.25
+# Switched to a new branch 'c96531a/revisao-tags-31.10.25'
+
+
+# Correção conta datahub-stage
+# tags environment para stg
+
+aws ec2 create-tags \
+  --profile datahubstage \
+  --region sa-east-1 \
+  --resources \
+    sg-01e0b9a92a7b4cc34 \
+    sg-0268eab5e48c78bc1 \
+    sg-057991ba0af51e1b1 \
+    sg-0630b6467727bea80 \
+    sg-0653f088205941871 \
+    sg-06eb6cfaf76c28993 \
+    sg-077a3df9de81e6656 \
+    sg-08913c5a07391106f \
+    sg-09b0b021c3ff6d8b2 \
+    sg-0a96d9114d32778f9 \
+    sg-0ad9fd5608d66ea13 \
+    sg-0c4aae75eb90db33d \
+    sg-0ca0d16aa330c1772 \
+    sg-0cce25026371390a2 \
+    sg-0d62ccea5993ecb58 \
+    sg-0e7f1c010f37a9c34 \
+    sg-0eb4a6fb4db8aa28a \
+    sg-0ed03576588b413a2 \
+  --tags Key=Environment,Value=stg
+
+# Dinamodb tables
+
+# tf-lock-527623259369-sa-east-1-uat
+aws dynamodb tag-resource \
+  --profile datahubstage \
+  --region sa-east-1 \
+  --resource-arn arn:aws:dynamodb:sa-east-1:527623259369:table/tf-lock-527623259369-sa-east-1-uat \
+  --tags Key=AppID,Value=22989 Key=CostString,Value=1800.BR.134.602018 Key=Environment,Value=stg
+
+# tflock-527623259369-sa-east-1-stg
+aws dynamodb tag-resource \
+  --profile datahubstage \
+  --region sa-east-1 \
+  --resource-arn arn:aws:dynamodb:sa-east-1:527623259369:table/tflock-527623259369-sa-east-1-stg \
+  --tags Key=AppID,Value=22989 Key=CostString,Value=1800.BR.134.602018 Key=Environment,Value=stg
+
+# tflock-527623259369-sa-east-1-uat
+aws dynamodb tag-resource \
+  --profile datahubstage \
+  --region sa-east-1 \
+  --resource-arn arn:aws:dynamodb:sa-east-1:527623259369:table/tflock-527623259369-sa-east-1-uat \
+  --tags Key=AppID,Value=22989 Key=CostString,Value=1800.BR.134.602018 Key=Environment,Value=stg
+
+# Instancias
+
+aws ec2 create-tags \
+  --profile datahubstage \
+  --region sa-east-1 \
+  --resources i-0f8869a95f92c2690 \
+  --tags Key=Environment,Value=stg
+
+aws ec2 create-tags \
+  --profile datahubstage \
+  --region sa-east-1 \
+  --resources vol-02dc839305f0b62cf \
+  --tags Key=Environment,Value=stg
+
+# EKS
+
+aws eks tag-resource \
+  --profile datahubstage \
+  --region sa-east-1 \
+  --resource-arn arn:aws:eks:sa-east-1:527623259369:cluster/datahub-uat-uat \
+  --tags Environment=stg
+``
+
+# S3 Buckets
+
+aws s3api put-bucket-tagging --profile datahubstage --region sa-east-1 --bucket aws-logs-527623259369-sa-east-1 --tagging 'TagSet=[{Key=Environment,Value=stg}]'
+
+aws s3api put-bucket-tagging --profile datahubstage --region sa-east-1 --bucket cockpit-devsecops-states-527623259369 --tagging 'TagSet=[{Key=Environment,Value=stg}]'
+
+aws s3api put-bucket-tagging --profile datahubstage --region sa-east-1 --bucket datahub-platform-527623259369-sa-east-1-tfstate --tagging 'TagSet=[{Key=Environment,Value=stg}]'
+
+aws s3api put-bucket-tagging --profile datahubstage --region sa-east-1 --bucket eec-aws-br-eits-datahub-artifacts-uat --tagging 'TagSet=[{Key=Environment,Value=stg}]'
+
+aws s3api put-bucket-tagging --profile datahubstage --region sa-east-1 --bucket experian-datahub-artifacts-uat --tagging 'TagSet=[{Key=Environment,Value=stg}]'
+
+aws s3api put-bucket-tagging --profile datahubstage --region sa-east-1 --bucket expn-datahub-stage-emr-logs-test --tagging 'TagSet=[{Key=Environment,Value=stg}]'
+
+aws s3api put-bucket-tagging --profile datahubstage --region sa-east-1 --bucket se-8359407fbaa618cb-datahub-uat-uat-access-logs --tagging 'TagSet=[{Key=Environment,Value=stg}]'
+
+aws s3api put-bucket-tagging --profile datahubstage --region sa-east-1 --bucket se-8359407fbaa618cb-datahub-uat-uat-backup --tagging 'TagSet=[{Key=Environment,Value=stg}]'
+
+aws s3api put-bucket-tagging --profile datahubstage --region sa-east-1 --bucket se-8359407fbaa618cb-datahub-uat-uat-containers-logs --tagging 'TagSet=[{Key=Environment,Value=stg}]'
+
+aws s3api put-bucket-tagging --profile datahubstage --region sa-east-1 --bucket se-8359407fbaa618cb-datahub-uat-uat-metrics-logs --tagging 'TagSet=[{Key=Environment,Value=stg}]'
+
+
+
+# testar
+
+aws ec2 describe-security-groups \
+  --profile datahubstage \
+  --region sa-east-1 \
+  --group-ids sg-0cce25026371390a2 \
+  --query "SecurityGroups[0].Tags[?Key=='environment'].Value | [0]" \
+  --output text
+
+
+
+aws autoscaling describe-auto-scaling-groups \
+  --profile datahubstage \
+  --region sa-east-1 \
+  --auto-scaling-group-names "eks-EKS-datahub-uat-uat-NG-large-20251112195413977900000014-d2cd3cd1-054b-161c-7cbd-31ae3d087dc9" \
+  --query "AutoScalingGroups[0].Tags[?Key=='environment'].Value | [0]" \
+  --output text

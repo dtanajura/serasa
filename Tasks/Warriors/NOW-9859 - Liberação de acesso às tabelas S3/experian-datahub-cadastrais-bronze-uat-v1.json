@@ -1,0 +1,59 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ManagedByOdinDamProducerDoNotModify",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::980921747889:role/BURoleForLFServiceRole"
+      },
+      "Action": [
+        "s3:Get*",
+        "s3:List*"
+      ],
+      "Resource": [
+        "arn:aws:s3:::experian-datahub-cadastrais-bronze-uat",
+        "arn:aws:s3:::experian-datahub-cadastrais-bronze-uat/*"
+      ]
+    },
+    {
+      "Sid": "Warriors access to Replicacao",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::713881783816:role/BURoleForNikeQAs",
+          "arn:aws:iam::713881783816:role/BURoleForEmrEc2Nike",
+          "arn:aws:iam::050752636274:role/BURoleForEmrEc2Nike"
+        ]
+      },
+      "Action": [
+        "s3:Get*",
+        "s3:List*"
+      ],
+      "Resource": [
+        "arn:aws:s3:::experian-datahub-cadastrais-bronze-uat",
+        "arn:aws:s3:::experian-datahub-cadastrais-bronze-uat/*"
+      ]
+    },
+    {
+      "Sid": "ManagedByOdinDamProducerDoNotModify",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Action": [
+        "s3:Get*",
+        "s3:List*"
+      ],
+      "Resource": [
+        "arn:aws:s3:::experian-datahub-cadastrais-bronze-uat",
+        "arn:aws:s3:::experian-datahub-cadastrais-bronze-uat/*"
+      ],
+      "Condition": {
+        "StringEquals": {
+          "s3:DataAccessPointAccount": "980921747889"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+[
+  { "Key": "Asset_Category", "Value": "Staging" },
+  { "Key": "BusinessServices", "Value": "datahub" },
+  { "Key": "BU", "Value": "EITS" },
+  { "Key": "AppID", "Value": "23008" },
+  { "Key": "CostString", "Value": "1800.BR.134.602018" },
+  { "Key": "Squad", "Value": "datahub" },
+  { "Key": "Project", "Value": "nike" },
+  { "Key": "Environment", "Value": "uat" },
+  { "Key": "Service", "Value": "latam_nike" },
+  { "Key": "Data_Type", "Value": "N/A" },
+  { "Key": "Data_Category", "Value": "N/A" }
+]

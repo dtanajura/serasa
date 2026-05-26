@@ -1,0 +1,15 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: view-restartpod
+subjects:
+- kind: Group
+  name: devsustain
+  apiGroup: rbac.authorization.k8s.io
+- kind: User
+  name: devsustain
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: view-restartpod
+  apiGroup: rbac.authorization.k8s.io

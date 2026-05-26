@@ -1,0 +1,31 @@
+{
+    "ReplicationConfiguration": {
+        "Role": "arn:aws:iam::492208500822:role/BURoleForDigitalDevops",
+        "Rules": [
+            {
+                "ID": "serasaexperian-crypto-private-stg",
+                "Priority": 0,
+                "Filter": {},
+                "Status": "Enabled",
+                "SourceSelectionCriteria": {
+                    "SseKmsEncryptedObjects": {
+                        "Status": "Enabled"
+                    }
+                },
+                "Destination": {
+                    "Bucket": "arn:aws:s3:::serasaexperian-crypto-private-stg-1",
+                    "Account": "802049031151",
+                    "AccessControlTranslation": {
+                        "Owner": "Destination"
+                    },
+                    "EncryptionConfiguration": {
+                        "ReplicaKmsKeyID": "arn:aws:kms:us-east-1:802049031151:key/c91ad248-f22d-4054-b05f-4be638728bce"
+                    }
+                },
+                "DeleteMarkerReplication": {
+                    "Status": "Disabled"
+                }
+            }
+        ]
+    }
+}

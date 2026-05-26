@@ -1,0 +1,176 @@
+# Para listar as tags "Name" dos clusters EMR em uma conta AWS utilizando o Boto3 e recebendo o nome do perfil AWS como parâmetro, você pode seguir os passos abaixo. Esse script requer que você tenha o Boto3 instalado e configurado em seu ambiente de desenvolvimento Python, além de ter perfis configurados no seu arquivo de credenciais AWS (normalmente localizado em ~/.aws/credentials).
+
+# Aqui está um exemplo de script em Python que lista os nomes dos clusters EMR utilizando uma tag específica "Name":
+
+import boto3
+import sys
+
+def list_emr_clusters_by_tag(profile_name):
+    # Configura a sessão utilizando o perfil fornecido
+    session = boto3.Session(profile_name=profile_name)
+    
+    # Cria um cliente para o serviço EMR
+    emr_client = session.client('emr')
+    
+    # Lista os clusters EMR
+    response = emr_client.list_clusters(ClusterStates=['STARTING', 'BOOTSTRAPPING', 'RUNNING', 'WAITING', 'TERMINATING'])
+    
+    # Para cada cluster, obter as tags e imprimir a tag "Name"
+    for cluster in response['Clusters']:
+        cluster_id = cluster['Id']
+        tags_response = emr_client.list_tags(ResourceId=cluster_id)
+        
+        # Procura pela tag "Name" nas tags do cluster
+        for tag in tags_response['Tags']:
+            if tag['Key'] == 'Name':
+                print(f"Cluster ID: {cluster_id}, Name: {tag['Value']}")
+                break
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print("Usage: python https://urldefense.com/v3/__http://script.py__;!!MfzFaTml5A!iDhjIuCBmzFdWG3yo75GeYqedB6E_10lwfD0QwC4MeH5DYVt1GfiHyhLJxazdU7Mco3eu-uzG5KQsALUC8O2waYnb0uvt43e$  <AWS_PROFILE_NAME>")
+        sys.exit(1)
+    
+    profile_name = sys.argv[1]
+    list_emr_clusters_by_tag(profile_name)
+
+    
+# Esse script faz o seguinte:
+# Recebe o nome do perfil AWS como argumento da linha de comando.
+# Configura uma sessão do Boto3 usando o perfil fornecido.
+# Cria um cliente EMR usando essa sessão.
+# Lista os clusters EMR na conta, filtrando por estados específicos (você pode ajustar os estados conforme necessário).
+# Para cada cluster listado, obtém as tags associadas a esse cluster.
+# Imprime o ID do cluster e o valor da tag "Name" (se existir) para cada cluster.
+
+# agora com uma lista das tags "Name" dos clusters EMR, quero buscar os custos no "cost explorer" do tipo "UnblendedCost" no mês corrente para todos tipos "EC2-Instances", "EC2-Other", "Elastic MapReduce" e "S3"
+
+# ChatGPT
+# Para buscar os custos no AWS Cost Explorer para uma lista de tags "Name" dos clusters EMR, filtrando pelos tipos "EC2-Instances", "EC2-Other", "Elastic MapReduce" e "S3", e considerando o custo do tipo "UnblendedCost" para o mês corrente, você pode usar o Boto3 para interagir com o AWS Cost Explorer API. Este exemplo pressupõe que você já tenha uma lista de tags "Name" para seus clusters EMR e queira somar os custos associados a essas tags.
+
+python
+Copy code
+import boto3
+from datetime import datetime
+
+# Configuração inicial
+aws_profile = "meu_perfil_aws"  # Substitua pelo seu perfil AWS
+tags_names = ["ClusterName1", "ClusterName2"]  # Substitua pelos nomes dos seus clusters EMR
+
+# Configura a sessão utilizando o perfil AWS fornecido
+session = boto3.Session(profile_name=aws_profile)
+
+# Cria um cliente para o AWS Cost Explorer
+ce_client = session.client('ce')
+
+# Define o período de tempo para o mês corrente
+now = datetime.now()
+start_date = f"{now.year}-{now.month:02d}-01"
+end_date = f"{now.year}-{now.month:02d}-{now.day:02d}"
+
+# Define os serviços a serem incluídos na consulta
+services = ["Amazon Elastic Compute Cloud - Compute", "Amazon Elastic Compute Cloud - Other", "Amazon Simple Storage Service", "Amazon Elastic MapReduce"]
+
+# Prepara o filtro de tags
+tags_filter = {
+    'Tags': {
+        'Key': 'aws:elasticmapreduce:job-flow-id',
+        'Values': tags_names
+    }
+}
+
+# Executa a consulta de custo e uso
+response = ce_client.get_cost_and_usage(
+    TimePeriod={'Start': start_date, 'End': end_date},
+    Granularity='MONTHLY',
+    Metrics=["UnblendedCost"],
+    Filter={
+        "And": [
+            {"Dimensions": {"Key": "SERVICE", "Values": services}},
+            tags_filter
+        ]
+    },
+    GroupBy=[
+        {"Type": "DIMENSION", "Key": "SERVICE"}
+    ]
+)
+
+# Processa e imprime os resultados
+for result in response['ResultsByTime']:
+    for group in result['Groups']:
+        service = group['Keys'][0]
+        amount = group['Metrics']['UnblendedCost']['Amount']
+        print(f"Service: {service}, Unblended Cost: ${amount}")
+
+# Este script realiza os seguintes passos:
+# Configura uma sessão do Boto3 usando um perfil AWS especificado.
+# Cria um cliente para interagir com o AWS Cost Explorer.
+# Define o período de tempo para analisar, que é o mês corrente.
+# Prepara um filtro que combina a dimensão "SERVICE" para incluir os serviços especificados e um filtro de tags baseado nas tags "Name" dos seus clusters EMR.
+# Executa a consulta de custo e uso usando o método get_cost_and_usage.
+# Itera pelos resultados, imprimindo o serviço e o custo não mesclado associado.
+# Note que o exemplo usa um filtro de tags baseado em um exemplo de chave de tag (aws:elasticmapreduce:job-flow-id). Você precisará ajustar essa chave para o que se aplica ao seu caso, como o uso de tags "Name" personalizadas que você atribuiu aos seus recursos.
+
+# Além disso, é importante notar que a API do Cost Explorer pode não suportar diretamente a filtragem por todas as tags específicas que você deseja, especialmente se essas tags não estiverem ativadas para alocação de custos. Certifique-se de que as tags relevantes estão ativadas para alocação de custos e ajuste o script conforme necessário para se adequar à sua estrutura de tags e requisitos de análise.
+
+# DMT
+# O tags_filter não deveria usar um foreach da variável tags_names ?
+
+# ChatGPT
+# Você está correto ao apontar que o exemplo anterior não itera corretamente sobre a lista de tags_names para aplicar cada tag de nome de cluster EMR individualmente na filtragem. A API do AWS Cost Explorer, na sua forma mais simples, não suporta diretamente a aplicação de múltiplos valores para uma única consulta de maneira dinâmica como parte de um loop ou foreach diretamente na chamada da API. Entretanto, para aplicar múltiplos valores de tag na filtragem, você precisaria ajustar a estrutura do filtro para acomodar isso.
+
+# No entanto, o exemplo que eu dei anteriormente simplifica a abordagem. Na prática, para aplicar múltiplos nomes de tags como critério de filtragem em uma consulta de custos, geralmente se faz uma série de consultas separadas para cada tag ou se prepara um relatório de custos que já leve em conta essas tags.
+
+# Aqui está uma abordagem corrigida e mais genérica para tentar abordar múltiplos valores de tags em uma consulta, focando em estruturar corretamente o filtro dentro das limitações explicadas:
+
+import boto3
+from datetime import datetime
+
+# Configuração inicial
+aws_profile = "meu_perfil_aws"  # Substitua pelo seu perfil AWS
+tags_names = ["ClusterName1", "ClusterName2"]  # Substitua pelos nomes dos seus clusters EMR
+
+# Configura a sessão utilizando o perfil AWS fornecido
+session = boto3.Session(profile_name=aws_profile)
+
+# Cria um cliente para o AWS Cost Explorer
+ce_client = session.client('ce')
+
+# Define o período de tempo para o mês corrente
+now = datetime.utcnow()
+start_date = f"{now.year}-{now.month:02d}-01"
+end_date = f"{now.year}-{now.month:02d}-{now.day:02d}"
+
+# Ajuste na abordagem para múltiplos valores de tag
+# Devido às limitações mencionadas, a filtragem por múltiplos valores de tags pode necessitar consultas individuais ou análise posterior
+
+# Executa uma consulta de custo e uso para cada tag "Name"
+for tag_name in tags_names:
+    response = ce_client.get_cost_and_usage(
+        TimePeriod={'Start': start_date, 'End': end_date},
+        Granularity='MONTHLY',
+        Metrics=["UnblendedCost"],
+        Filter={
+            "Tags": {
+                "Key": "Name",
+                "Values": [tag_name]
+            }
+        },
+        GroupBy=[
+            {"Type": "DIMENSION", "Key": "SERVICE"}
+        ]
+    )
+
+    # Processa e imprime os resultados para cada tag
+    print(f"Results for tag 'Name': {tag_name}")
+    for result in response['ResultsByTime']:
+        for group in result['Groups']:
+            service = group['Keys'][0]
+            amount = group['Metrics']['UnblendedCost']['Amount']
+            print(f"Service: {service}, Unblended Cost: ${amount}")
+    print("\n")
+
+# Neste script, a consulta get_cost_and_usage é chamada separadamente para cada valor de tag_name em tags_names. Isso significa que para cada tag de nome de cluster EMR, uma consulta separada é realizada, e os custos são recuperados e impressos para aquela tag específica.
+
+# Essa abordagem pode não ser a mais eficiente em termos de desempenho, especialmente se você tiver muitas tags para consultar, mas contorna a limitação de aplicar múltiplos critérios de filtro em uma única chamada de API. Para análises mais complexas ou se você estiver lidando com um grande volume de tags, considerar a exportação dos dados de custo para análise offline ou o uso de ferramentas de análise de dados pode ser mais adequado.
+

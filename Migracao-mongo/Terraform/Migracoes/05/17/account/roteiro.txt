@@ -1,0 +1,44 @@
+Bancos 
+    Origem: mongodb-account-iam	10.97.55.13 (primario)	10.97.55.144 (hidden) 10.97.55.59 (Arbitro)	10.97.55.178 (secundario)
+    Disco: 3500 GB
+    Instance Type: m5a.4xlarge 16 vCPU	64 GB de memória
+
+    Destino: mongodb-account-iam	10.99.133.35	10.99.133.111	10.99.133.161
+    Disco: 1000
+    /dev/nvme2n1            xfs      1000G   26G  975G   3% /var/lib/mongo
+    Tamanho da base - 66 GB
+
+    Instance Type: c6i.xlarge 4 vCPU  8 GB de memória
+    Alterar para c6i.4xlarge (compute optimized family with 16 vCPUs, 32.0 GiB)
+
+
+01 - conectar no banco de origem
+    acessar o servidor mongodb-account-iam-a
+    Fazer logon no banco:
+    mongo -u admin -p AccV#952b
+    Verificar se o banco está no cluster:
+mongodb-account-iam:PRIMARY> show databases
+=======================================
+account                      76.144GB
+=======================================
+adChanges                     2.780GB
+admin                         0.000GB
+config                        0.001GB
+digitalCertificateWebhook     0.000GB
+iam                        2065.243GB
+iamSaml                       0.001GB
+idcdb                         0.000GB
+local                         1.605GB
+otp                           1.022GB
+partner                       0.000GB
+sms                           0.000GB
+verifyId                      0.000GB
+
+Testar os endpoints
+
+Criar instância do DMS para iniciar a migração dos dados
+
+aws dms describe-endpoints --no-verify-ssl --output text --query 'Endpoints[].EndpointArn' --filter Name='endpoint-id',Values='destination-migracao-mongodb-digital-persona-video-loan-sendgrid'
+aws dms describe-replication-instances --no-verify-ssl --output text --query 'ReplicationInstances[].ReplicationInstanceArn' --filter Name='replication-instance-id',Values='migracao-mongo-instance'
+aws dms test-connection --replication-instance-arn $(aws dms describe-replication-instances --no-verify-ssl --output text --query 'ReplicationInstances[].ReplicationInstanceArn' --filter Name='replication-instance-id',Values='migracao-mongo-instance') --endpoint-arn $(aws dms describe-endpoints --no-verify-ssl --output text --query 'Endpoints[].EndpointArn' --filter Name='endpoint-id',Values='destination-migracao-mongodb-digital-persona-video-loan-sendgrid') --no-verify-ssl
+

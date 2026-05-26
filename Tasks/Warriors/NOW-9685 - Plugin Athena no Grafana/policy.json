@@ -1,0 +1,182 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "IAMPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "iam:*",
+        "sts:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "S3Permissions",
+      "Effect": "Allow",
+      "Action": [
+        "s3:*",
+        "s3-object-lambda:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AthenaPermissions",
+      "Effect": "Allow",
+      "Action": [
+        "athena:ListDataCatalogs",
+        "athena:GetDataCatalog",
+        "athena:ListDatabases",
+        "athena:GetDatabase",
+        "athena:ListTableMetadata",
+        "athena:GetTableMetadata",
+        "athena:ListWorkGroups",
+        "athena:GetWorkGroup",
+        "athena:StartQueryExecution",
+        "athena:GetQueryExecution",
+        "athena:GetQueryResults",
+        "athena:GetQueryResultsStream",
+        "athena:StopQueryExecution"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "GluePermissions",
+      "Effect": "Allow",
+      "Action": [
+        "glue:GetDatabases",
+        "glue:GetTables",
+        "glue:GetTable",
+        "glue:GetPartitions",
+        "glue:CreateTable"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ComputeAndNetworking",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:*",
+        "ebs:*",
+        "elasticloadbalancing:*",
+        "autoscaling:*",
+        "elasticfilesystem:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "LoggingAndMonitoring",
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:*",
+        "logs:*",
+        "config:ListDiscoveredResources",
+        "ce:GetCostAndUsage"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "MessagingStreaming",
+      "Effect": "Allow",
+      "Action": [
+        "kinesis:*",
+        "kafka:*",
+        "sqs:*",
+        "sns:*",
+        "mq:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "DatabaseRelated",
+      "Effect": "Allow",
+      "Action": [
+        "rds:*",
+        "dynamodb:*",
+        "cassandra:*",
+        "elasticache:*",
+        "elasticmapreduce:*",
+        "kms:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AppAndServerless",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:*",
+        "ecs:*",
+        "eks:*",
+        "application-autoscaling:*",
+        "apigateway:*",
+        "airflow:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "NetworkingFrontend",
+      "Effect": "Allow",
+      "Action": [
+        "route53:*",
+        "cloudfront:*",
+        "waf:*",
+        "wafv2:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ContainerRegistry",
+      "Effect": "Allow",
+      "Action": [
+        "ecr:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "BackupRestore",
+      "Effect": "Allow",
+      "Action": [
+        "backup:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "SecretsAndCertificates",
+      "Effect": "Allow",
+      "Action": [
+        "secretsmanager:*",
+        "acm:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "OrgBillingSupport",
+      "Effect": "Allow",
+      "Action": [
+        "organizations:*",
+        "support:*",
+        "servicecatalog:SearchProducts"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "TaggingAndResourceManagement",
+      "Effect": "Allow",
+      "Action": [
+        "tag:*",
+        "ram:ListResourceTypes"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "Other",
+      "Effect": "Allow",
+      "Action": [
+        "dms:*",
+        "macie2:*",
+        "es:*",
+        "cloudformation:*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

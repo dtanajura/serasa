@@ -1,0 +1,74 @@
+https://pages.experian.com/display/EDPB/How+to+use+the+AWS+CLI+with+Okta+authentication+usin+SAML2OKTA#method1
+
+contas NIKE - origem
+eec-aws-br-nike-architecture-sandbox (187739130313)
+eec-aws-br-nike-corporate-prod (564593125549)
+
+eec-aws-br-eits-devhub-prod (306298826605)
+eec-aws-br-eits-devhub-sandbox (071087690196)
+BUAdministratorAccessRole
+ DevSustain
+ Account: eec-aws-br-eits-devhub-test (838498078144)
+ BUAdministratorAccessRole
+ DevSustain
+
+ Certificado orifinal 41cc4da1-bc60-45c6-87df-6041caaa98b1
+
+
+Solicitação de regra de firewall
+App Name dev-hub-portal
+App ID 20274
+Justificativa de Negócio: Due to the migration from AppCanvas to EKS we need the VPC to have access in our Nexus Repository to download some Helm charts for VPC CNI and Observability.
+
+The traffic will go through the CSS Egress (CSS firewall rule must be applied).
+
+Account: eec-aws-br-eits-devhub-sandbox (071087690196)
+10.120.134.0/27
+10.120.134.32/27
+10.120.134.64/27
+
+Enter Source IP Range using the format with a dash(-): zzx.zzx.zzx.zzx-zzx.zzx.zzx.zzx
+10.120.134.0-10.120.134.95
+Destination Details
+ Enter IP Address 10.52.149.0
+ Sub-rede 24
+
+Account: eec-aws-br-eits-devhub-dev (977554819825)
+10.120.134.128/27
+10.120.134.160/27
+10.120.134.192/27
+
+Enter Source IP Range using the format with a dash(-): zzx.zzx.zzx.zzx-zzx.zzx.zzx.zzx
+10.120.134.128-10.120.134.223
+
+Account: eec-aws-br-eits-devhub-test (838498078144)
+10.120.135.0/27
+10.120.135.32/27
+10.120.135.64/27
+
+Enter Source IP Range using the format with a dash(-): zzx.zzx.zzx.zzx-zzx.zzx.zzx.zzx
+10.120.135.0-10.120.135.95
+
+Account: eec-aws-br-eits-devhub-prod (306298826605)
+10.120.136.0/26
+10.120.136.64/26
+10.120.136.128/26
+
+Enter Source IP Range using the format with a dash(-): zzx.zzx.zzx.zzx-zzx.zzx.zzx.zzx
+10.120.136.0-10.120.135.191
+
+Policy name     Type    Attached entities
+AmazonSSMManagedInstanceCore	AWS managed	19
+BUPolicyForDigital-SSM-KMS	Customer managed	2
+CloudWatchAgentAdminPolicy	AWS managed	1
+CloudWatchAgentServerPolicy	AWS managed	4
+
+# BUPolicyForDigital-SSM-KMS
+
+database name - dblab
+admin - labadmin
+password - w1OKF09ct#
+subnets:
+subnet-09b31519466ea770c
+subnet-0cd04680da6d95113
+subnet-04756c2417c30202e
