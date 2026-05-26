@@ -1,0 +1,21 @@
+[
+    {"Key":"AccountOwnerId","Value":"STK6255"},
+    {"Key":"AccountOwnerEmail","Value":"Andre.Silva@experian.com"},
+    {"Key":"RequestorId","Value":"C96531A"},
+    {"Key":"RequestorEmail","Value":"davi.tanajura@experian.com"},
+    {"Key":"IAMUserName","Value":"BUUserForDevSecOpsPiaaS"},
+    {"Key":"IAMUserDescription","Value":"IAM User for DevSecOpsPiaaS programmatic access"},
+    {"Key":"IAMUserGroup","Value":"BUGroupForDevSecOpsPiaaS"},
+    {"Key":"IAMPolicies","Value":"BUPolicyForDevSecOpsPiaaS,AmazonS3FullAccess,AmazonEC2ContainerRegistryPowerUser"},
+    {"Key":"ThirdPartyAccess","Value":"No"},
+    {"Key":"ThirdPartyType","Value":""},
+    {"Key":"ThirdPartyName","Value":""},
+    {"Key":"ArcherAttestationID","Value":""},
+    {"Key":"QuestionnaireID","Value":""},
+    {"Key":"VendorID","Value":""},
+    {"Key":"ARBID","Value":""},
+    {"Key":"IAMUserGroupExist","Value":"Yes"},
+    {"Key":"AppGearrId","Value":"9339"},
+    {"Key":"SharedServicesAccountId","Value":"/org/member/sharedservices_account_id"},
+    {"Key":"BusinessJustification","Value":"User for DevSecOps automations PIAAS"}
+]

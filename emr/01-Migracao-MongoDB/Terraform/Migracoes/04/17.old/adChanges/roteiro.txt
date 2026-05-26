@@ -1,0 +1,48 @@
+Bancos 
+    Origem: mongodb-account-iam
+    A - 10.97.55.13
+    Arbiter - 10.97.55.59
+    C - 10.97.55.178
+    Destino: mongodb-digital-security-services
+    A - 10.99.133.10
+    B - 10.99.133.106
+    C - 10.99.133.147
+01 - conectar no banco de origem
+    acessar o servidor mongodb-account-iam-a
+    Fazer logon no banco:
+        mongo -u admin -p AccV#952b
+    Verificar se o banco está no cluster:
+        mongodb-account-iam:PRIMARY> show databases
+            account                      76.312GB
+            adChanges                     2.651GB
+            admin                         0.000GB
+            config                        0.001GB
+            digitalCertificateWebhook     0.000GB
+            iam                        2063.595GB
+            iamSaml                       0.001GB
+            idcdb                         0.000GB
+            local                         1.584GB
+            otp                           1.018GB
+            partner                       0.000GB
+            sms                           0.000GB
+            verifyId                      0.000GB
+    Criar usuário de migração:
+        mongodb-account-iam:PRIMARY> use admin
+            switched to db admin
+        mongodb-account-iam:PRIMARY> db.createUser(
+            ... {
+            ...  user: "migracao-database",
+            ...  pwd:  "123Troc@r",
+            ...  roles:
+            ...  [
+            ...     { role:"root",db:"admin"},
+            ...  ] } );
+            Successfully added user: {
+                    "user" : "migracao-database",
+                    "roles" : [
+                            {
+                                    "role" : "root",
+                                    "db" : "admin"
+                            }
+                    ]
+            }

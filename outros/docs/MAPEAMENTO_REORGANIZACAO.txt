@@ -1,0 +1,185 @@
+MAPEAMENTO DE REORGANIZAÇÃO DE PASTAS
+=====================================
+
+ESTRUTURA PROPOSTA:
+─────────────────
+
+certificados/
+contas-ambientes/
+backup/
+ec2/
+eks/
+emr/
+lambda/
+roles/
+s3-buckets/
+tags/
+outros/
+
+---
+
+MAPEAMENTO DETALHADO:
+────────────────────
+
+✅ certificados/
+├── 01-Lista certificados (Lista certificados)
+└── 02-Solicitacao certificados (Solicitação de certificados)
+
+✅ contas-ambientes/
+├── 01-Ambiente LAB (Ambiente LAB + ambiente lab - dev experience)
+├── 02-Levantamento ambiente (Levantamento do ambiente)
+├── 03-Levantamento volumes (levantamento volumes)
+├── 04-Migracao contas DevHub (Migração de contas DEV-HUB)
+├── 05-Onboarding positivo negativo (Onboard contas positivo e negativo)
+├── 06-Onboarding SRE dev (Onboarding conta SRE DEV)
+├── 07-Onboarding DevHub completo (Onboarding contas devhub)
+├── 08-Usuario positivo mercantil (usuario BUUserForPositivoMercantil)
+├── 09-Contas negativo privadas (negativos-privados)
+├── 10-Permissoes DevSecOps (Permissão BUUserForDevSecOpsPiaaS)
+└── 11-Monitoramento sandbox (Monitoramento eec-aws-br-nike-ss-sandbox)
+
+✅ backup/
+└── 01-Backup configuration (backup)
+
+✅ eks/
+├── 01-Listar roles node groups (Listar Roles dos Node Groups)
+├── 02-Remover cluster eks (Remover cluster eks)
+└── 03-Start stop eks (ligar e desligar eks)
+
+✅ lambda/
+└── 01-Rotina lambda (Rotina Lambda)
+
+✅ roles/
+├── 01-Permissoes deployments (permissões para deployments)
+└── 02-Permissoes DevSecOps (Permissão BUUserForDevSecOpsPiaaS - JAÁ EM contas-ambientes)
+
+✅ s3-buckets/
+├── 01-Inventario datahub tags (inventario datahub)
+└── 02-Inventario geral (inventario)
+
+✅ tags/
+├── 01-Tagging recursos (inventario datahub)
+└── 02-Tagging buckets S3 (inventario)
+
+✅ emr/
+├── 01-Migracao mongodb (Migracao-mongo)
+└── 02-Tratamento mongodb (Tratamento Mongo)
+
+✅ outros/
+├── 01-AWS CLI diversos (AWS CLI Diversos)
+├── 02-Hackathon Nike (Hackaton)
+├── 03-Lambda automation - MOVER PARA lambda/ (Rotina Lambda)
+├── 04-Pinot analytics (Pinot)
+├── 05-Remover tudo cleanup (Remover tudo)
+├── 06-Roteiros centralizados (roteiros)
+├── 07-Review laboratorios (rev_labs)
+├── 08-SageMaker ML (sagemaker)
+├── 09-System manager (system manager)
+├── 10-Terragrunt IaC (terragrunt)
+├── 11-Lens Kubernetes UI (lens)
+├── 12-Tasks rastreamento (Tasks)
+├── 13-Vulnerabilidades v2 (Vulnerabilidades - 2)
+├── 14-Vulnerabilidades v1 (vulnerabilidades)
+├── 15-Tarefas diversas (_outras tarefas)
+└── 16-Zabbix monitoring (zabbix)
+    └── Nota: atualização cliente zabbix pode ir aqui também
+
+---
+
+OBSERVAÇÕES:
+────────────
+
+CONSOLIDAÇÕES NECESSÁRIAS:
+1. "Ambiente LAB" + "ambiente lab - dev experience" → um único diretório
+2. "Permissão BUUserForDevSecOpsPiaaS" pode estar em contas-ambientes/ OU roles/
+   (Colocando em contas-ambientes por estar mais relacionado a setup de contas)
+
+DUPLICATAS A REMOVER:
+1. "inventario datahub copy" - já é cópia, remover
+
+CATEGORIAS SEM PASTAS (não criar vazias):
+- airflow: nenhuma pasta encontrada
+- elasticsearch: nenhuma pasta encontrada
+- kafka: nenhuma pasta encontrada
+- rds: nenhuma pasta encontrada
+- athena: nenhuma pasta encontrada
+- firehose: nenhuma pasta encontrada
+- msk: nenhuma pasta encontrada
+- glue: nenhuma pasta encontrada
+
+ARQUIVOS PARA DELETAR:
+- inventario datahub copy/ (pasta completa)
+- Ambiente LAB/teste.json
+- Ambiente LAB/teste.py
+- Hackaton/diagrama
+- Rotina Lambda/output.txt
+- Onboarding contas devhub/lixo.txt
+- inventario/inventory - Copia.old
+- _outras tarefas/* (se vazio)
+
+---
+
+TOTAL DE PASTAS:
+────────────────
+certificados: 2
+contas-ambientes: 11
+backup: 1
+eks: 3
+lambda: 1
+roles: 1
+s3-buckets: 2
+tags: 2
+emr: 2
+outros: 16
+─────────────
+TOTAL: 41 (depois de consolidações será ~38)
+
+---
+
+ESTRUTURA FINAL (na raiz):
+──────────────────────────
+serasa/
+├── README.md (principal, atualizado)
+├── backup/
+│   ├── 01-Backup-Configuration/
+│   │   ├── README.md
+│   │   ├── backup-plan.json
+│   │   └── comandos.txt
+│   └── [...]
+├── certificados/
+│   ├── 01-AWS-ACM-Certificados/
+│   │   ├── README.md
+│   │   ├── acm.py
+│   │   └── acm_certificates.xlsx
+│   └── 02-Solicitacao-Certificados/
+│       ├── DEVHUB/
+│       └── Lab01/
+├── contas-ambientes/
+│   ├── 01-Ambiente-LAB-DEV-Experience/
+│   ├── 02-Levantamento-Ambiente/
+│   ├── [...]
+│   └── 11-Permissoes-DevSecOps-PiaaS/
+├── eks/
+│   ├── 01-EKS-Node-Groups-Roles/
+│   ├── 02-Remocao-EKS-Cluster/
+│   └── 03-EKS-Start-Stop-Script/
+├── emr/
+│   ├── 01-Migracao-MongoDB/
+│   └── 02-Tratamento-MongoDB/
+├── lambda/
+│   └── 01-Lambda-Automation/
+├── outros/
+│   ├── 01-AWS-CLI-Diversos/
+│   ├── 02-Hackathon-Nike/
+│   ├── [...]
+│   └── 16-Zabbix-Monitoring/
+├── roles/
+│   ├── 01-Permissoes-Deployment/
+│   └── 02-Permissoes-DevSecOps-PiaaS/ (talvez)
+├── s3-buckets/
+│   ├── 01-Inventario-DataHub-Tags/
+│   └── 02-Inventario-Geral-AWS/
+└── tags/
+    ├── 01-Tagging-DataHub-Resources/
+    └── 02-Tagging-S3-Buckets/
+

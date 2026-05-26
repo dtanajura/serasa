@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar Pasta</title>
+</head>
+<body>
+    <h1>Selecionar Pasta do Repositório</h1>
+    <form id="folderForm" action="/select_folder" method="post">
+        <input type="file" id="fileInput" webkitdirectory directory multiple style="display: none;">
+        <input type="text" id="folder_path" name="folder_path" value="{{ last_folder }}" readonly required>
+        <button type="button" onclick="document.getElementById('fileInput').click();">Abrir Explorador de Arquivos</button>
+    </form>
+    {% if last_folder %}
+        <p>Última pasta selecionada: {{ last_folder }}</p>
+    {% endif %}
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            const files = event.target.files;
+            if (files.length > 0) {
+                const folderPath = files[0].webkitRelativePath.split('/')[0];
+                document.getElementById('folder_path').value = folderPath;
+                document.getElementById('folderForm').submit();
+            }
+        });
+    </script>
+</body>
+</html>

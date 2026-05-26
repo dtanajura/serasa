@@ -1,0 +1,33 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::294463638235:role/BURoleForGlue-Cross-account"
+        ],
+        "Service": "ec2.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::730335661246:role/BURoleForMWAAairflow-mwaa-datahub-dev"
+        ]
+      },
+      "Action": "sts:AssumeRole"
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::530914589075:role/BURoleForOdinAccess"
+        ]
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}

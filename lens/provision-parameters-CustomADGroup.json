@@ -1,8 +1,0 @@
-[
-    {"Key":"RoleName","Value":"BURoleForAccessAppWatchlist"},
-    {"Key":"AccountOwnerLanId","Value":"C90332A"},
-    {"Key":"IdentityCentralRequestable","Value":"Yes"},
-    {"Key":"ADGroupDomain","Value":"serasa.intranet"},
-    {"Key":"IdentityCentralPrivileged","Value":"Yes"},
-    {"Key":"CreateRole","Value":"Yes"}
-]

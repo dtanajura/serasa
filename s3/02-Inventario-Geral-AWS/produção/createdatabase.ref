@@ -1,0 +1,71 @@
+# Uso: python https://urldefense.com/v3/__http://meuscript.py__;!!MfzFaTml5A!jUub94PQUpIom6LqR1x3xKNqzUcO2DyEwslXclz82MeVlU1PlOWnnw7xjZQQExXHbKgCgOUI5nOwcknt6G5NxTCN5B4_xGim$  --hostname your_rds_endpoint --username your_master_username --password your_master_password --new_database_name your_new_database_name --table_name inventario
+
+import argparse
+import psycopg2
+from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
+import secrets
+import string
+
+def generate_password(length=12):
+    alphabet = string.ascii_letters + string.digits + string.punctuation
+    return ''.join(secrets.choice(alphabet) for i in range(length))
+
+def create_database(conn, database_name):
+    conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
+    cursor = conn.cursor()
+    cursor.execute(f"CREATE DATABASE {database_name};")
+    print(f"Banco de dados '{database_name}' criado com sucesso.")
+    cursor.close()
+
+def create_user(conn, username, password):
+    cursor = conn.cursor()
+    cursor.execute(f"CREATE USER \"{username}\" WITH PASSWORD '{password}';")
+    print(f"Usuário '{username}' criado com sucesso. Senha: {password}")
+    cursor.close()
+
+def grant_permissions(conn, database_name, username):
+    cursor = conn.cursor()
+    cursor.execute(f"GRANT ALL PRIVILEGES ON DATABASE \"{database_name}\" TO \"{username}\";")
+    print(f"Permissões concedidas ao usuário '{username}' no banco de dados '{database_name}'.")
+    cursor.close()
+
+def create_table(conn, table_name):
+    cursor = conn.cursor()
+    cursor.execute(f"""
+        CREATE TABLE {table_name} (
+            resource_type VARCHAR(255),
+            resource_id VARCHAR(255)
+        );
+    """)
+    print(f"Tabela '{table_name}' criada com sucesso.")
+    cursor.close()
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Script para criar um banco de dados, usuário e tabela no PostgreSQL.')
+
+    parser.add_argument('--hostname', required=True, help='O endpoint do seu banco de dados RDS')
+    parser.add_argument('--username', required=True, help='O nome de usuário para conectar ao banco de dados')
+    parser.add_argument('--password', required=True, help='A senha para conectar ao banco de dados')
+    parser.add_argument('--new_database_name', required=True, help='O nome do novo banco de dados a ser criado')
+    parser.add_argument('--table_name', required=True, help='O nome da nova tabela a ser criada')
+
+    args = parser.parse_args()
+
+    # Gera uma senha aleatória para o novo usuário
+    app_user_password = generate_password()
+
+    try:
+        # Conecta ao banco de dados padrão para criar o banco de dados e o usuário
+        conn = psycopg2.connect(dbname='postgres', user=args.username, password=args.password, host=args.hostname, port=5432)
+        create_database(conn, args.new_database_name)
+        create_user(conn, 'app-user', app_user_password)
+        grant_permissions(conn, args.new_database_name, 'app-user')
+        conn.close()
+
+        # Conecta ao novo banco de dados para criar a tabela
+        conn = psycopg2.connect(dbname=args.new_database_name, user=args.username, password=args.password, host=args.hostname, port=5432)
+        create_table(conn, args.table_name)
+        conn.close()
+
+    except Exception as e:
+        print(f"Ocorreu um erro: {e}")
