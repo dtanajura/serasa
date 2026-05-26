@@ -1,0 +1,54 @@
+Service,Shortened Name
+Amazon Elastic Load Balancing,ELB
+Amazon GuardDuty,GuardDuty
+AWS Identity and Access Management Access Analyzer,IAM Analyzer
+Amazon Managed Workflows for Apache Airflow,MWAA
+AWS CloudShell,CloudShell
+AWS Service Catalog,SvcCatalog
+Amazon DataZone,DataZone
+AWS Glue,Glue
+AWS Systems Manager,SSM
+Amazon Elastic Compute Cloud - Compute,EC2
+AWS Key Management Service,KMS
+Tax,Tax
+Amazon Macie,Macie
+Amazon Glacier,Glacier
+Amazon Elastic File System,EFS
+Amazon DynamoDB,DynamoDB
+Amazon Virtual Private Cloud,VPC
+Amazon Simple Queue Service,SQS
+Amazon Keyspaces (for Apache Cassandra),Keyspaces
+Amazon Location Service,LocService
+Amazon Relational Database Service,RDS
+Amazon Elastic MapReduce,EMR
+Amazon OpenSearch Service,OpenSearch
+AWS Lambda,Lambda
+AWS Certificate Manager,CertMgr
+Amazon Route 53,Route53
+AWS Step Functions,StepFunc
+Amazon Managed Streaming for Apache Kafka,MSK
+Amazon Kinesis Firehose,Firehose
+Amazon DocumentDB (with MongoDB compatibility),DocDB
+Amazon ElastiCache,ElastiCache
+Amazon Simple Storage Service,S3
+Amazon Athena,Athena
+AWS Migration Hub Refactor Spaces,Refactor
+AWS Config,Config
+AWS Direct Connect,DirectCon
+AWS Data Transfer,DataXfer
+EC2 - Other,EC2 Other
+AWS Database Migration Service,DMS
+AWS CloudTrail,CloudTrail
+Amazon Elastic Container Service,ECS
+AWS Backup,Backup
+Amazon Simple Notification Service,SNS
+AWS Cost Explorer,CostEx
+AWS Secrets Manager,Secrets
+Amazon Elastic Container Service for Kubernetes,EKS
+Amazon EC2 Container Registry (ECR),ECR
+Amazon Kinesis,Kinesis
+CloudWatch Events,CW Events
+AmazonCloudWatch,CloudWatch
+Amazon CloudFront,CloudFront
+AWS X-Ray,X-Ray
+Amazon Bedrock,Bedrock

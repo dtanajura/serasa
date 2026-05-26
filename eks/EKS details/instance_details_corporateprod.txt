@@ -1,0 +1,119 @@
+Nome da conta eec-aws-br-nike-corporate-prod
+EKS clusters for account: eec-aws-br-nike-corporate-prod
+eks_clusters: account_id=564593125549, cluster_id=eks-nike-tech-01-prod, cluster_name=eks-nike-tech-01-prod, kubernetes_version=1.30
+Details eks_nodegroups: nodegroup_id=node_group_on_demand_general_large-20221014210118202900000039, autoscaling_group_name=eks-node_group_on_demand_general_large-20221014210118202900000039-54c1ec26-9343-64bb-5d9c-d32f013bf038, launch_template_id=lt-07b74d91d48bb2a05, launch_template_version=11
+No instances
+Details eks_nodegroups: nodegroup_id=node_group_on_demand_general_medium-20221014210118197500000033, autoscaling_group_name=eks-node_group_on_demand_general_medium-20221014210118197500000033-36c1ec26-933a-576d-5625-d155783d8dae, launch_template_id=lt-0711fc7a9e85e903b, launch_template_version=19
+Details eks_nodes: instance_id=i-0314b3a25f821b7b1
+Instance Details:
+  Instance Type: m5.2xlarge
+  Private IP Address: 10.99.151.27
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-028b8945faac17ddb
+  OS: Amazon Linux 2
+  Tags:
+    Name: node_group_on_demand_general_medium
+    Environment: prd
+    Project: nike_tech
+    aws:ec2launchtemplate:version: 18
+    aws:ec2launchtemplate:id: lt-09602e3e69bb2459f
+    eks:cluster-name: eks-nike-tech-01-prod
+    Application: EKS
+    adDomain: br.experian.local
+    aws:autoscaling:groupName: eks-node_group_on_demand_general_medium-20221014210118197500000033-36c1ec26-933a-576d-5625-d155783d8dae
+    ResourceName: ec2eksnike
+    AppID: 21231
+    aws:eks:cluster-name: eks-nike-tech-01-prod
+    k8s.io/cluster-autoscaler/eks-nike-tech-01-prod: owned
+    CostString: 1800.BR.100.404506
+    Instance-Scheduler: opt-out
+    ResourceBusinessUnit: eits
+    aws:ec2:fleet-id: fleet-1bbfaa94-3f05-4c07-0c92-83a8b474314d
+    k8s.io/cluster-autoscaler/enabled: true
+    eks:nodegroup-name: node_group_on_demand_general_medium-20221014210118197500000033
+    map-migrated: d-server-01riktnbfe0092
+    ResourceAppRole: app
+    Rapid7Tag: eec-aws-br-nike-corporate-prod, Servers EEC AWS
+    ResourceCostCenter: finops-eks
+    PCI: false
+    ManagedBy: Terraform
+    ResourceOwner: devsecops-paas-brazil@br.experian.com
+    kubernetes.io/cluster/eks-nike-tech-01-prod: owned
+Details eks_nodegroups: nodegroup_id=node_group_on_demand_general_small-20221014210118199400000035, autoscaling_group_name=eks-node_group_on_demand_general_small-20221014210118199400000035-92c1ec26-932b-2e81-c753-a54bb7e273b6, launch_template_id=lt-02417f98903f8d491, launch_template_version=18
+Details eks_nodes: instance_id=i-087985581e406f4a9
+Instance Details:
+  Instance Type: m5.xlarge
+  Private IP Address: 10.99.151.166
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0f94a0447c81d2e83
+  OS: Amazon Linux 2
+  Tags:
+    ManagedBy: Terraform
+    kubernetes.io/cluster/eks-nike-tech-01-prod: owned
+    eks:cluster-name: eks-nike-tech-01-prod
+    Application: EKS
+    Instance-Scheduler: opt-out
+    ResourceBusinessUnit: eits
+    aws:ec2:fleet-id: fleet-8d2cb78d-f81e-6136-8e32-0e2835da291f
+    k8s.io/cluster-autoscaler/enabled: true
+    Rapid7Tag: eec-aws-br-nike-corporate-prod, Servers EEC AWS
+    eks:nodegroup-name: node_group_on_demand_general_small-20221014210118199400000035
+    PCI: false
+    aws:ec2launchtemplate:version: 21
+    adDomain: br.experian.local
+    k8s.io/cluster-autoscaler/eks-nike-tech-01-prod: owned
+    ResourceCostCenter: finops-eks
+    aws:ec2launchtemplate:id: lt-03ce61b4b7b072ecd
+    Name: node_group_on_demand_general_small
+    Environment: prd
+    aws:autoscaling:groupName: eks-node_group_on_demand_general_small-20221014210118199400000035-92c1ec26-932b-2e81-c753-a54bb7e273b6
+    ResourceOwner: devsecops-paas-brazil@br.experian.com
+    CostString: 1800.BR.100.404506
+    aws:eks:cluster-name: eks-nike-tech-01-prod
+    AppID: 21231
+    Project: nike_tech
+    ResourceName: ec2eksnike
+    map-migrated: d-server-01riktnbfe0092
+    ResourceAppRole: app
+Details eks_nodegroups: nodegroup_id=node_group_on_demand_infra-20230413222208948100000005, autoscaling_group_name=eks-node_group_on_demand_infra-20230413222208948100000005-7cc3be5b-1b3b-ea6a-0981-05c798745e36, launch_template_id=lt-0683bcd847292e8b4, launch_template_version=18
+Details eks_nodes: instance_id=i-0a45090763e9e7800
+Instance Details:
+  Instance Type: c6i.2xlarge
+  Private IP Address: 10.99.151.39
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0ccbacf09b93df7e2
+  OS: Amazon Linux 2
+  Tags:
+    ResourceBusinessUnit: eits
+    aws:ec2launchtemplate:id: lt-0a7afaab71f4d4c06
+    Instance-Scheduler: opt-out
+    ResourceName: ec2eksnike
+    aws:ec2:fleet-id: fleet-2d35968d-822f-eebc-0c18-852a209ba9b1
+    k8s.io/cluster-autoscaler/enabled: true
+    CostString: 1800.BR.100.404506
+    ResourceCostCenter: finops-eks
+    aws:eks:cluster-name: eks-nike-tech-01-prod
+    eks:cluster-name: eks-nike-tech-01-prod
+    Rapid7Tag: eec-aws-br-nike-corporate-prod, Servers EEC AWS
+    Worker: infra
+    PCI: false
+    ManagedBy: Terraform
+    adDomain: br.experian.local
+    Application: EKS
+    aws:ec2launchtemplate:version: 20
+    Project: nike_tech
+    Environment: prd
+    ResourceOwner: devsecops-paas-brazil@br.experian.com
+    kubernetes.io/cluster/eks-nike-tech-01-prod: owned
+    AppID: 21231
+    Name: node_group_on_demand_infra
+    aws:autoscaling:groupName: eks-node_group_on_demand_infra-20230413222208948100000005-7cc3be5b-1b3b-ea6a-0981-05c798745e36
+    k8s.io/cluster-autoscaler/eks-nike-tech-01-prod: owned
+    eks:nodegroup-name: node_group_on_demand_infra-20230413222208948100000005
+    ResourceAppRole: app
+    map-migrated: d-server-01riktnbfe0092
+Details eks_nodegroups: nodegroup_id=node_group_spot_general_mixed-2023041322264419880000000f, autoscaling_group_name=eks-node_group_spot_general_mixed-2023041322264419880000000f-92c3be5d-34d6-bc8f-6566-5dec95956ace, launch_template_id=lt-00c3afe5cc42a8ddf, launch_template_version=11
+No instances

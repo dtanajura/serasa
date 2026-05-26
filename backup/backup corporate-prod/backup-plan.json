@@ -1,0 +1,17 @@
+{
+    "BackupPlan": {
+        "BackupPlanName": "Backup-Geral",
+        "Rules": [
+            {
+                "RuleName": "Daily-Backups",
+                "TargetBackupVaultName": "backup-vault-corporateprod",
+                "ScheduleExpression": "cron(0 3 ? * 1-6 *)",
+                "StartWindowMinutes": 300,
+                "CompletionWindowMinutes": 10080,
+                "Lifecycle": {
+                    "DeleteAfterDays": 10
+                }
+            }
+        ]
+    }
+}

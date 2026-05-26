@@ -1,0 +1,55 @@
+s3://inventory-results-230530/experian-drive-private-qa/inventory-experian-drive-private-qa/2023-06-11T01-00Z/manifest.json
+
+s3://inventory-results-230530/experian-drive-private-prd/inventory-experian-drive-private-prd/2023-06-11T01-00Z/manifest.json
+
+s3://inventory-results-230530/experian-drive-private-uat/inventory-experian-drive-private-uat/2023-06-11T01-00Z/manifest.json
+
+s3://inventory-results-230530/experian-drive-public-stg/inventory-experian-drive-public-stg/2023-06-11T01-00Z/manifest.json
+
+s3://inventory-results-230530/serasaexperian-client-access/inventory-serasaexperian-client-access/2023-06-11T01-00Z/manifest.json
+
+s3://inventory-results-230530/serasaexperian-crypto-private-uat/inventory-serasaexperian-crypto-private-uat/2023-06-11T01-00Z/manifest.json
+
+s3://inventory-results-230530/serasaexperian-crypto-private/inventory-serasaexperian-crypto-private/2023-06-11T01-00Z/manifest.json
+s3://inventory-results-230530/serasaexperian-drive-private-qa/inventory-serasaexperian-drive-private-qa/2023-06-11T01-00Z/manifest.json
+s3://inventory-results-230530/serasaexperian-drive-private-stg/inventory-serasaexperian-drive-private-stg/2023-06-11T01-00Z/manifest.json
+s3://inventory-results-230530/serasaexperian-drive-private-uat/inventory-serasaexperian-drive-private-uat/2023-06-11T01-00Z/manifest.json
+s3://inventory-results-230530/serasaexperian-drive-private/inventory-serasaexperian-drive-private/2023-06-11T01-00Z/manifest.json
+s3://inventory-results-230530/serasaexperian-drive-public-stg/inventory-serasaexperian-drive-public-stg/2023-06-11T01-00Z/manifest.json
+s3://inventory-results-230530/serasaexperian-drive-public-uat/inventory-serasaexperian-drive-public-uat/2023-06-11T01-00Z/manifest.json
+s3://inventory-results-230530/serasaexperian-drive-public/inventory-serasaexperian-drive-public/2023-06-11T01-00Z/manifest.json
+s3://inventory-results-230530/uat-serasaexperian-drive-private/inventory-uat-serasaexperian-drive-private/2023-06-11T01-00Z/manifest.json
+s3://inventory-results-230530/uat-serasaexperian-drive-public/inventory-uat-serasaexperian-drive-public/2023-06-11T01-00Z/manifest.json
+
+
+Não criou:
+serasaexperian-crypto-private-qa
+
+Replicações ativadas:
+experian-drive-private-qa
+experian-drive-public-stg
+serasaexperian-client-access
+
+Replicações em andamento:
+experian-drive-private-prd
+experian-drive-private-uat
+serasaexperian-crypto-private
+serasaexperian-crypto-private-uat
+serasaexperian-drive-private
+serasaexperian-drive-private-qa
+serasaexperian-drive-private-stg
+serasaexperian-drive-private-uat
+serasaexperian-drive-public
+serasaexperian-drive-public-stg
+serasaexperian-drive-public-uat
+uat-serasaexperian-drive-private
+uat-serasaexperian-drive-public
+
+ainda não replicada:
+serasaexperian-crypto-private-qa
+
+328257591560
+burolefordigitaldevops
+arn:aws:kms:sa-east-1:328257591560:key/a50a635a-1479-434d-a513-42688ca5ff3c
+s3://file-share-claranet
+BURoleForDigitalS3Replication

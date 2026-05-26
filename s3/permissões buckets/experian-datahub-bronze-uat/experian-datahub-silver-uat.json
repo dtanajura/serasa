@@ -1,0 +1,132 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowS3ListBucket",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::141318255201:root",
+                    "arn:aws:iam::376129858674:root",
+                    "arn:aws:iam::623955547361:root",
+                    "arn:aws:iam::730335661246:root",
+                    "arn:aws:iam::093785888205:root",
+                    "arn:aws:iam::146737708860:root",
+                    "arn:aws:iam::713881783816:root",
+                    "arn:aws:iam::471112967268:root",
+                    "arn:aws:iam::154986970855:root",
+                    "arn:aws:iam::278332118946:root"
+                ]
+            },
+            "Action": "s3:ListBucket",
+            "Resource": "arn:aws:s3:::experian-datahub-silver-uat"
+        },
+        {
+            "Sid": "AllowS3GetObject",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::141318255201:root",
+                    "arn:aws:iam::376129858674:root",
+                    "arn:aws:iam::623955547361:root",
+                    "arn:aws:iam::730335661246:root",
+                    "arn:aws:iam::093785888205:root",
+                    "arn:aws:iam::146737708860:root",
+                    "arn:aws:iam::713881783816:root",
+                    "arn:aws:iam::471112967268:root",
+                    "arn:aws:iam::154986970855:root",
+                    "arn:aws:iam::278332118946:root"
+                ]
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::experian-datahub-silver-uat/*"
+        },
+        {
+            "Sid": "ManagedByOdinDamProducerDoNotModify",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::980921747889:role/BURoleForLFServiceRole"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-silver-uat",
+                "arn:aws:s3:::experian-datahub-silver-uat/*"
+            ]
+        },
+        {
+            "Sid": "ManagedByOdinDamProducerDoNotModify",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-silver-uat",
+                "arn:aws:s3:::experian-datahub-silver-uat/*"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "s3:DataAccessPointAccount": "980921747889"
+                }
+            }
+        },
+        {
+            "Sid": "MSAccess",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::310051034381:role/BURoleForAirflow"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-silver-uat",
+                "arn:aws:s3:::experian-datahub-silver-uat/warehouse/qsa/bt_qsa/*"
+            ]
+        },
+        {
+            "Sid": "ECSAccess",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::093785888205:role/dataops-databricks-default-role-dev",
+                    "arn:aws:iam::278332118946:role/BURoleFor-unity-catalog-dev"
+                ]
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-silver-uat",
+                "arn:aws:s3:::experian-datahub-silver-uat/warehouse/warehouse/replicacao/bt_cadastrais_pf/*",
+                "arn:aws:s3:::experian-datahub-silver-uat/warehouse/warehouse/replicacao/bt_enderecos_pf/*",
+                "arn:aws:s3:::experian-datahub-silver-uat/warehouse/warehouse/replicacao/bt_telefones_pf/*",
+                "arn:aws:s3:::experian-datahub-silver-uat/warehouse/warehouse/replicacao/bt_emails_pf/*"
+            ]
+        },
+        {
+            "Sid": "Acesso para a conta de Negativos Privados",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::300374333803:role/BURoleForNegativos"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"           
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-silver-uat/*",
+                "arn:aws:s3:::experian-datahub-silver-uat"
+            ]
+        }
+
+    ]
+}

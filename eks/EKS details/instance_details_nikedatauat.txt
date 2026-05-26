@@ -1,0 +1,2 @@
+Nome da conta eec-aws-br-eits-nikedataservice-uat
+No EKS clusters found for account: eec-aws-br-eits-nikedataservice-uat

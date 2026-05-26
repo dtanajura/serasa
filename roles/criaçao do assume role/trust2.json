@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+      {
+          "Effect": "Allow",
+          "Principal": {
+              "Federated": "arn:aws:iam::105794972139:oidc-provider/oidc.eks.sa-east-1.amazonaws.com/id/B9414B05E6ACE60A23B746C0BFAFC46F"
+          },
+          "Action": "sts:AssumeRoleWithWebIdentity",
+          "Condition": {
+              "StringEquals": {
+                  "oidc.eks.sa-east-1.amazonaws.com/id/B9414B05E6ACE60A23B746C0BFAFC46F:sub": "system:serviceaccount:mesa-optin-prod:experian-mesa-positivo-optin-serviceaccount"
+              }
+          }
+      }
+  ]
+}

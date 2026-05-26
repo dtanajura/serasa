@@ -1,0 +1,32 @@
+  - job_name: 'EMR-experian-ssrm-synthetic-summarization'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'EMR-experian-ssrm-synthetic-summarization'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'EMR-Nike-Ssrm-Support'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'EMR-Nike-Ssrm-Support'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'EMR-Nike-Ssrm-Analytic-Scheduled-Extraction'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'EMR-Nike-Ssrm-Analytic-Scheduled-Extraction'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'

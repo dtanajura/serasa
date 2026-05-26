@@ -1,0 +1,543 @@
+Nome da conta eec-aws-br-ds-dataservices-stage
+EKS clusters for account: eec-aws-br-ds-dataservices-stage
+eks_clusters: account_id=146737708860, cluster_id=ds-eks-01-uat, cluster_name=ds-eks-01-uat, kubernetes_version=1.30
+Details eks_nodegroups: nodegroup_id=EKS-ds-eks-01-uat-NG-infra-2024032100440356980000000f, autoscaling_group_name=eks-EKS-ds-eks-01-uat-NG-infra-2024032100440356980000000f-eac72f3b-8553-9fe6-e272-e512f059ab04, launch_template_id=lt-057231bee4ee6f3eb, launch_template_version=9
+Details eks_nodes: instance_id=i-0b9c754de27c49f32
+Instance Details:
+  Instance Type: c6i.2xlarge
+  Private IP Address: 10.99.13.59
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-07c5124b83d896a59
+  OS: Amazon Linux 2
+  Tags:
+    ResourceName: ds-eks-uat
+    Application: EKS
+    Worker: infra
+    ManagedBy: Terraform
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-infra-2024032100440356980000000f-eac72f3b-8553-9fe6-e272-e512f059ab04
+    AppID: 19558
+    aws:eks:cluster-name: ds-eks-01-uat
+    RepositoryVersion: v1.7.0
+    ResourceAppRole: app
+    Environment: stg
+    ResourceOwner: datastrategy_ti@br.experian.com
+    adDomain: br.experian.local
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+    CostString: 1800.BR.100.404506
+    ResourceCostCenter: 1800.BR.100.404506
+    aws:ec2launchtemplate:version: 9
+    service-request: RITM3395904
+    map-migrated: d-server-01riktnbfe0092
+    aws:ec2:fleet-id: fleet-a7261d05-5a16-e13e-2498-0c8876c15c41
+    aws:ec2launchtemplate:id: lt-01f666bcb4e1e0e1c
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-infra-2024032100440356980000000f
+    eks:cluster-name: ds-eks-01-uat
+    PCI: false
+    k8s.io/cluster-autoscaler/enabled: true
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    Name: EKS-ds-eks-01-uat-NG-infra
+    ClusterName: ds-eks-01-uat
+    Instance-Scheduler: opt-out
+    Project: datastrategy
+Details eks_nodes: instance_id=i-0cf7363e6dab470b3
+Instance Details:
+  Instance Type: c6i.2xlarge
+  Private IP Address: 10.99.13.136
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0888f3142ba7505c0
+  OS: Amazon Linux 2
+  Tags:
+    service-request: RITM3395904
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+    CostString: 1800.BR.100.404506
+    Instance-Scheduler: opt-out
+    aws:ec2:fleet-id: fleet-b1bf8a16-1f8f-66ad-aeb8-a108c630ab6b
+    map-migrated: d-server-01riktnbfe0092
+    Name: EKS-ds-eks-01-uat-NG-infra
+    ResourceCostCenter: 1800.BR.100.404506
+    adDomain: br.experian.local
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    ResourceAppRole: app
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-infra-2024032100440356980000000f
+    aws:ec2launchtemplate:version: 9
+    AppID: 19558
+    ResourceOwner: datastrategy_ti@br.experian.com
+    aws:ec2launchtemplate:id: lt-01f666bcb4e1e0e1c
+    ClusterName: ds-eks-01-uat
+    ResourceName: ds-eks-uat
+    Environment: stg
+    Application: EKS
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    ManagedBy: Terraform
+    PCI: false
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-infra-2024032100440356980000000f-eac72f3b-8553-9fe6-e272-e512f059ab04
+    aws:eks:cluster-name: ds-eks-01-uat
+    RepositoryVersion: v1.7.0
+    Project: datastrategy
+    eks:cluster-name: ds-eks-01-uat
+    Worker: infra
+    k8s.io/cluster-autoscaler/enabled: true
+Details eks_nodegroups: nodegroup_id=EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c, autoscaling_group_name=eks-EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c-76c72f3c-c35b-f7bb-d374-5fe3ccf1f7d9, launch_template_id=lt-0ba721ef9468d7355, launch_template_version=9
+Details eks_nodes: instance_id=i-00c1e9262fd1f8b88
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.13.202
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-02d4454a3a83af66c
+  OS: Amazon Linux 2
+  Tags:
+    aws:ec2:fleet-id: fleet-070cb72d-d096-43b6-8438-260a6971a8b2
+    AppID: 19558
+    aws:ec2launchtemplate:id: lt-040a150bbda2829bb
+    aws:eks:cluster-name: ds-eks-01-uat
+    ManagedBy: Terraform
+    ResourceName: ds-eks-uat
+    PCI: false
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    eks:cluster-name: ds-eks-01-uat
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c
+    map-migrated: d-server-01riktnbfe0092
+    Project: datastrategy
+    ClusterName: ds-eks-01-uat
+    Instance-Scheduler: opt-out
+    CostString: 1800.BR.100.404506
+    service-request: RITM3395904
+    ResourceOwner: datastrategy_ti@br.experian.com
+    k8s.io/cluster-autoscaler/enabled: true
+    ResourceAppRole: app
+    adDomain: br.experian.local
+    ResourceCostCenter: 1800.BR.100.404506
+    Name: EKS-ds-eks-01-uat-NG-large
+    RepositoryVersion: v1.7.0
+    aws:ec2launchtemplate:version: 9
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+    Application: EKS
+    Environment: stg
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c-76c72f3c-c35b-f7bb-d374-5fe3ccf1f7d9
+Details eks_nodes: instance_id=i-017d3088a13e63d41
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.13.201
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0b733e59e9c5250a8
+  OS: Amazon Linux 2
+  Tags:
+    Environment: stg
+    AppID: 19558
+    eks:cluster-name: ds-eks-01-uat
+    ClusterName: ds-eks-01-uat
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c-76c72f3c-c35b-f7bb-d374-5fe3ccf1f7d9
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    PCI: false
+    ResourceName: ds-eks-uat
+    RepositoryVersion: v1.7.0
+    map-migrated: d-server-01riktnbfe0092
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c
+    Project: datastrategy
+    k8s.io/cluster-autoscaler/enabled: true
+    ResourceOwner: datastrategy_ti@br.experian.com
+    Instance-Scheduler: opt-out
+    Name: EKS-ds-eks-01-uat-NG-large
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+    ManagedBy: Terraform
+    service-request: RITM3395904
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    ResourceAppRole: app
+    aws:ec2:fleet-id: fleet-911d88bc-9787-e405-a610-892a36ea16e6
+    aws:eks:cluster-name: ds-eks-01-uat
+    aws:ec2launchtemplate:id: lt-040a150bbda2829bb
+    Application: EKS
+    adDomain: br.experian.local
+    CostString: 1800.BR.100.404506
+    ResourceCostCenter: 1800.BR.100.404506
+    aws:ec2launchtemplate:version: 9
+Details eks_nodes: instance_id=i-060daf6cff298ff6f
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.13.143
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0948d15cc157cb623
+  OS: Amazon Linux 2
+  Tags:
+    Name: EKS-ds-eks-01-uat-NG-large
+    ResourceAppRole: app
+    ManagedBy: Terraform
+    ResourceOwner: datastrategy_ti@br.experian.com
+    k8s.io/cluster-autoscaler/enabled: true
+    aws:eks:cluster-name: ds-eks-01-uat
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    aws:ec2launchtemplate:id: lt-040a150bbda2829bb
+    ResourceName: ds-eks-uat
+    service-request: RITM3395904
+    map-migrated: d-server-01riktnbfe0092
+    Instance-Scheduler: opt-out
+    ClusterName: ds-eks-01-uat
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c
+    Project: datastrategy
+    eks:cluster-name: ds-eks-01-uat
+    Environment: stg
+    adDomain: br.experian.local
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c-76c72f3c-c35b-f7bb-d374-5fe3ccf1f7d9
+    PCI: false
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    AppID: 19558
+    RepositoryVersion: v1.7.0
+    Application: EKS
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+    aws:ec2:fleet-id: fleet-bbb78216-1fad-ec05-2cba-8902350da69a
+    CostString: 1800.BR.100.404506
+    ResourceCostCenter: 1800.BR.100.404506
+    aws:ec2launchtemplate:version: 9
+Details eks_nodes: instance_id=i-07c35a31a1098e509
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.13.134
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-04044421403cc2543
+  OS: Amazon Linux 2
+  Tags:
+    RepositoryVersion: v1.7.0
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    aws:ec2launchtemplate:version: 9
+    Environment: stg
+    PCI: false
+    AppID: 19558
+    adDomain: br.experian.local
+    ClusterName: ds-eks-01-uat
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c-76c72f3c-c35b-f7bb-d374-5fe3ccf1f7d9
+    map-migrated: d-server-01riktnbfe0092
+    ResourceName: ds-eks-uat
+    Project: datastrategy
+    k8s.io/cluster-autoscaler/enabled: true
+    eks:cluster-name: ds-eks-01-uat
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c
+    Name: EKS-ds-eks-01-uat-NG-large
+    ResourceAppRole: app
+    ManagedBy: Terraform
+    ResourceOwner: datastrategy_ti@br.experian.com
+    Instance-Scheduler: opt-out
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+    aws:eks:cluster-name: ds-eks-01-uat
+    aws:ec2:fleet-id: fleet-911d0abe-3d27-cc0d-8c12-a1a08b1b49c7
+    aws:ec2launchtemplate:id: lt-040a150bbda2829bb
+    service-request: RITM3395904
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    CostString: 1800.BR.100.404506
+    Application: EKS
+    ResourceCostCenter: 1800.BR.100.404506
+Details eks_nodes: instance_id=i-0b3a9f7b3c8c202fb
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.13.62
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0f837493d1275ad26
+  OS: Amazon Linux 2
+  Tags:
+    Instance-Scheduler: opt-out
+    k8s.io/cluster-autoscaler/enabled: true
+    CostString: 1800.BR.100.404506
+    service-request: RITM3395904
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+    Project: datastrategy
+    aws:eks:cluster-name: ds-eks-01-uat
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c
+    ResourceName: ds-eks-uat
+    aws:ec2:fleet-id: fleet-af2cbd8f-5814-49b4-241a-868a94e3db2c
+    ManagedBy: Terraform
+    PCI: false
+    ClusterName: ds-eks-01-uat
+    AppID: 19558
+    eks:cluster-name: ds-eks-01-uat
+    RepositoryVersion: v1.7.0
+    aws:ec2launchtemplate:version: 9
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    Application: EKS
+    Environment: stg
+    adDomain: br.experian.local
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c-76c72f3c-c35b-f7bb-d374-5fe3ccf1f7d9
+    aws:ec2launchtemplate:id: lt-040a150bbda2829bb
+    map-migrated: d-server-01riktnbfe0092
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    ResourceCostCenter: 1800.BR.100.404506
+    Name: EKS-ds-eks-01-uat-NG-large
+    ResourceAppRole: app
+    ResourceOwner: datastrategy_ti@br.experian.com
+Details eks_nodes: instance_id=i-0bc8915fba1b5b7ce
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.13.147
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-00b4a9abf8f5ebe7d
+  OS: Amazon Linux 2
+  Tags:
+    RepositoryVersion: v1.7.0
+    aws:ec2:fleet-id: fleet-91b508bc-bda5-cc25-aeb0-03a898078f2b
+    aws:ec2launchtemplate:version: 9
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    eks:cluster-name: ds-eks-01-uat
+    PCI: false
+    ResourceName: ds-eks-uat
+    AppID: 19558
+    CostString: 1800.BR.100.404506
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+    ResourceCostCenter: 1800.BR.100.404506
+    adDomain: br.experian.local
+    Application: EKS
+    Environment: stg
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c-76c72f3c-c35b-f7bb-d374-5fe3ccf1f7d9
+    Name: EKS-ds-eks-01-uat-NG-large
+    k8s.io/cluster-autoscaler/enabled: true
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    ManagedBy: Terraform
+    aws:ec2launchtemplate:id: lt-040a150bbda2829bb
+    ResourceOwner: datastrategy_ti@br.experian.com
+    aws:eks:cluster-name: ds-eks-01-uat
+    ResourceAppRole: app
+    map-migrated: d-server-01riktnbfe0092
+    service-request: RITM3395904
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c
+    Project: datastrategy
+    ClusterName: ds-eks-01-uat
+    Instance-Scheduler: opt-out
+Details eks_nodes: instance_id=i-0cf6078dd80a51659
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.13.242
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0da398006afa8a15b
+  OS: Amazon Linux 2
+  Tags:
+    k8s.io/cluster-autoscaler/enabled: true
+    ResourceAppRole: app
+    Name: EKS-ds-eks-01-uat-NG-large
+    ResourceOwner: datastrategy_ti@br.experian.com
+    ManagedBy: Terraform
+    map-migrated: d-server-01riktnbfe0092
+    aws:ec2launchtemplate:id: lt-040a150bbda2829bb
+    Project: datastrategy
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    service-request: RITM3395904
+    ClusterName: ds-eks-01-uat
+    Instance-Scheduler: opt-out
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    aws:ec2launchtemplate:version: 9
+    Environment: stg
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c-76c72f3c-c35b-f7bb-d374-5fe3ccf1f7d9
+    AppID: 19558
+    eks:cluster-name: ds-eks-01-uat
+    RepositoryVersion: v1.7.0
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c
+    ResourceName: ds-eks-uat
+    PCI: false
+    Application: EKS
+    aws:ec2:fleet-id: fleet-270e3d25-721c-e33e-2c1a-ae22178b7423
+    aws:eks:cluster-name: ds-eks-01-uat
+    CostString: 1800.BR.100.404506
+    ResourceCostCenter: 1800.BR.100.404506
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+    adDomain: br.experian.local
+Details eks_nodes: instance_id=i-0e0fb6183b5b948e7
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.13.31
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-07cc13b212ec58067
+  OS: Amazon Linux 2
+  Tags:
+    ClusterName: ds-eks-01-uat
+    ResourceName: ds-eks-uat
+    AppID: 19558
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c-76c72f3c-c35b-f7bb-d374-5fe3ccf1f7d9
+    Application: EKS
+    Environment: stg
+    RepositoryVersion: v1.7.0
+    ManagedBy: Terraform
+    PCI: false
+    aws:ec2:fleet-id: fleet-af2cbd8f-5814-49b4-241a-868a94e3db2c
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-large-2024032100464639320000003c
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    aws:eks:cluster-name: ds-eks-01-uat
+    Project: datastrategy
+    k8s.io/cluster-autoscaler/enabled: true
+    eks:cluster-name: ds-eks-01-uat
+    service-request: RITM3395904
+    CostString: 1800.BR.100.404506
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+    Instance-Scheduler: opt-out
+    map-migrated: d-server-01riktnbfe0092
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    ResourceCostCenter: 1800.BR.100.404506
+    adDomain: br.experian.local
+    ResourceAppRole: app
+    aws:ec2launchtemplate:id: lt-040a150bbda2829bb
+    ResourceOwner: datastrategy_ti@br.experian.com
+    aws:ec2launchtemplate:version: 9
+    Name: EKS-ds-eks-01-uat-NG-large
+Details eks_nodegroups: nodegroup_id=EKS-ds-eks-01-uat-NG-medium-20240321004646388900000038, autoscaling_group_name=eks-EKS-ds-eks-01-uat-NG-medium-20240321004646388900000038-82c72f3c-c354-5ee4-2192-30274bbdcefa, launch_template_id=lt-02ff3d57dbfc739fe, launch_template_version=9
+Details eks_nodes: instance_id=i-041a1d74350fc8b59
+Instance Details:
+  Instance Type: m5.2xlarge
+  Private IP Address: 10.99.13.132
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-093c80cb4310c69af
+  OS: Amazon Linux 2
+  Tags:
+    ResourceName: ds-eks-uat
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-medium-20240321004646388900000038-82c72f3c-c354-5ee4-2192-30274bbdcefa
+    Application: EKS
+    ClusterName: ds-eks-01-uat
+    aws:ec2launchtemplate:version: 9
+    eks:cluster-name: ds-eks-01-uat
+    Environment: stg
+    adDomain: br.experian.local
+    ManagedBy: Terraform
+    PCI: false
+    k8s.io/cluster-autoscaler/enabled: true
+    aws:eks:cluster-name: ds-eks-01-uat
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-medium-20240321004646388900000038
+    RepositoryVersion: v1.7.0
+    Name: EKS-ds-eks-01-uat-NG-medium
+    service-request: RITM3395904
+    map-migrated: d-server-01riktnbfe0092
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+    Instance-Scheduler: opt-out
+    CostString: 1800.BR.100.404506
+    Project: datastrategy
+    ResourceCostCenter: 1800.BR.100.404506
+    ResourceAppRole: app
+    aws:ec2:fleet-id: fleet-079dbe8f-2007-6436-0e98-af00cf3b55a1
+    ResourceOwner: datastrategy_ti@br.experian.com
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    aws:ec2launchtemplate:id: lt-06b7e7033225efd29
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    AppID: 19558
+Details eks_nodes: instance_id=i-0abfc17e5243e8392
+Instance Details:
+  Instance Type: m5.2xlarge
+  Private IP Address: 10.99.13.209
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0d61004358830cdc3
+  OS: Amazon Linux 2
+  Tags:
+    Instance-Scheduler: opt-out
+    ResourceOwner: datastrategy_ti@br.experian.com
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+    aws:ec2:fleet-id: fleet-ad959e2d-0a87-e6bc-04b0-2d281b3e0dc1
+    CostString: 1800.BR.100.404506
+    ResourceAppRole: app
+    ManagedBy: Terraform
+    k8s.io/cluster-autoscaler/enabled: true
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-medium-20240321004646388900000038-82c72f3c-c354-5ee4-2192-30274bbdcefa
+    Project: datastrategy
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    map-migrated: d-server-01riktnbfe0092
+    service-request: RITM3395904
+    aws:ec2launchtemplate:id: lt-06b7e7033225efd29
+    ClusterName: ds-eks-01-uat
+    Environment: stg
+    aws:ec2launchtemplate:version: 9
+    AppID: 19558
+    RepositoryVersion: v1.7.0
+    ResourceName: ds-eks-uat
+    PCI: false
+    eks:cluster-name: ds-eks-01-uat
+    aws:eks:cluster-name: ds-eks-01-uat
+    Application: EKS
+    Name: EKS-ds-eks-01-uat-NG-medium
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-medium-20240321004646388900000038
+    ResourceCostCenter: 1800.BR.100.404506
+    adDomain: br.experian.local
+Details eks_nodes: instance_id=i-0ebfa1d5f166fae5a
+Instance Details:
+  Instance Type: m5.2xlarge
+  Private IP Address: 10.99.13.7
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0b996eb1ee5534859
+  OS: Amazon Linux 2
+  Tags:
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-medium-20240321004646388900000038-82c72f3c-c354-5ee4-2192-30274bbdcefa
+    Application: EKS
+    ResourceName: ds-eks-uat
+    aws:eks:cluster-name: ds-eks-01-uat
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    eks:cluster-name: ds-eks-01-uat
+    aws:ec2launchtemplate:id: lt-06b7e7033225efd29
+    RepositoryVersion: v1.7.0
+    aws:ec2:fleet-id: fleet-bb15a894-b5a5-cca5-0c1a-23aa183b208f
+    Instance-Scheduler: opt-out
+    ClusterName: ds-eks-01-uat
+    PCI: false
+    ManagedBy: Terraform
+    k8s.io/cluster-autoscaler/enabled: true
+    map-migrated: d-server-01riktnbfe0092
+    Name: EKS-ds-eks-01-uat-NG-medium
+    CostString: 1800.BR.100.404506
+    Project: datastrategy
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+    adDomain: br.experian.local
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-medium-20240321004646388900000038
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    service-request: RITM3395904
+    aws:ec2launchtemplate:version: 9
+    Environment: stg
+    ResourceOwner: datastrategy_ti@br.experian.com
+    ResourceAppRole: app
+    AppID: 19558
+    ResourceCostCenter: 1800.BR.100.404506
+Details eks_nodegroups: nodegroup_id=EKS-ds-eks-01-uat-NG-small-2024032100464639300000003a, autoscaling_group_name=eks-EKS-ds-eks-01-uat-NG-small-2024032100464639300000003a-14c72f3c-c357-82ac-8708-69956dc47217, launch_template_id=lt-0375e9379551a8dde, launch_template_version=9
+Details eks_nodes: instance_id=i-029f8e03829aa3a00
+Instance Details:
+  Instance Type: t3.large
+  Private IP Address: 10.99.13.144
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-058f893b251da403f
+  OS: Amazon Linux 2
+  Tags:
+    aws:ec2launchtemplate:id: lt-0b5ce6a9178b49d33
+    Environment: stg
+    aws:ec2launchtemplate:version: 9
+    eks:cluster-name: ds-eks-01-uat
+    PCI: false
+    RepositoryVersion: v1.7.0
+    eks:nodegroup-name: EKS-ds-eks-01-uat-NG-small-2024032100464639300000003a
+    AppID: 19558
+    ResourceName: ds-eks-uat
+    Project: datastrategy
+    map-migrated: d-server-01riktnbfe0092
+    Name: EKS-ds-eks-01-uat-NG-small
+    ResourceBusinessUnit: BRASA1UAPUDS01
+    aws:ec2:fleet-id: fleet-2f9f9485-a8a5-c63c-2698-af8271e58b26
+    kubernetes.io/cluster/ds-eks-01-uat: owned
+    ClusterName: ds-eks-01-uat
+    Instance-Scheduler: opt-out
+    ResourceOwner: datastrategy_ti@br.experian.com
+    k8s.io/cluster-autoscaler/enabled: true
+    service-request: RITM3395904
+    ManagedBy: Terraform
+    aws:eks:cluster-name: ds-eks-01-uat
+    ResourceAppRole: app
+    aws:autoscaling:groupName: eks-EKS-ds-eks-01-uat-NG-small-2024032100464639300000003a-14c72f3c-c357-82ac-8708-69956dc47217
+    Application: EKS
+    ResourceCostCenter: 1800.BR.100.404506
+    adDomain: br.experian.local
+    CostString: 1800.BR.100.404506
+    k8s.io/cluster-autoscaler/ds-eks-01-uat: owned
+Details eks_nodegroups: nodegroup_id=EKS-ds-eks-01-uat-NG-spot-20240321004646386000000036, autoscaling_group_name=eks-EKS-ds-eks-01-uat-NG-spot-20240321004646386000000036-02c72f3c-c355-2a0e-8ea6-5c1d43305547, launch_template_id=lt-0d4721680286a89ea, launch_template_version=6
+No instances

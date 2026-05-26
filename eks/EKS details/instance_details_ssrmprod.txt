@@ -1,0 +1,870 @@
+Nome da conta eec-aws-br-nike-sales-prod
+EKS clusters for account: eec-aws-br-nike-sales-prod
+eks_clusters: account_id=877001948254, cluster_id=sales-eks-01-prod, cluster_name=sales-eks-01-prod, kubernetes_version=1.30
+Details eks_nodegroups: nodegroup_id=node_group_on_demand_infra-20231213014216056200000002, autoscaling_group_name=eks-node_group_on_demand_infra-20231213014216056200000002-a0c6306b-60b2-be98-c094-36362c71e771, launch_template_id=lt-09611148dd10e2d50, launch_template_version=17
+Details eks_nodes: instance_id=i-0635cc68082f404d4
+Instance Details:
+  Instance Type: c5.9xlarge
+  Private IP Address: 10.99.147.31
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0c6ea617fab708660
+  OS: Amazon Linux 2
+  Tags:
+    eks:nodegroup-name: node_group_on_demand_infra-20231213014216056200000002
+    CostString: 1800.BR.124.602000
+    aws:eks:cluster-name: sales-eks-01-prod
+    map-migrated: d-server-01riktnbfe0092
+    k8s.io/cluster-autoscaler/enabled: true
+    PCI: false
+    ResourceAppRole: app
+    Name: node_group_on_demand_infra
+    ResourceName: salesinstances
+    aws:ec2:fleet-id: fleet-9b37a21e-9727-e6af-84b2-8b8a4350817f
+    Instance-Scheduler: opt-out
+    aws:autoscaling:groupName: eks-node_group_on_demand_infra-20231213014216056200000002-a0c6306b-60b2-be98-c094-36362c71e771
+    aws:ec2launchtemplate:id: lt-0de24d027a372f214
+    Worker: infra
+    AppID: 12019
+    ManagedBy: Terraform
+    ResourceOwner: nikesre@br.experian.com
+    kubernetes.io/cluster/sales-eks-01-prod: owned
+    Project: nike
+    ResourceBusinessUnit: EITS
+    aws:ec2launchtemplate:version: 7
+    k8s.io/cluster-autoscaler/sales-eks-01-prod: owned
+    Environment: prd
+    eks:cluster-name: sales-eks-01-prod
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    Application: EKS
+Details eks_nodes: instance_id=i-08effc19cc68e4209
+Instance Details:
+  Instance Type: c5.9xlarge
+  Private IP Address: 10.99.147.107
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0be35e64dcabf0aa5
+  OS: Amazon Linux 2
+  Tags:
+    aws:eks:cluster-name: sales-eks-01-prod
+    eks:nodegroup-name: node_group_on_demand_infra-20231213014216056200000002
+    CostString: 1800.BR.124.602000
+    k8s.io/cluster-autoscaler/enabled: true
+    Instance-Scheduler: opt-out
+    aws:autoscaling:groupName: eks-node_group_on_demand_infra-20231213014216056200000002-a0c6306b-60b2-be98-c094-36362c71e771
+    Project: nike
+    PCI: false
+    ResourceBusinessUnit: EITS
+    ResourceOwner: nikesre@br.experian.com
+    AppID: 12019
+    ManagedBy: Terraform
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    aws:ec2:fleet-id: fleet-a73f14a5-288d-6c9e-a638-a5289134e4ca
+    Application: EKS
+    Worker: infra
+    k8s.io/cluster-autoscaler/sales-eks-01-prod: owned
+    Environment: prd
+    eks:cluster-name: sales-eks-01-prod
+    aws:ec2launchtemplate:version: 7
+    Name: node_group_on_demand_infra
+    ResourceAppRole: app
+    kubernetes.io/cluster/sales-eks-01-prod: owned
+    aws:ec2launchtemplate:id: lt-0de24d027a372f214
+    map-migrated: d-server-01riktnbfe0092
+    ResourceName: salesinstances
+Details eks_nodegroups: nodegroup_id=node_group_on_demand_large-2023121301455078040000002e, autoscaling_group_name=eks-node_group_on_demand_large-2023121301455078040000002e-92c6306d-040f-a72f-880b-c3c2a3c8c0f4, launch_template_id=lt-00c55de863e060cf0, launch_template_version=7
+Details eks_nodes: instance_id=i-0037b27c00f50de1b
+Instance Details:
+  Instance Type: m6a.8xlarge
+  Private IP Address: 10.99.147.56
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-07edf0e06322580c9
+  OS: Amazon Linux 2
+  Tags:
+    ResourceName: salesinstances
+    ResourceBusinessUnit: EITS
+    aws:ec2:fleet-id: fleet-858c1727-d8bc-eb1e-a432-2e80ff1d9d85
+    eks:cluster-name: sales-eks-01-prod
+    Application: EKS
+    AppID: 12019
+    ManagedBy: Terraform
+    aws:ec2launchtemplate:id: lt-001ec4d060d4e89c4
+    ResourceAppRole: app
+    Environment: prd
+    aws:eks:cluster-name: sales-eks-01-prod
+    Project: nike
+    k8s.io/cluster-autoscaler/sales-eks-01-prod: owned
+    aws:ec2launchtemplate:version: 7
+    ResourceOwner: nikesre@br.experian.com
+    kubernetes.io/cluster/sales-eks-01-prod: owned
+    PCI: false
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    aws:autoscaling:groupName: eks-node_group_on_demand_large-2023121301455078040000002e-92c6306d-040f-a72f-880b-c3c2a3c8c0f4
+    Name: node_group_on_demand_large
+    eks:nodegroup-name: node_group_on_demand_large-2023121301455078040000002e
+    Instance-Scheduler: opt-out
+    k8s.io/cluster-autoscaler/enabled: true
+Details eks_nodes: instance_id=i-02c23577ba107b112
+Instance Details:
+  Instance Type: m6a.8xlarge
+  Private IP Address: 10.99.147.163
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0d49b5285f4a08791
+  OS: Amazon Linux 2
+  Tags:
+    Environment: prd
+    Application: EKS
+    ResourceBusinessUnit: EITS
+    PCI: false
+    ManagedBy: Terraform
+    AppID: 12019
+    k8s.io/cluster-autoscaler/enabled: true
+    aws:ec2:fleet-id: fleet-911da836-b725-6e25-8498-01aa1e0aa8b4
+    aws:eks:cluster-name: sales-eks-01-prod
+    eks:nodegroup-name: node_group_on_demand_large-2023121301455078040000002e
+    Instance-Scheduler: opt-out
+    Name: node_group_on_demand_large
+    aws:autoscaling:groupName: eks-node_group_on_demand_large-2023121301455078040000002e-92c6306d-040f-a72f-880b-c3c2a3c8c0f4
+    CostString: 1800.BR.124.602000
+    map-migrated: d-server-01riktnbfe0092
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    ResourceOwner: nikesre@br.experian.com
+    adDomain: br.experian.local
+    kubernetes.io/cluster/sales-eks-01-prod: owned
+    ResourceName: salesinstances
+    aws:ec2launchtemplate:id: lt-001ec4d060d4e89c4
+    eks:cluster-name: sales-eks-01-prod
+    ResourceAppRole: app
+    k8s.io/cluster-autoscaler/sales-eks-01-prod: owned
+    aws:ec2launchtemplate:version: 7
+    Project: nike
+Details eks_nodes: instance_id=i-04b35aed855ae03bd
+Instance Details:
+  Instance Type: m6a.8xlarge
+  Private IP Address: 10.99.147.69
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0410f322536187634
+  OS: Amazon Linux 2
+  Tags:
+    eks:cluster-name: sales-eks-01-prod
+    AppID: 12019
+    ResourceBusinessUnit: EITS
+    Application: EKS
+    ManagedBy: Terraform
+    ResourceAppRole: app
+    ResourceName: salesinstances
+    aws:ec2launchtemplate:id: lt-001ec4d060d4e89c4
+    Environment: prd
+    aws:ec2:fleet-id: fleet-119f82be-9fa7-ec8d-8430-a9a0477dfb14
+    aws:eks:cluster-name: sales-eks-01-prod
+    Project: nike
+    aws:ec2launchtemplate:version: 7
+    k8s.io/cluster-autoscaler/sales-eks-01-prod: owned
+    ResourceOwner: nikesre@br.experian.com
+    aws:autoscaling:groupName: eks-node_group_on_demand_large-2023121301455078040000002e-92c6306d-040f-a72f-880b-c3c2a3c8c0f4
+    PCI: false
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    kubernetes.io/cluster/sales-eks-01-prod: owned
+    Name: node_group_on_demand_large
+    eks:nodegroup-name: node_group_on_demand_large-2023121301455078040000002e
+    Instance-Scheduler: opt-out
+    k8s.io/cluster-autoscaler/enabled: true
+Details eks_nodes: instance_id=i-064379136a4222e31
+Instance Details:
+  Instance Type: m6a.8xlarge
+  Private IP Address: 10.99.147.98
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0b8a09be94ec2b6d6
+  OS: Amazon Linux 2
+  Tags:
+    Environment: prd
+    eks:cluster-name: sales-eks-01-prod
+    k8s.io/cluster-autoscaler/sales-eks-01-prod: owned
+    Application: EKS
+    ResourceBusinessUnit: EITS
+    k8s.io/cluster-autoscaler/enabled: true
+    PCI: false
+    AppID: 12019
+    ManagedBy: Terraform
+    aws:ec2:fleet-id: fleet-8facb5a5-d896-c194-ae3a-2e20c3aaf76d
+    Name: node_group_on_demand_large
+    Instance-Scheduler: opt-out
+    eks:nodegroup-name: node_group_on_demand_large-2023121301455078040000002e
+    aws:autoscaling:groupName: eks-node_group_on_demand_large-2023121301455078040000002e-92c6306d-040f-a72f-880b-c3c2a3c8c0f4
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    kubernetes.io/cluster/sales-eks-01-prod: owned
+    Project: nike
+    ResourceAppRole: app
+    ResourceName: salesinstances
+    aws:ec2launchtemplate:id: lt-001ec4d060d4e89c4
+    ResourceOwner: nikesre@br.experian.com
+    aws:ec2launchtemplate:version: 7
+    aws:eks:cluster-name: sales-eks-01-prod
+Details eks_nodes: instance_id=i-0e2e54815a7c0d252
+Instance Details:
+  Instance Type: m6a.8xlarge
+  Private IP Address: 10.99.147.100
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-05a8b168832de8ea3
+  OS: Amazon Linux 2
+  Tags:
+    ManagedBy: Terraform
+    ResourceBusinessUnit: EITS
+    Project: nike
+    k8s.io/cluster-autoscaler/enabled: true
+    AppID: 12019
+    ResourceName: salesinstances
+    aws:ec2launchtemplate:id: lt-001ec4d060d4e89c4
+    ResourceAppRole: app
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    Instance-Scheduler: opt-out
+    eks:nodegroup-name: node_group_on_demand_large-2023121301455078040000002e
+    kubernetes.io/cluster/sales-eks-01-prod: owned
+    PCI: false
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    aws:autoscaling:groupName: eks-node_group_on_demand_large-2023121301455078040000002e-92c6306d-040f-a72f-880b-c3c2a3c8c0f4
+    Name: node_group_on_demand_large
+    aws:eks:cluster-name: sales-eks-01-prod
+    aws:ec2:fleet-id: fleet-8facb5a5-d896-c194-ae3a-2e20c3aaf76d
+    Environment: prd
+    eks:cluster-name: sales-eks-01-prod
+    aws:ec2launchtemplate:version: 7
+    Application: EKS
+    ResourceOwner: nikesre@br.experian.com
+    k8s.io/cluster-autoscaler/sales-eks-01-prod: owned
+Details eks_nodes: instance_id=i-0e5b031fb098f63ff
+Instance Details:
+  Instance Type: m6a.8xlarge
+  Private IP Address: 10.99.147.51
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0fbce8c1ad9bec8ca
+  OS: Amazon Linux 2
+  Tags:
+    Environment: prd
+    kubernetes.io/cluster/sales-eks-01-prod: owned
+    aws:ec2launchtemplate:version: 7
+    ResourceName: salesinstances
+    ResourceAppRole: app
+    CostString: 1800.BR.124.602000
+    aws:ec2launchtemplate:id: lt-001ec4d060d4e89c4
+    map-migrated: d-server-01riktnbfe0092
+    Name: node_group_on_demand_large
+    aws:autoscaling:groupName: eks-node_group_on_demand_large-2023121301455078040000002e-92c6306d-040f-a72f-880b-c3c2a3c8c0f4
+    eks:nodegroup-name: node_group_on_demand_large-2023121301455078040000002e
+    Instance-Scheduler: opt-out
+    aws:eks:cluster-name: sales-eks-01-prod
+    k8s.io/cluster-autoscaler/enabled: true
+    Project: nike
+    AppID: 12019
+    eks:cluster-name: sales-eks-01-prod
+    ManagedBy: Terraform
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    ResourceOwner: nikesre@br.experian.com
+    adDomain: br.experian.local
+    k8s.io/cluster-autoscaler/sales-eks-01-prod: owned
+    Application: EKS
+    PCI: false
+    aws:ec2:fleet-id: fleet-311f2816-1d27-cea7-2c98-8188a492e6e5
+    ResourceBusinessUnit: EITS
+Details eks_nodes: instance_id=i-0f5f0ab615949531b
+Instance Details:
+  Instance Type: m6a.8xlarge
+  Private IP Address: 10.99.147.146
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0d34f448e74ff0c3b
+  OS: Amazon Linux 2
+  Tags:
+    Application: EKS
+    ResourceBusinessUnit: EITS
+    ManagedBy: Terraform
+    AppID: 12019
+    ResourceName: salesinstances
+    ResourceAppRole: app
+    aws:ec2launchtemplate:version: 7
+    kubernetes.io/cluster/sales-eks-01-prod: owned
+    Project: nike
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    ResourceOwner: nikesre@br.experian.com
+    adDomain: br.experian.local
+    Environment: prd
+    eks:cluster-name: sales-eks-01-prod
+    k8s.io/cluster-autoscaler/sales-eks-01-prod: owned
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    Name: node_group_on_demand_large
+    aws:ec2:fleet-id: fleet-0d1f340f-202f-64bc-2cb0-af8018ae1d99
+    aws:autoscaling:groupName: eks-node_group_on_demand_large-2023121301455078040000002e-92c6306d-040f-a72f-880b-c3c2a3c8c0f4
+    PCI: false
+    aws:eks:cluster-name: sales-eks-01-prod
+    aws:ec2launchtemplate:id: lt-001ec4d060d4e89c4
+    k8s.io/cluster-autoscaler/enabled: true
+    eks:nodegroup-name: node_group_on_demand_large-2023121301455078040000002e
+    Instance-Scheduler: opt-out
+Details eks_nodegroups: nodegroup_id=node_group_on_demand_medium-20231213014550778000000028, autoscaling_group_name=eks-node_group_on_demand_medium-20231213014550778000000028-2ec6306d-0409-6f99-ea06-5b0323a0a86f, launch_template_id=lt-0322e60ae1bb9637b, launch_template_version=7
+Details eks_nodes: instance_id=i-03841aeec1593ddde
+Instance Details:
+  Instance Type: c5.4xlarge
+  Private IP Address: 10.99.147.24
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0a36faa7a9cd832e0
+  OS: Amazon Linux 2
+  Tags:
+    ResourceOwner: nikesre@br.experian.com
+    adDomain: br.experian.local
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    CostString: 1800.BR.124.602000
+    map-migrated: d-server-01riktnbfe0092
+    k8s.io/cluster-autoscaler/enabled: true
+    Instance-Scheduler: opt-out
+    aws:autoscaling:groupName: eks-node_group_on_demand_medium-20231213014550778000000028-2ec6306d-0409-6f99-ea06-5b0323a0a86f
+    ManagedBy: Terraform
+    PCI: false
+    AppID: 12019
+    k8s.io/cluster-autoscaler/sales-eks-01-prod: owned
+    Application: EKS
+    ResourceName: salesinstances
+    eks:nodegroup-name: node_group_on_demand_medium-20231213014550778000000028
+    eks:cluster-name: sales-eks-01-prod
+    ResourceBusinessUnit: EITS
+    aws:ec2launchtemplate:id: lt-083e15e428dbcd274
+    aws:ec2launchtemplate:version: 7
+    ResourceAppRole: app
+    Environment: prd
+    aws:ec2:fleet-id: fleet-87261f2d-f89c-411e-2cb2-a48af87c4f9d
+    aws:eks:cluster-name: sales-eks-01-prod
+    Name: node_group_on_demand_medium
+    Project: nike
+    kubernetes.io/cluster/sales-eks-01-prod: owned
+Details eks_nodes: instance_id=i-0dbac85588ffe744d
+Instance Details:
+  Instance Type: c5.4xlarge
+  Private IP Address: 10.99.147.162
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-01b08172026b94b1d
+  OS: Amazon Linux 2
+  Tags:
+    aws:eks:cluster-name: sales-eks-01-prod
+    CostString: 1800.BR.124.602000
+    map-migrated: d-server-01riktnbfe0092
+    Instance-Scheduler: opt-out
+    PCI: false
+    AppID: 12019
+    ManagedBy: Terraform
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    ResourceBusinessUnit: EITS
+    k8s.io/cluster-autoscaler/enabled: true
+    aws:autoscaling:groupName: eks-node_group_on_demand_medium-20231213014550778000000028-2ec6306d-0409-6f99-ea06-5b0323a0a86f
+    Name: node_group_on_demand_medium
+    eks:nodegroup-name: node_group_on_demand_medium-20231213014550778000000028
+    aws:ec2:fleet-id: fleet-07861d07-f2bc-4936-0618-84a21c0d2f2d
+    aws:ec2launchtemplate:version: 7
+    Application: EKS
+    Environment: prd
+    eks:cluster-name: sales-eks-01-prod
+    k8s.io/cluster-autoscaler/sales-eks-01-prod: owned
+    ResourceOwner: nikesre@br.experian.com
+    ResourceName: salesinstances
+    Project: nike
+    kubernetes.io/cluster/sales-eks-01-prod: owned
+    aws:ec2launchtemplate:id: lt-083e15e428dbcd274
+    ResourceAppRole: app
+Details eks_nodes: instance_id=i-0e482b94baa76e590
+Instance Details:
+  Instance Type: c5.4xlarge
+  Private IP Address: 10.99.147.102
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-03fed6286682a7ae4
+  OS: Amazon Linux 2
+  Tags:
+    k8s.io/cluster-autoscaler/sales-eks-01-prod: owned
+    Application: EKS
+    eks:cluster-name: sales-eks-01-prod
+    Name: node_group_on_demand_medium
+    ResourceName: salesinstances
+    eks:nodegroup-name: node_group_on_demand_medium-20231213014550778000000028
+    Project: nike
+    ResourceAppRole: app
+    aws:ec2:fleet-id: fleet-a58c9f2d-7834-e31c-2c3a-0e809ba5253f
+    ManagedBy: Terraform
+    AppID: 12019
+    k8s.io/cluster-autoscaler/enabled: true
+    Instance-Scheduler: opt-out
+    aws:ec2launchtemplate:id: lt-083e15e428dbcd274
+    CostString: 1800.BR.124.602000
+    map-migrated: d-server-01riktnbfe0092
+    PCI: false
+    aws:eks:cluster-name: sales-eks-01-prod
+    kubernetes.io/cluster/sales-eks-01-prod: owned
+    aws:ec2launchtemplate:version: 7
+    Environment: prd
+    aws:autoscaling:groupName: eks-node_group_on_demand_medium-20231213014550778000000028-2ec6306d-0409-6f99-ea06-5b0323a0a86f
+    ResourceOwner: nikesre@br.experian.com
+    ResourceBusinessUnit: EITS
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+Details eks_nodegroups: nodegroup_id=node_group_on_demand_small-2023121301455077810000002a, autoscaling_group_name=eks-node_group_on_demand_small-2023121301455077810000002a-f2c6306d-040e-da31-e51b-94b86423a43d, launch_template_id=lt-00db2609146a25542, launch_template_version=5
+No instances
+Details eks_nodegroups: nodegroup_id=node_group_spot_mixed-2023121301455077900000002c, autoscaling_group_name=eks-node_group_spot_mixed-2023121301455077900000002c-1cc6306d-0407-0503-376e-ed1e96d65ab5, launch_template_id=lt-0c3322daf65896bfe, launch_template_version=5
+No instances
+eks_clusters: account_id=877001948254, cluster_id=sales-eks-01-uat, cluster_name=sales-eks-01-uat, kubernetes_version=1.30
+Details eks_nodegroups: nodegroup_id=EKS-sales-eks-01-uat-NG-infra-2024030712444161820000000a, autoscaling_group_name=eks-EKS-sales-eks-01-uat-NG-infra-2024030712444161820000000a-1ac70c78-e27f-b2ed-d459-fe450f4be9cc, launch_template_id=lt-04ac2be2c6c8ffc79, launch_template_version=7
+Details eks_nodes: instance_id=i-0b091c9199a1b474d
+Instance Details:
+  Instance Type: c6i.2xlarge
+  Private IP Address: 10.99.147.103
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-092acf5c61c0fdd43
+  OS: Amazon Linux 2
+  Tags:
+    RepositoryVersion: v1.6.18
+    ResourceName: eks-uat
+    service-request: RITM3367645
+    Environment: prd
+    ResourceCostCenter: 1800.BR.134.404506
+    Worker: infra
+    aws:ec2launchtemplate:version: 7
+    ManagedBy: Terraform
+    AppID: 12019
+    ResourceAppRole: app
+    Instance-Scheduler: opt-out
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    aws:ec2:fleet-id: fleet-bb35a8b4-9527-4c25-a69a-a320c74bb356
+    aws:eks:cluster-name: sales-eks-01-uat
+    kubernetes.io/cluster/sales-eks-01-uat: owned
+    Name: EKS-sales-eks-01-uat-NG-infra
+    aws:autoscaling:groupName: eks-EKS-sales-eks-01-uat-NG-infra-2024030712444161820000000a-1ac70c78-e27f-b2ed-d459-fe450f4be9cc
+    k8s.io/cluster-autoscaler/enabled: true
+    ResourceBusinessUnit: CS
+    Project: nike
+    PCI: false
+    eks:cluster-name: sales-eks-01-uat
+    ClusterName: sales-eks-01-uat
+    ResourceOwner: nikesre@br.experian.com
+    eks:nodegroup-name: EKS-sales-eks-01-uat-NG-infra-2024030712444161820000000a
+    Application: EKS
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    k8s.io/cluster-autoscaler/sales-eks-01-uat: owned
+    aws:ec2launchtemplate:id: lt-03cd381c8681e61b1
+Details eks_nodes: instance_id=i-0b4ca4ba7f6c8c90a
+Instance Details:
+  Instance Type: c6i.2xlarge
+  Private IP Address: 10.99.147.159
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-038d08f90a24b5737
+  OS: Amazon Linux 2
+  Tags:
+    ResourceName: eks-uat
+    service-request: RITM3367645
+    RepositoryVersion: v1.6.18
+    Application: EKS
+    ResourceCostCenter: 1800.BR.134.404506
+    Environment: prd
+    AppID: 12019
+    ManagedBy: Terraform
+    aws:ec2launchtemplate:version: 7
+    eks:cluster-name: sales-eks-01-uat
+    Worker: infra
+    Project: nike
+    ClusterName: sales-eks-01-uat
+    aws:ec2:fleet-id: fleet-319588bc-9d8d-ce85-ac98-a30ab7dbe7ae
+    PCI: false
+    ResourceOwner: nikesre@br.experian.com
+    eks:nodegroup-name: EKS-sales-eks-01-uat-NG-infra-2024030712444161820000000a
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    k8s.io/cluster-autoscaler/sales-eks-01-uat: owned
+    aws:ec2launchtemplate:id: lt-03cd381c8681e61b1
+    CostString: 1800.BR.124.602000
+    kubernetes.io/cluster/sales-eks-01-uat: owned
+    Name: EKS-sales-eks-01-uat-NG-infra
+    aws:eks:cluster-name: sales-eks-01-uat
+    aws:autoscaling:groupName: eks-EKS-sales-eks-01-uat-NG-infra-2024030712444161820000000a-1ac70c78-e27f-b2ed-d459-fe450f4be9cc
+    ResourceBusinessUnit: CS
+    k8s.io/cluster-autoscaler/enabled: true
+    ResourceAppRole: app
+    Instance-Scheduler: opt-out
+    map-migrated: d-server-01riktnbfe0092
+Details eks_nodegroups: nodegroup_id=EKS-sales-eks-01-uat-NG-large-20240307124709624800000034, autoscaling_group_name=eks-EKS-sales-eks-01-uat-NG-large-20240307124709624800000034-82c70c7a-0388-0a84-255f-3a69495f6430, launch_template_id=lt-0fa1490d00d940337, launch_template_version=7
+Details eks_nodes: instance_id=i-008e9a3d6c82e3e8c
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.147.7
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0d00f354343cef0fb
+  OS: Amazon Linux 2
+  Tags:
+    ResourceOwner: nikesre@br.experian.com
+    PCI: false
+    k8s.io/cluster-autoscaler/sales-eks-01-uat: owned
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    kubernetes.io/cluster/sales-eks-01-uat: owned
+    service-request: RITM3367645
+    RepositoryVersion: v1.6.18
+    Name: EKS-sales-eks-01-uat-NG-large
+    Environment: prd
+    aws:eks:cluster-name: sales-eks-01-uat
+    aws:ec2launchtemplate:version: 7
+    ResourceBusinessUnit: CS
+    eks:cluster-name: sales-eks-01-uat
+    Project: nike
+    aws:ec2:fleet-id: fleet-059d948f-0a0f-c696-a610-8da052277829
+    AppID: 12019
+    ManagedBy: Terraform
+    eks:nodegroup-name: EKS-sales-eks-01-uat-NG-large-20240307124709624800000034
+    ResourceAppRole: app
+    ClusterName: sales-eks-01-uat
+    Application: EKS
+    Instance-Scheduler: opt-out
+    ResourceCostCenter: 1800.BR.134.404506
+    ResourceName: eks-uat
+    aws:ec2launchtemplate:id: lt-008606d9bc39d2562
+    aws:autoscaling:groupName: eks-EKS-sales-eks-01-uat-NG-large-20240307124709624800000034-82c70c7a-0388-0a84-255f-3a69495f6430
+    k8s.io/cluster-autoscaler/enabled: true
+Details eks_nodes: instance_id=i-03bca89f376c3b0f5
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.147.95
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0c5ac1907246810eb
+  OS: Amazon Linux 2
+  Tags:
+    RepositoryVersion: v1.6.18
+    ResourceCostCenter: 1800.BR.134.404506
+    service-request: RITM3367645
+    ResourceName: eks-uat
+    Application: EKS
+    Environment: prd
+    AppID: 12019
+    aws:ec2:fleet-id: fleet-ad9d1e8f-a0a5-4694-a492-2daa8e65ae65
+    aws:ec2launchtemplate:version: 7
+    eks:cluster-name: sales-eks-01-uat
+    ResourceAppRole: app
+    Instance-Scheduler: opt-out
+    aws:ec2launchtemplate:id: lt-008606d9bc39d2562
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    Name: EKS-sales-eks-01-uat-NG-large
+    ResourceBusinessUnit: CS
+    kubernetes.io/cluster/sales-eks-01-uat: owned
+    aws:eks:cluster-name: sales-eks-01-uat
+    aws:autoscaling:groupName: eks-EKS-sales-eks-01-uat-NG-large-20240307124709624800000034-82c70c7a-0388-0a84-255f-3a69495f6430
+    k8s.io/cluster-autoscaler/enabled: true
+    Project: nike
+    k8s.io/cluster-autoscaler/sales-eks-01-uat: owned
+    ManagedBy: Terraform
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    ResourceOwner: nikesre@br.experian.com
+    adDomain: br.experian.local
+    ClusterName: sales-eks-01-uat
+    PCI: false
+    eks:nodegroup-name: EKS-sales-eks-01-uat-NG-large-20240307124709624800000034
+Details eks_nodes: instance_id=i-0b336176a0927f08a
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.147.189
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-005469789c30bd078
+  OS: Amazon Linux 2
+  Tags:
+    aws:autoscaling:groupName: eks-EKS-sales-eks-01-uat-NG-large-20240307124709624800000034-82c70c7a-0388-0a84-255f-3a69495f6430
+    CostString: 1800.BR.124.602000
+    map-migrated: d-server-01riktnbfe0092
+    PCI: false
+    ResourceBusinessUnit: CS
+    kubernetes.io/cluster/sales-eks-01-uat: owned
+    aws:eks:cluster-name: sales-eks-01-uat
+    aws:ec2launchtemplate:version: 7
+    Project: nike
+    eks:cluster-name: sales-eks-01-uat
+    k8s.io/cluster-autoscaler/sales-eks-01-uat: owned
+    Name: EKS-sales-eks-01-uat-NG-large
+    ResourceOwner: nikesre@br.experian.com
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    eks:nodegroup-name: EKS-sales-eks-01-uat-NG-large-20240307124709624800000034
+    ClusterName: sales-eks-01-uat
+    Environment: prd
+    aws:ec2:fleet-id: fleet-adbf3e0d-800d-ecb4-86ba-27aa6714eed2
+    Application: EKS
+    ResourceCostCenter: 1800.BR.134.404506
+    RepositoryVersion: v1.6.18
+    AppID: 12019
+    ManagedBy: Terraform
+    ResourceName: eks-uat
+    service-request: RITM3367645
+    ResourceAppRole: app
+    k8s.io/cluster-autoscaler/enabled: true
+    Instance-Scheduler: opt-out
+    aws:ec2launchtemplate:id: lt-008606d9bc39d2562
+Details eks_nodegroups: nodegroup_id=EKS-sales-eks-01-uat-NG-medium-20240307124709608800000030, autoscaling_group_name=eks-EKS-sales-eks-01-uat-NG-medium-20240307124709608800000030-2cc70c7a-037a-8fc7-56d3-02e274373b25, launch_template_id=lt-0313cdeae7251b57e, launch_template_version=7
+Details eks_nodes: instance_id=i-002433806fd782c54
+Instance Details:
+  Instance Type: m5.2xlarge
+  Private IP Address: 10.99.147.82
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-020707e7ec7a5fe3b
+  OS: Amazon Linux 2
+  Tags:
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    ResourceBusinessUnit: CS
+    kubernetes.io/cluster/sales-eks-01-uat: owned
+    eks:nodegroup-name: EKS-sales-eks-01-uat-NG-medium-20240307124709608800000030
+    PCI: false
+    aws:eks:cluster-name: sales-eks-01-uat
+    ResourceAppRole: app
+    k8s.io/cluster-autoscaler/enabled: true
+    aws:autoscaling:groupName: eks-EKS-sales-eks-01-uat-NG-medium-20240307124709608800000030-2cc70c7a-037a-8fc7-56d3-02e274373b25
+    Instance-Scheduler: opt-out
+    aws:ec2:fleet-id: fleet-251dbea5-028d-e4b6-8410-07a844a89907
+    ResourceCostCenter: 1800.BR.134.404506
+    ResourceName: eks-uat
+    AppID: 12019
+    ManagedBy: Terraform
+    Name: EKS-sales-eks-01-uat-NG-medium
+    service-request: RITM3367645
+    RepositoryVersion: v1.6.18
+    Project: nike
+    aws:ec2launchtemplate:id: lt-05a6d46e9db4931a1
+    aws:ec2launchtemplate:version: 7
+    eks:cluster-name: sales-eks-01-uat
+    Environment: prd
+    ResourceOwner: nikesre@br.experian.com
+    Application: EKS
+    k8s.io/cluster-autoscaler/sales-eks-01-uat: owned
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    ClusterName: sales-eks-01-uat
+Details eks_nodes: instance_id=i-0fbcb406810812eb8
+Instance Details:
+  Instance Type: m5.2xlarge
+  Private IP Address: 10.99.147.154
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-07cde9d2ca820cece
+  OS: Amazon Linux 2
+  Tags:
+    ResourceCostCenter: 1800.BR.134.404506
+    ResourceName: eks-uat
+    Environment: prd
+    aws:autoscaling:groupName: eks-EKS-sales-eks-01-uat-NG-medium-20240307124709608800000030-2cc70c7a-037a-8fc7-56d3-02e274373b25
+    Application: EKS
+    Project: nike
+    ResourceAppRole: app
+    aws:ec2launchtemplate:id: lt-05a6d46e9db4931a1
+    ResourceOwner: nikesre@br.experian.com
+    aws:ec2:fleet-id: fleet-b9950834-150d-e607-8432-0baa6dc0f889
+    eks:cluster-name: sales-eks-01-uat
+    aws:ec2launchtemplate:version: 7
+    Name: EKS-sales-eks-01-uat-NG-medium
+    service-request: RITM3367645
+    RepositoryVersion: v1.6.18
+    kubernetes.io/cluster/sales-eks-01-uat: owned
+    CostString: 1800.BR.124.602000
+    ResourceBusinessUnit: CS
+    aws:eks:cluster-name: sales-eks-01-uat
+    map-migrated: d-server-01riktnbfe0092
+    eks:nodegroup-name: EKS-sales-eks-01-uat-NG-medium-20240307124709608800000030
+    Instance-Scheduler: opt-out
+    adDomain: br.experian.local
+    k8s.io/cluster-autoscaler/sales-eks-01-uat: owned
+    ClusterName: sales-eks-01-uat
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    k8s.io/cluster-autoscaler/enabled: true
+    ManagedBy: Terraform
+    AppID: 12019
+    PCI: false
+Details eks_nodegroups: nodegroup_id=EKS-sales-eks-01-uat-NG-small-20240307124709626600000036, autoscaling_group_name=eks-EKS-sales-eks-01-uat-NG-small-20240307124709626600000036-22c70c7a-0388-2a0c-fcd8-53fa96d94c9f, launch_template_id=lt-010603afb261618be, launch_template_version=7
+Details eks_nodes: instance_id=i-06977376551c110ab
+Instance Details:
+  Instance Type: m5.xlarge
+  Private IP Address: 10.99.147.169
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0026c23b2c30a1bca
+  OS: Amazon Linux 2
+  Tags:
+    aws:ec2launchtemplate:version: 7
+    eks:nodegroup-name: EKS-sales-eks-01-uat-NG-small-20240307124709626600000036
+    Name: EKS-sales-eks-01-uat-NG-small
+    aws:ec2launchtemplate:id: lt-0828167fa84f9e5c8
+    PCI: false
+    k8s.io/cluster-autoscaler/sales-eks-01-uat: owned
+    ResourceCostCenter: 1800.BR.134.404506
+    aws:autoscaling:groupName: eks-EKS-sales-eks-01-uat-NG-small-20240307124709626600000036-22c70c7a-0388-2a0c-fcd8-53fa96d94c9f
+    ResourceName: eks-uat
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    AppID: 12019
+    ManagedBy: Terraform
+    k8s.io/cluster-autoscaler/enabled: true
+    Instance-Scheduler: opt-out
+    ClusterName: sales-eks-01-uat
+    aws:ec2:fleet-id: fleet-85b7348f-0227-6c9c-8eb8-8f8265e6ac79
+    ResourceAppRole: app
+    kubernetes.io/cluster/sales-eks-01-uat: owned
+    Application: EKS
+    aws:eks:cluster-name: sales-eks-01-uat
+    RepositoryVersion: v1.6.18
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    service-request: RITM3367645
+    ResourceBusinessUnit: CS
+    ResourceOwner: nikesre@br.experian.com
+    eks:cluster-name: sales-eks-01-uat
+    Project: nike
+    Environment: prd
+Details eks_nodes: instance_id=i-07cbd3047d3dc44d8
+Instance Details:
+  Instance Type: m5.xlarge
+  Private IP Address: 10.99.147.185
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-04f1efbc801544573
+  OS: Amazon Linux 2
+  Tags:
+    AppID: 12019
+    ManagedBy: Terraform
+    aws:ec2:fleet-id: fleet-85b7348f-0227-6c9c-8eb8-8f8265e6ac79
+    Project: nike
+    eks:cluster-name: sales-eks-01-uat
+    Instance-Scheduler: opt-out
+    Application: EKS
+    ClusterName: sales-eks-01-uat
+    Environment: prd
+    ResourceBusinessUnit: CS
+    aws:ec2launchtemplate:version: 7
+    aws:eks:cluster-name: sales-eks-01-uat
+    kubernetes.io/cluster/sales-eks-01-uat: owned
+    RepositoryVersion: v1.6.18
+    ResourceAppRole: app
+    service-request: RITM3367645
+    Name: EKS-sales-eks-01-uat-NG-small
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    k8s.io/cluster-autoscaler/sales-eks-01-uat: owned
+    ResourceOwner: nikesre@br.experian.com
+    aws:autoscaling:groupName: eks-EKS-sales-eks-01-uat-NG-small-20240307124709626600000036-22c70c7a-0388-2a0c-fcd8-53fa96d94c9f
+    eks:nodegroup-name: EKS-sales-eks-01-uat-NG-small-20240307124709626600000036
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    aws:ec2launchtemplate:id: lt-0828167fa84f9e5c8
+    ResourceCostCenter: 1800.BR.134.404506
+    ResourceName: eks-uat
+    k8s.io/cluster-autoscaler/enabled: true
+    PCI: false
+Details eks_nodes: instance_id=i-0ce6dcb56baa9d7cb
+Instance Details:
+  Instance Type: m5.xlarge
+  Private IP Address: 10.99.147.11
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-021740052c9fdc69d
+  OS: Amazon Linux 2
+  Tags:
+    aws:ec2:fleet-id: fleet-0f1f3c87-028d-4ebc-2c98-0f225e78abe8
+    aws:eks:cluster-name: sales-eks-01-uat
+    kubernetes.io/cluster/sales-eks-01-uat: owned
+    PCI: false
+    k8s.io/cluster-autoscaler/enabled: true
+    ResourceBusinessUnit: CS
+    Project: nike
+    aws:autoscaling:groupName: eks-EKS-sales-eks-01-uat-NG-small-20240307124709626600000036-22c70c7a-0388-2a0c-fcd8-53fa96d94c9f
+    ClusterName: sales-eks-01-uat
+    eks:cluster-name: sales-eks-01-uat
+    aws:ec2launchtemplate:version: 7
+    ResourceOwner: nikesre@br.experian.com
+    Environment: prd
+    aws:ec2launchtemplate:id: lt-0828167fa84f9e5c8
+    k8s.io/cluster-autoscaler/sales-eks-01-uat: owned
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    adDomain: br.experian.local
+    eks:nodegroup-name: EKS-sales-eks-01-uat-NG-small-20240307124709626600000036
+    RepositoryVersion: v1.6.18
+    Application: EKS
+    ResourceName: eks-uat
+    ResourceCostCenter: 1800.BR.134.404506
+    AppID: 12019
+    Name: EKS-sales-eks-01-uat-NG-small
+    ManagedBy: Terraform
+    service-request: RITM3367645
+    ResourceAppRole: app
+    Instance-Scheduler: opt-out
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+Details eks_nodes: instance_id=i-0e5f7e6ff609e80ad
+Instance Details:
+  Instance Type: m5.xlarge
+  Private IP Address: 10.99.147.80
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0eb3d9bea12df54dc
+  OS: Amazon Linux 2
+  Tags:
+    aws:eks:cluster-name: sales-eks-01-uat
+    CostString: 1800.BR.124.602000
+    kubernetes.io/cluster/sales-eks-01-uat: owned
+    map-migrated: d-server-01riktnbfe0092
+    ResourceOwner: nikesre@br.experian.com
+    Instance-Scheduler: opt-out
+    adDomain: br.experian.local
+    k8s.io/cluster-autoscaler/sales-eks-01-uat: owned
+    Rapid7Tag: eec-aws-br-nike-sales-prod, Servers EEC AWS
+    ClusterName: sales-eks-01-uat
+    Project: nike
+    ResourceAppRole: app
+    eks:cluster-name: sales-eks-01-uat
+    aws:ec2launchtemplate:version: 7
+    Name: EKS-sales-eks-01-uat-NG-small
+    ResourceBusinessUnit: CS
+    RepositoryVersion: v1.6.18
+    service-request: RITM3367645
+    ResourceCostCenter: 1800.BR.134.404506
+    ResourceName: eks-uat
+    Environment: prd
+    aws:ec2:fleet-id: fleet-191f0816-9f0d-4485-249a-010a7e09aaa8
+    aws:ec2launchtemplate:id: lt-0828167fa84f9e5c8
+    Application: EKS
+    aws:autoscaling:groupName: eks-EKS-sales-eks-01-uat-NG-small-20240307124709626600000036-22c70c7a-0388-2a0c-fcd8-53fa96d94c9f
+    eks:nodegroup-name: EKS-sales-eks-01-uat-NG-small-20240307124709626600000036
+    k8s.io/cluster-autoscaler/enabled: true
+    AppID: 12019
+    ManagedBy: Terraform
+    PCI: false
+Details eks_nodegroups: nodegroup_id=EKS-sales-eks-01-uat-NG-spot-20240307124709614600000032, autoscaling_group_name=eks-EKS-sales-eks-01-uat-NG-spot-20240307124709614600000032-46c70c7a-0383-a31b-6ef2-69824572167b, launch_template_id=lt-074a839dad85e7565, launch_template_version=6
+No instances

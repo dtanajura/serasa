@@ -1,0 +1,3924 @@
+{
+    "877001948254-tfstate": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "877001948254-tfstates": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "airflow-mwaa2b2faf66e289fd18-prod-877001948254": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "Project",
+            "Value": "airflow-mwaa-2.5.1"
+        },
+        {
+            "Key": "BU",
+            "Value": "EITS_Enterprise"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Terraform-managed",
+            "Value": "true"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Name",
+            "Value": "airflow-mwaa-ssrm-prod"
+        }
+    ],
+    "airflow-mwaa6f5c45d316a8fbbf-uat-877001948254": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Homologacao"
+        },
+        {
+            "Key": "Project",
+            "Value": "airflow-mwaa-2.5.1"
+        },
+        {
+            "Key": "BU",
+            "Value": "EITS_Enterprise"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "NA"
+        },
+        {
+            "Key": "Terraform-managed",
+            "Value": "true"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Name",
+            "Value": "airflow-mwaa-ssrm-uat"
+        }
+    ],
+    "analytic-bkp": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "analytic-consumption-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "analytic-consumption-to-process-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "analytic-consumption-to-process-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Backup"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "DATA_CATEGORY",
+            "Value": "Registry"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "analytic-consumption-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Backup"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "DATA_CATEGORY",
+            "Value": "Registry"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "analytic-consumptions-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Backup"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "LP"
+        },
+        {
+            "Key": "DATA_CATEGORY",
+            "Value": "Registry"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "analytic-consumptions-prod-bkp": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Backup"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "DATA_CATEGORY",
+            "Value": "Registry"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "aws-athena-query-results-877001948254-sa-east-1": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "aws-cloudtrail-logs-877001948254-612ece75": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "aws-emr-resources-877001948254-sa-east-1": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "aws-glue-assets-877001948254-sa-east-1": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "aws-glue-data-output-877001948254-sa-east-1": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "aws-glue-jdbc-drivers-877001948254-sa-east-1": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "aws-glue-notebooks-877001948254-sa-east-1": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "aws-glue-scripts-877001948254-sa-east-1": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "aws-glue-temporary-877001948254-sa-east-1": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "aws-logs-877001948254-sa-east-1": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "cf-templates-1v0x1muldhhlj-sa-east-1": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "cloudtrail-877001948254-local-trail": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "cockpit-devsecops-states-877001948254": [
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        }
+    ],
+    "consumption-extractions-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "LP"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "consumption-extractions-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "customer-sales-representative-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "LP"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "customer-sales-representative-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "data-loss-check-microbatch-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "LP"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "data-loss-check-microbatch-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "ebisys-contratos-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "LP"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "ebisys-contratos-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "enddaymark": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "experian-corp-ebisys-airflow-ssrm-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "experian-corp-ebisys-airflow-ssrm-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "experian-sre-emr-bootstrap-877001948254": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        },
+        {
+            "Key": "Name",
+            "Value": "experian-sre-emr-bootstrap-877001948254"
+        }
+    ],
+    "experian-ssrm-analytic-consumptions-bkp": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "experian-ssrm-analytic-consumptions-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "LP"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "experian-ssrm-analytic-consumptions-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "experian-ssrm-artifacts-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "experian-ssrm-artifacts-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "experian-ssrm-batch-summarization": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "experian-ssrm-commons-glue": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "experian-ssrm-dashboards-artifacts-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "experian-ssrm-synthetic-consumptions-bkp": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "experian-ssrm-synthetic-consumptions-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "LP"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "experian-ssrm-synthetic-consumptions-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Development/Staging/Sandbox"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "gr-base-upload-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "LP"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "gr-base-upload-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "gr-qtdo-upload-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "LP"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "gr-qtdo-upload-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "kafka-raw": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "log-ssbl-buckets-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "log-ssbl-buckets-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "log-ssbl-kafka-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "log-ssbl-kafka-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "log-ssbl-spark-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "log-ssbl-spark-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "mainframe-transactions-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "mainframe-transactions-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "migration-mongodb-db-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "nike-dashboards": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "N/A"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "nike-emr-artifacts": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "nike-emr-artifacts-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "nike-otc-sales-crl": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "scheduled-extractions-glue-job-tempdir-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "scheduled-extractions-glue-job-tempdir-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "scheduled-extractions-scripts-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "scheduled-extractions-scripts-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "se-d12d0bdc8a43c87e-sales-eks-01-prod-access-logs": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "BucketType",
+            "Value": "Log"
+        }
+    ],
+    "se-d12d0bdc8a43c87e-sales-eks-01-prod-backup": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "BucketType",
+            "Value": "Backup"
+        }
+    ],
+    "se-d12d0bdc8a43c87e-sales-eks-01-prod-helm-charts": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "BucketType",
+            "Value": "Helm"
+        }
+    ],
+    "se-d12d0bdc8a43c87e-sales-eks-01-prod-metrics-logs": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "BucketType",
+            "Value": "Log"
+        }
+    ],
+    "se-da9aba1524142f69-sales-eks-01-uat-access-logs": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "21231"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.134.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "uat"
+        },
+        {
+            "Key": "BucketType",
+            "Value": "Log"
+        }
+    ],
+    "se-da9aba1524142f69-sales-eks-01-uat-backup": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "AppID",
+            "Value": "21231"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.134.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "uat"
+        },
+        {
+            "Key": "BucketType",
+            "Value": "Backup"
+        }
+    ],
+    "se-da9aba1524142f69-sales-eks-01-uat-helm-charts": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "21231"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.134.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "uat"
+        },
+        {
+            "Key": "BucketType",
+            "Value": "Helm"
+        }
+    ],
+    "se-da9aba1524142f69-sales-eks-01-uat-metrics-logs": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "21231"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.134.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "uat"
+        },
+        {
+            "Key": "BucketType",
+            "Value": "Log"
+        }
+    ],
+    "selfservice-consumption": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "selfservice-consumption-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "snapshot-elastic-ssbl-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "snapshot-es-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "snapshot-ssrm-es-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "snapshot-ssrm-es-prod-v2": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "ssbl-uat-es-snapshot": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "ssrm-es-snapshots-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "ssrm-es-snapshots-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "ssrm-gr-userid-transac-replication-bkp": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "ssrm-microbatch-indexation-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "Project",
+            "Value": "ssrm"
+        },
+        {
+            "Key": "AppID",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "TerraformNikeSRE"
+        },
+        {
+            "Key": "Environment",
+            "Value": "Uat"
+        },
+        {
+            "Key": "Name",
+            "Value": "ssrm-microbatch-indexation-prod"
+        }
+    ],
+    "ssrm-microbatch-indexation-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "Project",
+            "Value": "ssrm"
+        },
+        {
+            "Key": "AppID",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "TerraformNikeSRE"
+        },
+        {
+            "Key": "Environment",
+            "Value": "Uat"
+        },
+        {
+            "Key": "Name",
+            "Value": "ssrm-microbatch-indexation-uat"
+        }
+    ],
+    "ssrm-mongodb-purge-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "ssrm-mongodb-purge-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "ssrm-prod-spobrairflowprd": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "synthetic-consumption-batch-logs-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "synthetic-consumption-batch-logs-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "synthetic-consumption-crud-ui": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "synthetic-consumption-crud-ui-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "synthetic-consumption-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "synthetic-consumption-to-process-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Staging"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "synthetic-consumption-to-process-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "synthetic-consumption-uat": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "synthetic-consumptions-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Staging"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "synthetic-consumptions-prod-bkp": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "DATA_CATEGORY",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "tf-eks-ssrm-state": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "tf-state-sre": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "ASSET_CATEGORY",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12019"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "DATA_TYPE",
+            "Value": "N/A"
+        }
+    ],
+    "tfstate-877001948254-sa-east-1-prd": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        },
+        {
+            "Key": "Name",
+            "Value": "tfstate-877001948254-sa-east-1-prd"
+        }
+    ]
+}

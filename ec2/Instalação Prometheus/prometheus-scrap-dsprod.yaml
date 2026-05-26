@@ -1,0 +1,502 @@
+  - job_name: "emr-consumo-endereco"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'emr-consumo-endereco'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "emr-contatos-positivo-email"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'emr-contatos-positivo-email'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "emr-contatos-positivo-endereco"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'emr-contatos-positivo-endereco'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "emr-contatos-positivo-telefone"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'emr-contatos-positivo-telefone'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "emr-mvp-diario"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'emr-mvp-diario'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian_dhub_batimento_fraude"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_dhub_batimento_fraude'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian_dhub_batimento_fraude_ingestion_aurora"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_dhub_batimento_fraude_ingestion_aurora'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian_dhub_batimento_fraude_ingestion_aurora_test"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_dhub_batimento_fraude_ingestion_aurora_test'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian_dhub_contacts_mainframe"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_dhub_contacts_mainframe'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian_dhub_contacts_pj"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_dhub_contacts_pj'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian_veloso_batimento_fraude"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_veloso_batimento_fraude'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication_silver_microbatch_cadastral"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication_silver_microbatch_cadastral'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-batch"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-batch'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-batch_depara_hash"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-batch_depara_hash'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-cadastrais-pf-gold-batch"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-cadastrais-pf-gold-batch'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-cadastrais-pf-microbatch"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-cadastrais-pf-microbatch'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-consumer_bronze_streaming"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-consumer_bronze_streaming'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-consumer_bronze_streaming_qsa"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-consumer_bronze_streaming_qsa'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-consumer-streaming-bronze_cadastrais"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-consumer-streaming-bronze_cadastrais'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-consumer-streaming-bronze-passagem"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-consumer-streaming-bronze-passagem'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-integration_silver_streaming"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-integration_silver_streaming'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-maintenance-negativos-gold"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-maintenance-negativos-gold'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-negativos-orquestrator"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-negativos-orquestrator'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-negativos-silver-batch-integration"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-negativos-silver-batch-integration'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-producer_silver_streaming"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-producer_silver_streaming'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-producer_silver_streaming_passagem"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-producer_silver_streaming_passagem'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-producer-dataset-batch"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-producer-dataset-batch'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-producer-dataset-microbatch-integration"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-producer-dataset-microbatch-integration'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-qsa"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-qsa'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-streaming-producer"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-streaming-producer'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-streaming-producer-passagem"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-streaming-producer-passagem'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-streaming-producer-s3-as-is"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-streaming-producer-s3-as-is'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-replication-streaming-producer-s3-as-is-passagem"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-streaming-producer-s3-as-is-passagem'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-reports-batch-ingestion-pf"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-reports-batch-ingestion-pf'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-reports-batch-ingestion-pj"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-reports-batch-ingestion-pj'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-reports-micro-batch-ingestion-gold-pj-passagem"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-reports-micro-batch-ingestion-gold-pj-passagem'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-reports-streaming-ingestion-gold-pf-passagem"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-reports-streaming-ingestion-gold-pf-passagem'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-reports-streaming-ingestion-gold-pj-passagem"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-reports-streaming-ingestion-gold-pj-passagem'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-reports-streaming-ingestion-pf"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-reports-streaming-ingestion-pf'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-reports-streaming-ingestion-pj"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-reports-streaming-ingestion-pj'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-reports-summary-pf"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-reports-summary-pf'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+
+  - job_name: "experian-reports-summary-pj"
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-reports-summary-pj'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'

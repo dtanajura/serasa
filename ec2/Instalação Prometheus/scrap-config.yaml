@@ -1,0 +1,264 @@
+
+  - job_name: 'experian-reports-streaming-ingestion-pf'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-reports-streaming-ingestion-pf'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'experian-reports-streaming-ingestion-pj'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-reports-streaming-ingestion-pj'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'experian-replication-integration_silver_streaming'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-integration_silver_streaming'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'experian-replication-producer_silver_streaming'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-producer_silver_streaming'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'experian-replication-negativos-orquestrator'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-negativos-orquestrator'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'experian-replication-consumer_bronze_streaming'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-consumer_bronze_streaming'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'experian-replication-producer_silver_streaming_passagem'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-producer_silver_streaming_passagem'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'experian-replication-consumer-streaming-bronze-passagem'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-consumer-streaming-bronze-passagem'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'airflow-dhub-renda-fgts'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'emr-renda-fgts'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'EMR - CREATE CLUSTER - DEV DS'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_datahub_create_emr'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'DATAHUB_LNO_tb_lno_acordo_acordos_silver'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_datahub_lno_replication'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'DATAHUB_LNO_tb_lno_eventos_silver'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_datahub_lno_replication'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'DATAHUB_LNO_tb_lno_acordo_debitos_silver'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_datahub_lno_replication'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'DATAHUB_LNO_tb_lno_debts_silver'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_datahub_lno_replication'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'DATAHUB_LNO_tb_lno_acordo_parcelas_silver'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_datahub_lno_replication'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'experian-replication-consumer-streaming-bronze_cadastrais'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-consumer_bronze_streaming_cadastrais'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'experian-reports-streaming-ingestion-gold-pj-passagem'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-reports-streaming-ingestion-gold-pj-passagem'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'experian-reports-streaming-ingestion-gold-pf-passagem'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-reports-streaming-ingestion-gold-pf-passagem'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'experian_dhub_contacts_mainframe'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'mf-contatos-ingestion_delta'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'experian-replication-streaming-producer-s3-as-is'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian-replication-streaming-producer-s3-as-is'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'airflow-dhub-opb2c-desconexao'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_datahub_opb2c'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'airflow-dhub-opb2c-category_checking'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_datahub_opb2c'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'airflow-dhub-opb2c-category_creditcard'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_datahub_opb2c'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'
+
+  - job_name: 'airflow-dhub-opb2c-liabilities'
+    ec2_sd_configs:
+      - region: sa-east-1
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_Name]
+        regex: 'experian_datahub_opb2c'
+        action: keep
+      - source_labels: [__meta_ec2_private_ip]
+        target_label: __address__
+        replacement: '${1}:9100'

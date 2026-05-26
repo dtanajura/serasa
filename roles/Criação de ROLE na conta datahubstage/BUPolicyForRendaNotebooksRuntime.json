@@ -1,0 +1,61 @@
+{
+    "Statement": [
+        {
+            "Action": [
+                "elasticmapreduce:GetClusterSessionCredentials"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "elasticmapreduce:ExecutionRoleArn": [
+                        "arn:aws:iam::730335661246:role/BURoleForAuxilioEmergencial",
+                        "arn:aws:iam::730335661246:role/BURoleForBolsaCapixaba",
+                        "arn:aws:iam::730335661246:role/BURoleForBolsaFamilia",
+                        "arn:aws:iam::730335661246:role/BURoleForBpc",
+                        "arn:aws:iam::730335661246:role/BURoleForCapes",
+                        "arn:aws:iam::730335661246:role/BURoleForCapesAuxilio",
+                        "arn:aws:iam::730335661246:role/BURoleForCartaoMaisInfancia",
+                        "arn:aws:iam::730335661246:role/BURoleForCbo",
+                        "arn:aws:iam::730335661246:role/BURoleForCfm",
+                        "arn:aws:iam::730335661246:role/BURoleForCnes",
+                        "arn:aws:iam::730335661246:role/BURoleForCnpq",
+                        "arn:aws:iam::730335661246:role/BURoleForConselhosDeClasse",
+                        "arn:aws:iam::730335661246:role/BURoleForCorredores",
+                        "arn:aws:iam::730335661246:role/BURoleForFapema",
+                        "arn:aws:iam::730335661246:role/BURoleForFapemig",
+                        "arn:aws:iam::730335661246:role/BURoleForFapesp",
+                        "arn:aws:iam::730335661246:role/BURoleForFgts",
+                        "arn:aws:iam::730335661246:role/BURoleForFies",
+                        "arn:aws:iam::730335661246:role/BURoleForGarantiaSafra",
+                        "arn:aws:iam::730335661246:role/BURoleForIbge",
+                        "arn:aws:iam::730335661246:role/BURoleForIfpa",
+                        "arn:aws:iam::730335661246:role/BURoleForIrpf",
+                        "arn:aws:iam::730335661246:role/BURoleForPof",
+                        "arn:aws:iam::730335661246:role/BURoleForProuni",
+                        "arn:aws:iam::730335661246:role/BURoleForRais",
+                        "arn:aws:iam::730335661246:role/BURoleForSeguroDefeso",
+                        "arn:aws:iam::730335661246:role/BURoleForSerFamilia",
+                        "arn:aws:iam::730335661246:role/BURoleForSerFamiliaCrianca",
+                        "arn:aws:iam::730335661246:role/BURoleForServidoresPublicos",
+                        "arn:aws:iam::730335661246:role/BURoleForSisu",
+                        "arn:aws:iam::730335661246:role/BURoleForTipologiaRestauranteIfood",
+                        "arn:aws:iam::730335661246:role/BURoleForTseBens",
+                        "arn:aws:iam::730335661246:role/BURoleForTseCandidatos",
+                        "arn:aws:iam::730335661246:role/BURoleForUfcEgressos",
+                        "arn:aws:iam::730335661246:role/BURoleForUfms",
+                        "arn:aws:iam::730335661246:role/BURoleForUfpi",
+                        "arn:aws:iam::730335661246:role/BURoleForUfpiEgressos",
+                        "arn:aws:iam::730335661246:role/BURoleForUfrn",
+                        "arn:aws:iam::730335661246:role/BURoleForUfscarEgressos",
+                        "arn:aws:iam::730335661246:role/BURoleForUfscEgressos",
+                        "arn:aws:iam::730335661246:role/BURoleForValeGas",
+                        "arn:aws:iam::730335661246:role/BURoleForWarehouse"
+                    ]
+                }
+            },
+            "Effect": "Allow",
+            "Resource": "*",
+            "Sid": "AllowSpecificExecRoleArn"
+        }
+    ],
+    "Version": "2012-10-17"
+}

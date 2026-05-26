@@ -1,0 +1,163 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::278332118946:role/BURoleFor-unity-catalog-dev",
+                    "arn:aws:iam::093785888205:role/dataops-databricks-default-role-dev",
+                    "arn:aws:iam::713881783816:role/BURoleForEmrEc2Nike",
+                    "arn:aws:iam::730335661246:role/BURoleForContatos",
+                    "arn:aws:iam::713881783816:role/BURoleForNikeQAs"
+                ]
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat",
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::278332118946:role/BURoleFor-unity-catalog-dev",
+                    "arn:aws:iam::093785888205:role/dataops-databricks-default-role-dev",
+                    "arn:aws:iam::713881783816:role/BURoleForEmrEc2Nike",
+                    "arn:aws:iam::730335661246:role/BURoleForContatos",
+                    "arn:aws:iam::713881783816:role/BURoleForNikeQAs"
+                ]
+            },
+            "Action": "s3:ListBucket",
+            "Resource": "arn:aws:s3:::experian-datahub-negativos-silver-uat"
+        },
+        {
+            "Sid": "ManagedByOdinDamProducerDoNotModify",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::980921747889:role/BURoleForLFServiceRole"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat",
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat/*"
+            ]
+        },
+        {
+            "Sid": "ManagedByOdinDamProducerDoNotModify",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat",
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat/*"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "s3:DataAccessPointAccount": "980921747889"
+                }
+            }
+        },
+        {
+            "Sid": "ManagedByOdinProducerDoNotModifyCentralReadOnly",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::980921747889:role/BURoleForLFServiceRole"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat",
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat/*"
+            ]
+        },
+        {
+            "Sid": "ManagedByOdinProducerDoNotModifyCentralReadOnlyAccessPoint",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat",
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat/*"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "s3:DataAccessPointAccount": "980921747889"
+                }
+            }
+        },
+        {
+            "Sid": "ManagedByOdinProducerDoNotModifyCentralReadOnly",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::816069132622:role/BURoleForLFServiceRole"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat",
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat/*"
+            ]
+        },
+        {
+            "Sid": "ManagedByOdinProducerDoNotModifyCentralReadOnlyAccessPoint",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat",
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat/*"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "s3:DataAccessPointAccount": "816069132622"
+                }
+            }
+        },
+        {
+            "Sid": "Acesso para a conta de Negativos Privados",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::300374333803:role/BURoleForNegativos"
+            },
+            "Action": [
+                "s3:Get",
+                "s3:List",
+                "s3:GetObjectAcl",
+                "s3:GetObject",
+                "s3:ListBucket"            
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat/*",
+                "arn:aws:s3:::experian-datahub-negativos-silver-uat"
+            ]
+        }
+
+    ]
+}

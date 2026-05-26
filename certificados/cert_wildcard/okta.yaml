@@ -1,0 +1,40 @@
+awscli:
+  profiles:
+    # Corpservices DEV
+    # okta-aws-cli web --profile eec-aws-br-eits-corpservices-dev
+    # Account: eec-aws-br-eits-corpservices-dev (720643395463)
+    # BURoleForEKSOpenLensAccess
+    eec-aws-br-eits-corpservices-dev:
+      oidc-client-id: "0oa19i40axcLwWIsy0x8"
+      aws-acct-fed-app-id: "0oals3mw7qW6Cr2je0x7"
+      org-domain: "experian.okta.com"
+      aws-iam-idp: "arn:aws:iam::720643395463:saml-provider/OktaSSO"
+      aws-iam-role: "arn:aws:iam::720643395463:role/BURoleForEKSOpenLensAccess"
+      write-aws-credentials: true
+      open-browser: true
+
+    # CP EKS 01 UAT
+    # okta-aws-cli web --profile cp-eks-01-uat
+    # Account: cp-eks-01-uat (620553805602)
+    # BURoleForEKSOpenLensAccess
+    cp-eks-01-uat:
+      oidc-client-id: "0oa19i40axcLwWIsy0x8"
+      aws-acct-fed-app-id: "0oals3mw7qW6Cr2je0x7"
+      org-domain: "experian.okta.com"
+      aws-iam-idp: "arn:aws:iam::620553805602:saml-provider/OktaSSO"
+      aws-iam-role: "arn:aws:iam::620553805602:role/BURoleForEKSOpenLensAccess"
+      write-aws-credentials: true
+      open-browser: true
+
+    # CP EKS 01 PRD
+    # okta-aws-cli web --profile cp-eks-01-prd
+    # Account: cp-eks-01-prd (528155739981)
+    # BURoleForEKSOpenLensAccess
+    cp-eks-01-prd:
+      oidc-client-id: "0oa19i40axcLwWIsy0x8"
+      aws-acct-fed-app-id: "0oals3mw7qW6Cr2je0x7"
+      org-domain: "experian.okta.com"
+      aws-iam-idp: "arn:aws:iam::528155739981:saml-provider/OktaSSO"
+      aws-iam-role: "arn:aws:iam::528155739981:role/BURoleForEKSOpenLensAccess"
+      write-aws-credentials: true
+      open-browser: true

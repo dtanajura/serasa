@@ -1,0 +1,3 @@
+profile,region,tipo,resource_id,parent_id,name,status,engine,size_gb,encrypted,kms_key_id,start_time,description,snapshot_type,tags_name
+nikedataserviceprod,sa-east-1,rds-cluster,rds:nike-data-extractor-2025-12-16-03-08,nike-data-extractor,rds:nike-data-extractor-2025-12-16-03-08,available,aurora-postgresql,,True,arn:aws:kms:sa-east-1:225989352496:key/c14a896b-f630-490b-a5cf-f7ca69cbe9f2,2025-12-16T03:08:08.904000+00:00,,automated,
+nikedataserviceprod,sa-east-1,docdb-cluster,rds:nike-data-extractor-2025-12-16-03-08,nike-data-extractor,rds:nike-data-extractor-2025-12-16-03-08,available,docdb,,True,arn:aws:kms:sa-east-1:225989352496:key/c14a896b-f630-490b-a5cf-f7ca69cbe9f2,2025-12-16T03:08:08.904000+00:00,,automated,

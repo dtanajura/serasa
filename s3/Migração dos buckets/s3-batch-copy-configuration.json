@@ -1,0 +1,7 @@
+{
+    "S3PutObjectCopy": {
+      "TargetResource": "arn:aws:s3:::experian-drive-private-prd-2",
+      "MetadataDirective": "COPY",
+      "StorageClass": "STANDARD"
+    }
+  }

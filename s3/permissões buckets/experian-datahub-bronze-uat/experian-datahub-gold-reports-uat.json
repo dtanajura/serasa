@@ -1,0 +1,125 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::713881783816:role/BURoleForEmrEc2Nike",
+                    "arn:aws:iam::889013495121:role/BURoleForBucketS3DefaultRole",
+                    "arn:aws:iam::623955547361:role/BURoleForEMREC2",
+                    "arn:aws:iam::889013495121:role/BURoleForAwsGlueJobs",
+                    "arn:aws:iam::623955547361:role/BURoleForEMREC2DefaultRole",
+                    "arn:aws:iam::484240119361:role/BURoleForEc2JuntaComercial",
+                    "arn:aws:iam::471112967268:role/BURoleForReaderAnalyses",
+                    "arn:aws:iam::331365656181:user/BUUserForSQSDO",
+                    "arn:aws:iam::713881783816:role/BURoleForNikeQAs",
+                    "arn:aws:iam::331365656181:user/BUUserForSQS",
+                    "arn:aws:iam::331365656181:role/BURoleForEC2EMR",
+                    "arn:aws:iam::146737708860:role/BURoleForCSAccess",
+                    "AROAW3MEFMRSGJVNBVQQV"
+                ]
+            },
+            "Action": [
+                "s3:GetObjectAcl",
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-gold-reports-uat/deleteds/reports_exclusions/*",
+                "arn:aws:s3:::experian-datahub-gold-reports-uat/warehouse/reports_$folder$/*",
+                "arn:aws:s3:::experian-datahub-gold-reports-uat/warehouse/reports.db/*",
+                "arn:aws:s3:::experian-datahub-gold-reports-uat/warehouse/reports/*",
+                "arn:aws:s3:::experian-datahub-gold-reports-uat/warehouse/reports/depara_hash/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::713881783816:role/BURoleForEmrEc2Nike",
+                    "arn:aws:iam::484240119361:role/BURoleForEc2JuntaComercial"
+                ]
+            },
+            "Action": [
+                "s3:GetObjectAcl",
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::experian-datahub-gold-reports-uat/warehouse/*"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::713881783816:role/BURoleForEmrEc2Nike",
+                    "arn:aws:iam::889013495121:role/BURoleForBucketS3DefaultRole",
+                    "arn:aws:iam::623955547361:role/BURoleForEMREC2",
+                    "arn:aws:iam::889013495121:role/BURoleForAwsGlueJobs",
+                    "arn:aws:iam::623955547361:role/BURoleForEMREC2DefaultRole",
+                    "arn:aws:iam::484240119361:role/BURoleForEc2JuntaComercial",
+                    "arn:aws:iam::471112967268:role/BURoleForReaderAnalyses",
+                    "arn:aws:iam::331365656181:user/BUUserForSQSDO",
+                    "arn:aws:iam::713881783816:role/BURoleForNikeQAs",
+                    "arn:aws:iam::331365656181:user/BUUserForSQS",
+                    "arn:aws:iam::331365656181:role/BURoleForEC2EMR",
+                    "arn:aws:iam::146737708860:role/BURoleForCSAccess",
+                    "AROAW3MEFMRSGJVNBVQQV"
+                ]
+            },
+            "Action": "s3:ListBucket",
+            "Resource": "arn:aws:s3:::experian-datahub-gold-reports-uat"
+        },
+        {
+            "Sid": "ManagedByOdinDamProducerDoNotModify",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::980921747889:role/BURoleForLFServiceRole"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-gold-reports-uat",
+                "arn:aws:s3:::experian-datahub-gold-reports-uat/*"
+            ]
+        },
+        {
+            "Sid": "ManagedByOdinDamProducerDoNotModify",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-gold-reports-uat",
+                "arn:aws:s3:::experian-datahub-gold-reports-uat/*"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "s3:DataAccessPointAccount": "980921747889"
+                }
+            }
+        },
+        {
+            "Sid": "Acesso para a conta de Negativos Privados",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::300374333803:role/BURoleForNegativos"
+            },
+            "Action": [
+                "s3:Get",
+                "s3:List",
+                "s3:GetObjectAcl",
+                "s3:GetObject",
+                "s3:ListBucket"            
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-gold-reports-uat/*",
+                "arn:aws:s3:::experian-datahub-gold-reports-uat"
+            ]
+        }
+    ]
+}

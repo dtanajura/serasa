@@ -1,0 +1,4 @@
+profile,region,tipo,resource_id,parent_id,name,status,engine,size_gb,encrypted,kms_key_id,start_time,description,snapshot_type,tags_name
+bnsprod,sa-east-1,rds-cluster,credit-services-bi-prod-27-02-2024,credit-services-bi-prod,credit-services-bi-prod-27-02-2024,available,docdb,,True,arn:aws:kms:sa-east-1:290856541169:key/6a332ff4-9341-409e-89b1-a2633ff7342d,2024-02-27T13:00:40.071000+00:00,,manual,
+bnsprod,sa-east-1,docdb-cluster,credit-services-bi-prod-27-02-2024,credit-services-bi-prod,credit-services-bi-prod-27-02-2024,available,docdb,,True,arn:aws:kms:sa-east-1:290856541169:key/6a332ff4-9341-409e-89b1-a2633ff7342d,2024-02-27T13:00:40.071000+00:00,,manual,
+bnsprod,sa-east-1,elasticache,new-bkp-authbilling,authbilling,new-bkp-authbilling,available,redis,,,,,,,

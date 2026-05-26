@@ -1,0 +1,26 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "glue:GetDatabase",
+                "glue:CreateDatabase",
+                "glue:GetDataBases",
+                "glue:CreateTable",
+                "glue:GetTable",
+                "glue:UpdateTable",
+                "glue:DeleteTable",
+                "glue:GetTables",
+                "glue:GetPartition",
+                "glue:GetPartitions",
+                "glue:CreatePartition",
+                "glue:BatchCreatePartition",
+                "glue:GetUserDefinedFunctions"
+            ],
+            "Resource": [
+                "arn:aws:glue:sa-east-1:294463638235:catalog"
+            ]
+        }
+    ]
+}

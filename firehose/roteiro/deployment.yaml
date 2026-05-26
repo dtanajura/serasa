@@ -1,0 +1,120 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "10"
+    meta.helm.sh/release-name: experian-datahub-consent-management-api
+    meta.helm.sh/release-namespace: datahub-consentimentos
+  creationTimestamp: "2024-03-21T15:54:17Z"
+  generation: 10
+  labels:
+    app: experian-datahub-consent-management-api
+    app.kubernetes.io/instance: experian-datahub-consent-management-api
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: experian-datahub-consent-management-api
+    app.kubernetes.io/version: 0.0.4-SNAPSHOT
+    chart: experian-datahub-consent-management-api-0.0.4-SNAPSHOT
+    gearr: "24209"
+    helm.sh/chart: experian-datahub-consent-management-api-0.0.4-SNAPSHOT
+    version: 0.0.4-SNAPSHOT
+  name: experian-datahub-consent-management-api
+  namespace: datahub-consentimentos
+  resourceVersion: "2301712"
+  uid: f8cf2ad6-27ba-4acf-b9fc-35eeecf1f39d
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: experian-datahub-consent-management-api
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        timestamp: "1711407176"
+      creationTimestamp: null
+      labels:
+        app: experian-datahub-consent-management-api
+        app.kubernetes.io/instance: experian-datahub-consent-management-api
+        app.kubernetes.io/managed-by: Helm
+        app.kubernetes.io/name: experian-datahub-consent-management-api
+        app.kubernetes.io/version: 0.0.4-SNAPSHOT
+        chart: experian-datahub-consent-management-api-0.0.4-SNAPSHOT
+        gearr: "24209"
+        helm.sh/chart: experian-datahub-consent-management-api-0.0.4-SNAPSHOT
+        version: 0.0.4-SNAPSHOT
+    spec:
+      serviceAccount: consent-sa
+      serviceAccountName: consent-sa
+      containers:
+      - env:
+        - name: GEARR_ID
+          value: "24209"
+        - name: CLUSTER_NAME
+          value: nike-tech-dev
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.name
+        envFrom:
+        - secretRef:
+            name: experian-datahub-consent-management-api
+        - configMapRef:
+            name: experian-datahub-consent-management-api-configmap
+        image: 187739130313.dkr.ecr.sa-east-1.amazonaws.com/experian-datahub-consent-management-api:0.0.4-SNAPSHOT
+        imagePullPolicy: Always
+        name: experian-datahub-consent-management-api
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        readinessProbe:
+          failureThreshold: 3
+          periodSeconds: 10
+          successThreshold: 1
+          tcpSocket:
+            port: 8080
+          timeoutSeconds: 60
+        resources:
+          limits:
+            cpu: "1"
+            memory: 2Gi
+          requests:
+            cpu: 700m
+            memory: 1Gi
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 1
+  conditions:
+  - lastTransitionTime: "2024-03-25T15:19:54Z"
+    lastUpdateTime: "2024-03-25T15:19:54Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2024-03-21T15:54:17Z"
+    lastUpdateTime: "2024-03-25T22:53:17Z"
+    message: ReplicaSet "experian-datahub-consent-management-api-6d6fdd589f" has successfully
+      progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 10
+  readyReplicas: 1
+  replicas: 1
+  updatedReplicas: 1

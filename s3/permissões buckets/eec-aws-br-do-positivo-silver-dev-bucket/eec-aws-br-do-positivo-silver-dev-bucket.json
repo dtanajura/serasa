@@ -1,0 +1,71 @@
+{
+    "Version": "2012-10-17",
+    "Id": "ProductionPermission",
+    "Statement": [
+        {
+            "Sid": "ProductionPermission",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::822130695371:role/BURoleForEMREC2DefaultRole"
+            },
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::eec-aws-br-do-positivo-silver-dev-bucket",
+                "arn:aws:s3:::eec-aws-br-do-positivo-silver-dev-bucket/*"
+            ]
+        },
+        {
+            "Sid": "Datamasque bucket policy",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::484240119361:role/BuRoleForDatamasqueUAT"
+            },
+            "Action": [
+                "s3:ListBucket*",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketObjectLockConfiguration",
+                "s3:PutObject",
+                "s3:GetObject",
+                "s3:GetEncryptionConfiguration",
+                "s3:DeleteObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::eec-aws-br-do-positivo-silver-dev-bucket",
+                "arn:aws:s3:::eec-aws-br-do-positivo-silver-dev-bucket/*"
+            ]
+        },
+        {
+            "Sid": "AllowSSLRequestsOnly",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::eec-aws-br-do-positivo-silver-dev-bucket",
+                "arn:aws:s3:::eec-aws-br-do-positivo-silver-dev-bucket/*"
+            ],
+            "Condition": {
+                "Bool": {
+                    "aws:SecureTransport": "false"
+                }
+            }
+        },
+        {
+            "Sid": "Acesso para a conta de Mercantil",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::730335661246:role/BURoleForPositivoMercantil"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::eec-aws-br-do-positivo-silver-dev-bucket",
+                "arn:aws:s3:::eec-aws-br-do-positivo-silver-dev-bucket/ifs/Cadastral/processados/*"
+            ]
+        }
+    ]
+}

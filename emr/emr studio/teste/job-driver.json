@@ -1,0 +1,6 @@
+{
+    "sparkSubmit": {
+        "entryPoint": "s3://aws-emr-studio-187739130313-sa-east-1/hive/scripts/create_table.sql",
+        "sparkSubmitParameters": "--hiveconf hive.exec.scratchdir=s3://aws-emr-studio-187739130313-sa-east-1/hive/scratch --hiveconf hive.metastore.warehouse.dir=s3://aws-emr-studio-187739130313-sa-east-1/hive/warehouse"
+    }
+}

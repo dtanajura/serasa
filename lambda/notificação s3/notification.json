@@ -1,0 +1,19 @@
+{
+  "LambdaFunctionConfigurations": [
+    {
+      "Id": "valida-remessa-lambda",
+      "LambdaFunctionArn": "arn:aws:lambda:sa-east-1:730335661246:function:experian-datahub-mercantil-valida-remessa-dev",
+      "Events": ["s3:ObjectCreated:*"],
+      "Filter": {
+        "Key": {
+          "FilterRules": [
+            {
+              "Name": "prefix",
+              "Value": "stage/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

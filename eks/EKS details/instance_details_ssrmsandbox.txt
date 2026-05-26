@@ -1,0 +1,440 @@
+Nome da conta eec-aws-br-nike-ss-sandbox
+EKS clusters for account: eec-aws-br-nike-ss-sandbox
+eks_clusters: account_id=087086536124, cluster_id=ssrm-eks-01-sandbox, cluster_name=ssrm-eks-01-sandbox, kubernetes_version=1.30
+Details eks_nodegroups: nodegroup_id=EKS-ssrm-eks-01-sandbox-NG-infra-2024030713381940590000000a, autoscaling_group_name=eks-EKS-ssrm-eks-01-sandbox-NG-infra-2024030713381940590000000a-acc70c91-6f63-6cfe-d58d-3ad27724671f, launch_template_id=lt-0d37c3c98d05c10f5, launch_template_version=16
+Details eks_nodes: instance_id=i-01aa31dc6c757fdc1
+Instance Details:
+  Instance Type: c6i.2xlarge
+  Private IP Address: 10.99.144.18
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-06bc36feaec4ad04a
+  OS: Amazon Linux 2
+  Tags:
+    Application: EKS
+    ResourceBusinessUnit: EITS
+    eks:nodegroup-name: EKS-ssrm-eks-01-sandbox-NG-infra-2024030713381940590000000a
+    aws:ec2:fleet-id: fleet-99bd2214-958d-648f-2eb8-890aeb050706
+    aws:eks:cluster-name: ssrm-eks-01-sandbox
+    Worker: infra
+    service-request: RITM3367639
+    k8s.io/cluster-autoscaler/enabled: true
+    ManagedBy: Terraform
+    PCI: false
+    CostString: 1800.BR.124.602000
+    map-migrated: d-server-01riktnbfe0092
+    ClusterName: ssrm-eks-01-sandbox
+    eks:cluster-name: ssrm-eks-01-sandbox
+    Instance-Scheduler: opt-out
+    adDomain: br.experian.local
+    kubernetes.io/cluster/ssrm-eks-01-sandbox: owned
+    AppID: 0
+    Project: nike
+    ResourceAppRole: app
+    ResourceName: eksinstance
+    Environment: sbx
+    Name: EKS-ssrm-eks-01-sandbox-NG-infra
+    ResourceCostCenter: 1800.BR.124.602000
+    ResourceOwner: nikesre@br.experian.com
+    aws:ec2launchtemplate:version: 8
+    k8s.io/cluster-autoscaler/ssrm-eks-01-sandbox: owned
+    aws:ec2launchtemplate:id: lt-0d4120ba347b5b5a7
+    Rapid7Tag: eec-aws-br-nike-ss-sandbox, Servers EEC AWS
+    aws:autoscaling:groupName: eks-EKS-ssrm-eks-01-sandbox-NG-infra-2024030713381940590000000a-acc70c91-6f63-6cfe-d58d-3ad27724671f
+    RepositoryVersion: v1.6.18
+Details eks_nodes: instance_id=i-0b75c9518ab207542
+Instance Details:
+  Instance Type: c6i.2xlarge
+  Private IP Address: 10.99.144.177
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-002dce47fca2d3e5e
+  OS: Amazon Linux 2
+  Tags:
+    aws:ec2:fleet-id: fleet-191d8816-35a7-ce8d-ae9a-a9003bf58dc7
+    Application: EKS
+    kubernetes.io/cluster/ssrm-eks-01-sandbox: owned
+    ResourceBusinessUnit: EITS
+    eks:nodegroup-name: EKS-ssrm-eks-01-sandbox-NG-infra-2024030713381940590000000a
+    aws:eks:cluster-name: ssrm-eks-01-sandbox
+    k8s.io/cluster-autoscaler/enabled: true
+    service-request: RITM3367639
+    Worker: infra
+    PCI: false
+    ManagedBy: Terraform
+    Rapid7Tag: eec-aws-br-nike-ss-sandbox, Servers EEC AWS
+    ClusterName: ssrm-eks-01-sandbox
+    AppID: 0
+    Instance-Scheduler: opt-out
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    Environment: sbx
+    adDomain: br.experian.local
+    eks:cluster-name: ssrm-eks-01-sandbox
+    ResourceCostCenter: 1800.BR.124.602000
+    ResourceName: eksinstance
+    aws:autoscaling:groupName: eks-EKS-ssrm-eks-01-sandbox-NG-infra-2024030713381940590000000a-acc70c91-6f63-6cfe-d58d-3ad27724671f
+    Name: EKS-ssrm-eks-01-sandbox-NG-infra
+    Project: nike
+    ResourceAppRole: app
+    k8s.io/cluster-autoscaler/ssrm-eks-01-sandbox: owned
+    ResourceOwner: nikesre@br.experian.com
+    aws:ec2launchtemplate:version: 8
+    RepositoryVersion: v1.6.18
+    aws:ec2launchtemplate:id: lt-0d4120ba347b5b5a7
+Details eks_nodegroups: nodegroup_id=EKS-ssrm-eks-01-sandbox-NG-large-20240307134052396400000030, autoscaling_group_name=eks-EKS-ssrm-eks-01-sandbox-NG-large-20240307134052396400000030-94c70c92-9a30-bbe3-4232-9616cb684475, launch_template_id=lt-09a2eb64648a955b2, launch_template_version=10
+Details eks_nodes: instance_id=i-017e920d87cb1a2de
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.144.137
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0d24ff0775f31277e
+  OS: Amazon Linux 2
+  Tags:
+    Application: EKS
+    RepositoryVersion: v1.6.18
+    ManagedBy: Terraform
+    Environment: sbx
+    Instance-Scheduler: opt-out
+    ResourceName: eksinstance
+    kubernetes.io/cluster/ssrm-eks-01-sandbox: owned
+    ResourceAppRole: app
+    aws:autoscaling:groupName: eks-EKS-ssrm-eks-01-sandbox-NG-large-20240307134052396400000030-94c70c92-9a30-bbe3-4232-9616cb684475
+    eks:nodegroup-name: EKS-ssrm-eks-01-sandbox-NG-large-20240307134052396400000030
+    eks:cluster-name: ssrm-eks-01-sandbox
+    AppID: 0
+    ResourceCostCenter: 1800.BR.124.602000
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    aws:ec2:fleet-id: fleet-2d159405-00ad-ce9c-8e98-8daa45d4d0d2
+    ClusterName: ssrm-eks-01-sandbox
+    Rapid7Tag: eec-aws-br-nike-ss-sandbox, Servers EEC AWS
+    aws:ec2launchtemplate:id: lt-073547f20eb62cb9d
+    service-request: RITM3367639
+    PCI: false
+    aws:eks:cluster-name: ssrm-eks-01-sandbox
+    k8s.io/cluster-autoscaler/enabled: true
+    Project: nike
+    aws:ec2launchtemplate:version: 8
+    k8s.io/cluster-autoscaler/ssrm-eks-01-sandbox: owned
+    ResourceOwner: nikesre@br.experian.com
+    ResourceBusinessUnit: EITS
+    adDomain: br.experian.local
+    Name: EKS-ssrm-eks-01-sandbox-NG-large
+Details eks_nodes: instance_id=i-084b64f6a20d97762
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.144.43
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-02cfe87f4ba481c3f
+  OS: Amazon Linux 2
+  Tags:
+    Rapid7Tag: eec-aws-br-nike-ss-sandbox, Servers EEC AWS
+    CostString: 1800.BR.124.602000
+    map-migrated: d-server-01riktnbfe0092
+    eks:cluster-name: ssrm-eks-01-sandbox
+    aws:ec2launchtemplate:id: lt-073547f20eb62cb9d
+    AppID: 0
+    k8s.io/cluster-autoscaler/enabled: true
+    Instance-Scheduler: opt-out
+    service-request: RITM3367639
+    k8s.io/cluster-autoscaler/ssrm-eks-01-sandbox: owned
+    ResourceOwner: nikesre@br.experian.com
+    ResourceCostCenter: 1800.BR.124.602000
+    Project: nike
+    ResourceAppRole: app
+    aws:autoscaling:groupName: eks-EKS-ssrm-eks-01-sandbox-NG-large-20240307134052396400000030-94c70c92-9a30-bbe3-4232-9616cb684475
+    kubernetes.io/cluster/ssrm-eks-01-sandbox: owned
+    ResourceName: eksinstance
+    Environment: sbx
+    aws:ec2:fleet-id: fleet-8d269d05-d03c-439c-aeba-ac829f1ecb37
+    ClusterName: ssrm-eks-01-sandbox
+    RepositoryVersion: v1.6.18
+    Application: EKS
+    eks:nodegroup-name: EKS-ssrm-eks-01-sandbox-NG-large-20240307134052396400000030
+    aws:ec2launchtemplate:version: 8
+    PCI: false
+    aws:eks:cluster-name: ssrm-eks-01-sandbox
+    ResourceBusinessUnit: EITS
+    ManagedBy: Terraform
+    adDomain: br.experian.local
+    Name: EKS-ssrm-eks-01-sandbox-NG-large
+Details eks_nodes: instance_id=i-0c64b1a9fb819c023
+Instance Details:
+  Instance Type: m5.4xlarge
+  Private IP Address: 10.99.144.104
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0f73b93eced92d8f6
+  OS: Amazon Linux 2
+  Tags:
+    Name: EKS-ssrm-eks-01-sandbox-NG-large
+    Application: EKS
+    aws:ec2:fleet-id: fleet-a597be07-2a25-6434-8c32-8728ced18785
+    Environment: sbx
+    ResourceBusinessUnit: EITS
+    k8s.io/cluster-autoscaler/enabled: true
+    eks:cluster-name: ssrm-eks-01-sandbox
+    eks:nodegroup-name: EKS-ssrm-eks-01-sandbox-NG-large-20240307134052396400000030
+    Instance-Scheduler: opt-out
+    PCI: false
+    aws:eks:cluster-name: ssrm-eks-01-sandbox
+    ManagedBy: Terraform
+    service-request: RITM3367639
+    AppID: 0
+    aws:autoscaling:groupName: eks-EKS-ssrm-eks-01-sandbox-NG-large-20240307134052396400000030-94c70c92-9a30-bbe3-4232-9616cb684475
+    kubernetes.io/cluster/ssrm-eks-01-sandbox: owned
+    ResourceCostCenter: 1800.BR.124.602000
+    adDomain: br.experian.local
+    ClusterName: ssrm-eks-01-sandbox
+    CostString: 1800.BR.124.602000
+    map-migrated: d-server-01riktnbfe0092
+    aws:ec2launchtemplate:version: 8
+    ResourceAppRole: app
+    Rapid7Tag: eec-aws-br-nike-ss-sandbox, Servers EEC AWS
+    ResourceName: eksinstance
+    RepositoryVersion: v1.6.18
+    ResourceOwner: nikesre@br.experian.com
+    aws:ec2launchtemplate:id: lt-073547f20eb62cb9d
+    k8s.io/cluster-autoscaler/ssrm-eks-01-sandbox: owned
+    Project: nike
+Details eks_nodegroups: nodegroup_id=EKS-ssrm-eks-01-sandbox-NG-medium-20240307134052401100000034, autoscaling_group_name=eks-EKS-ssrm-eks-01-sandbox-NG-medium-20240307134052401100000034-5cc70c92-9a38-30a8-05b3-82207b1cab4d, launch_template_id=lt-0fad15fc22bef6868, launch_template_version=10
+Details eks_nodes: instance_id=i-009014d81bbe305e4
+Instance Details:
+  Instance Type: m5.2xlarge
+  Private IP Address: 10.99.144.23
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-091b69192b28529bb
+  OS: Amazon Linux 2
+  Tags:
+    map-migrated: d-server-01riktnbfe0092
+    aws:eks:cluster-name: ssrm-eks-01-sandbox
+    adDomain: br.experian.local
+    kubernetes.io/cluster/ssrm-eks-01-sandbox: owned
+    ResourceCostCenter: 1800.BR.124.602000
+    ResourceOwner: nikesre@br.experian.com
+    CostString: 1800.BR.124.602000
+    eks:cluster-name: ssrm-eks-01-sandbox
+    AppID: 0
+    k8s.io/cluster-autoscaler/enabled: true
+    Instance-Scheduler: opt-out
+    aws:ec2launchtemplate:id: lt-0efdfe276e7ceb5cc
+    service-request: RITM3367639
+    aws:autoscaling:groupName: eks-EKS-ssrm-eks-01-sandbox-NG-medium-20240307134052401100000034-5cc70c92-9a38-30a8-05b3-82207b1cab4d
+    ManagedBy: Terraform
+    PCI: false
+    eks:nodegroup-name: EKS-ssrm-eks-01-sandbox-NG-medium-20240307134052401100000034
+    ResourceBusinessUnit: EITS
+    Environment: sbx
+    Application: EKS
+    aws:ec2launchtemplate:version: 8
+    Project: nike
+    Name: EKS-ssrm-eks-01-sandbox-NG-medium
+    k8s.io/cluster-autoscaler/ssrm-eks-01-sandbox: owned
+    ClusterName: ssrm-eks-01-sandbox
+    Rapid7Tag: eec-aws-br-nike-ss-sandbox, Servers EEC AWS
+    ResourceName: eksinstance
+    aws:ec2:fleet-id: fleet-8797b48f-a807-e61c-0498-07aa19534fb1
+    ResourceAppRole: app
+    RepositoryVersion: v1.6.18
+Details eks_nodes: instance_id=i-0631c735e3bb12071
+Instance Details:
+  Instance Type: m5.2xlarge
+  Private IP Address: 10.99.144.111
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0066d92c51e17677e
+  OS: Amazon Linux 2
+  Tags:
+    aws:autoscaling:groupName: eks-EKS-ssrm-eks-01-sandbox-NG-medium-20240307134052401100000034-5cc70c92-9a38-30a8-05b3-82207b1cab4d
+    Project: nike
+    ResourceAppRole: app
+    k8s.io/cluster-autoscaler/ssrm-eks-01-sandbox: owned
+    ResourceBusinessUnit: EITS
+    service-request: RITM3367639
+    k8s.io/cluster-autoscaler/enabled: true
+    ManagedBy: Terraform
+    RepositoryVersion: v1.6.18
+    aws:ec2:fleet-id: fleet-0f3fb42d-0827-6e36-0eb2-05805bb1d15a
+    Name: EKS-ssrm-eks-01-sandbox-NG-medium
+    aws:ec2launchtemplate:id: lt-0efdfe276e7ceb5cc
+    Application: EKS
+    adDomain: br.experian.local
+    ResourceCostCenter: 1800.BR.124.602000
+    ResourceName: eksinstance
+    ResourceOwner: nikesre@br.experian.com
+    kubernetes.io/cluster/ssrm-eks-01-sandbox: owned
+    aws:ec2launchtemplate:version: 8
+    aws:eks:cluster-name: ssrm-eks-01-sandbox
+    PCI: false
+    Rapid7Tag: eec-aws-br-nike-ss-sandbox, Servers EEC AWS
+    ClusterName: ssrm-eks-01-sandbox
+    AppID: 0
+    Instance-Scheduler: opt-out
+    map-migrated: d-server-01riktnbfe0092
+    CostString: 1800.BR.124.602000
+    Environment: sbx
+    eks:nodegroup-name: EKS-ssrm-eks-01-sandbox-NG-medium-20240307134052401100000034
+    eks:cluster-name: ssrm-eks-01-sandbox
+Details eks_nodegroups: nodegroup_id=EKS-ssrm-eks-01-sandbox-NG-small-20240307134052400000000032, autoscaling_group_name=eks-EKS-ssrm-eks-01-sandbox-NG-small-20240307134052400000000032-1ec70c92-9a31-68b5-6d07-802853725368, launch_template_id=lt-015c97b08c0058467, launch_template_version=10
+Details eks_nodes: instance_id=i-07a98e3fa14b39416
+Instance Details:
+  Instance Type: m5.xlarge
+  Private IP Address: 10.99.144.26
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-07d7b8d54566a8421
+  OS: Amazon Linux 2
+  Tags:
+    AppID: 0
+    map-migrated: d-server-01riktnbfe0092
+    aws:eks:cluster-name: ssrm-eks-01-sandbox
+    Name: EKS-ssrm-eks-01-sandbox-NG-small
+    ResourceName: eksinstance
+    ClusterName: ssrm-eks-01-sandbox
+    PCI: false
+    Rapid7Tag: eec-aws-br-nike-ss-sandbox, Servers EEC AWS
+    aws:ec2:fleet-id: fleet-079d1e85-a20d-441e-8c98-afa8dd9ad9a1
+    k8s.io/cluster-autoscaler/ssrm-eks-01-sandbox: owned
+    aws:ec2launchtemplate:version: 8
+    Project: nike
+    ResourceOwner: nikesre@br.experian.com
+    adDomain: br.experian.local
+    aws:autoscaling:groupName: eks-EKS-ssrm-eks-01-sandbox-NG-small-20240307134052400000000032-1ec70c92-9a31-68b5-6d07-802853725368
+    Application: EKS
+    ResourceBusinessUnit: EITS
+    RepositoryVersion: v1.6.18
+    ResourceAppRole: app
+    ManagedBy: Terraform
+    eks:nodegroup-name: EKS-ssrm-eks-01-sandbox-NG-small-20240307134052400000000032
+    Instance-Scheduler: opt-out
+    eks:cluster-name: ssrm-eks-01-sandbox
+    k8s.io/cluster-autoscaler/enabled: true
+    aws:ec2launchtemplate:id: lt-0a386b49cdd79ea24
+    service-request: RITM3367639
+    ResourceCostCenter: 1800.BR.124.602000
+    Environment: sbx
+    CostString: 1800.BR.124.602000
+    kubernetes.io/cluster/ssrm-eks-01-sandbox: owned
+Details eks_nodes: instance_id=i-097fabafbc37b7a34
+Instance Details:
+  Instance Type: m5.xlarge
+  Private IP Address: 10.99.144.155
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-08755ab47a777070e
+  OS: Amazon Linux 2
+  Tags:
+    aws:ec2launchtemplate:version: 8
+    ResourceName: eksinstance
+    PCI: false
+    aws:eks:cluster-name: ssrm-eks-01-sandbox
+    RepositoryVersion: v1.6.18
+    ResourceOwner: nikesre@br.experian.com
+    aws:ec2launchtemplate:id: lt-0a386b49cdd79ea24
+    AppID: 0
+    aws:ec2:fleet-id: fleet-3397809e-352f-6605-0618-8322d1fb473a
+    kubernetes.io/cluster/ssrm-eks-01-sandbox: owned
+    ResourceCostCenter: 1800.BR.124.602000
+    ClusterName: ssrm-eks-01-sandbox
+    CostString: 1800.BR.124.602000
+    Environment: sbx
+    map-migrated: d-server-01riktnbfe0092
+    k8s.io/cluster-autoscaler/enabled: true
+    eks:cluster-name: ssrm-eks-01-sandbox
+    Instance-Scheduler: opt-out
+    Rapid7Tag: eec-aws-br-nike-ss-sandbox, Servers EEC AWS
+    ResourceAppRole: app
+    ManagedBy: Terraform
+    eks:nodegroup-name: EKS-ssrm-eks-01-sandbox-NG-small-20240307134052400000000032
+    Name: EKS-ssrm-eks-01-sandbox-NG-small
+    k8s.io/cluster-autoscaler/ssrm-eks-01-sandbox: owned
+    Project: nike
+    service-request: RITM3367639
+    Application: EKS
+    aws:autoscaling:groupName: eks-EKS-ssrm-eks-01-sandbox-NG-small-20240307134052400000000032-1ec70c92-9a31-68b5-6d07-802853725368
+    adDomain: br.experian.local
+    ResourceBusinessUnit: EITS
+Details eks_nodes: instance_id=i-0ae5afa6bf9da4348
+Instance Details:
+  Instance Type: m5.xlarge
+  Private IP Address: 10.99.144.71
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-05a6d9da05e89956b
+  OS: Amazon Linux 2
+  Tags:
+    aws:ec2launchtemplate:version: 8
+    ResourceName: eksinstance
+    ResourceOwner: nikesre@br.experian.com
+    aws:ec2launchtemplate:id: lt-0a386b49cdd79ea24
+    PCI: false
+    aws:eks:cluster-name: ssrm-eks-01-sandbox
+    RepositoryVersion: v1.6.18
+    aws:autoscaling:groupName: eks-EKS-ssrm-eks-01-sandbox-NG-small-20240307134052400000000032-1ec70c92-9a31-68b5-6d07-802853725368
+    Application: EKS
+    Name: EKS-ssrm-eks-01-sandbox-NG-small
+    ResourceBusinessUnit: EITS
+    adDomain: br.experian.local
+    aws:ec2:fleet-id: fleet-31958a1e-b72d-4c2f-ac90-0ba068bd34ec
+    k8s.io/cluster-autoscaler/ssrm-eks-01-sandbox: owned
+    Instance-Scheduler: opt-out
+    ResourceAppRole: app
+    ManagedBy: Terraform
+    eks:nodegroup-name: EKS-ssrm-eks-01-sandbox-NG-small-20240307134052400000000032
+    Rapid7Tag: eec-aws-br-nike-ss-sandbox, Servers EEC AWS
+    service-request: RITM3367639
+    Project: nike
+    k8s.io/cluster-autoscaler/enabled: true
+    map-migrated: d-server-01riktnbfe0092
+    ClusterName: ssrm-eks-01-sandbox
+    kubernetes.io/cluster/ssrm-eks-01-sandbox: owned
+    AppID: 0
+    eks:cluster-name: ssrm-eks-01-sandbox
+    Environment: sbx
+    CostString: 1800.BR.124.602000
+    ResourceCostCenter: 1800.BR.124.602000
+Details eks_nodes: instance_id=i-0c30148753a0b8c3b
+Instance Details:
+  Instance Type: m5.xlarge
+  Private IP Address: 10.99.144.5
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0ada6fab827b96f39
+  OS: Amazon Linux 2
+  Tags:
+    ResourceBusinessUnit: EITS
+    Project: nike
+    ResourceAppRole: app
+    aws:ec2launchtemplate:id: lt-0a386b49cdd79ea24
+    eks:nodegroup-name: EKS-ssrm-eks-01-sandbox-NG-small-20240307134052400000000032
+    ManagedBy: Terraform
+    RepositoryVersion: v1.6.18
+    aws:ec2:fleet-id: fleet-079d1e85-a20d-441e-8c98-afa8dd9ad9a1
+    aws:ec2launchtemplate:version: 8
+    k8s.io/cluster-autoscaler/ssrm-eks-01-sandbox: owned
+    ResourceOwner: nikesre@br.experian.com
+    aws:autoscaling:groupName: eks-EKS-ssrm-eks-01-sandbox-NG-small-20240307134052400000000032-1ec70c92-9a31-68b5-6d07-802853725368
+    Application: EKS
+    adDomain: br.experian.local
+    map-migrated: d-server-01riktnbfe0092
+    Name: EKS-ssrm-eks-01-sandbox-NG-small
+    aws:eks:cluster-name: ssrm-eks-01-sandbox
+    ResourceName: eksinstance
+    Rapid7Tag: eec-aws-br-nike-ss-sandbox, Servers EEC AWS
+    PCI: false
+    Instance-Scheduler: opt-out
+    service-request: RITM3367639
+    k8s.io/cluster-autoscaler/enabled: true
+    ClusterName: ssrm-eks-01-sandbox
+    ResourceCostCenter: 1800.BR.124.602000
+    kubernetes.io/cluster/ssrm-eks-01-sandbox: owned
+    CostString: 1800.BR.124.602000
+    Environment: sbx
+    eks:cluster-name: ssrm-eks-01-sandbox
+    AppID: 0
+Details eks_nodegroups: nodegroup_id=EKS-ssrm-eks-01-sandbox-NG-spot-20240307134052401900000036, autoscaling_group_name=eks-EKS-ssrm-eks-01-sandbox-NG-spot-20240307134052401900000036-8ec70c92-9a33-c85f-231a-aa8c9bb8338b, launch_template_id=lt-01407f51a3b8ae642, launch_template_version=8
+No instances

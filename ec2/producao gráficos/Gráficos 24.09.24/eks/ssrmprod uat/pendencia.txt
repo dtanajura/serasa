@@ -1,0 +1,1 @@
+Falta abrir regra de firewall para criar o datasource no Grafana - pedi para Rodrigo

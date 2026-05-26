@@ -1,0 +1,407 @@
+Nome da conta eec-aws-br-ds-dataoffice-uat
+EKS clusters for account: eec-aws-br-ds-dataoffice-uat
+eks_clusters: account_id=484240119361, cluster_id=do-eks-01-uat, cluster_name=do-eks-01-uat, kubernetes_version=1.30
+Details eks_nodegroups: nodegroup_id=EKS-do-eks-01-uat-infra-20241203235255496700000002, autoscaling_group_name=eks-EKS-do-eks-01-uat-infra-20241203235255496700000002-a8c9c778-7902-8eb1-1645-b93b461c875f, launch_template_id=lt-01ec73a0c79035d34, launch_template_version=3
+Details eks_nodes: instance_id=i-02cc6cc6400c273cb
+Instance Details:
+  Instance Type: c6a.xlarge
+  Private IP Address: 10.120.138.11
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0cb27342b775853cc
+  OS: Amazon Linux 2
+  Tags:
+    Environment: uat
+    aws:autoscaling:groupName: eks-EKS-do-eks-01-uat-infra-20241203235255496700000002-a8c9c778-7902-8eb1-1645-b93b461c875f
+    ResourceOwner: sredob@br.experian.com
+    eks:nodegroup-name: EKS-do-eks-01-uat-infra-20241203235255496700000002
+    AppID: 123456
+    Project: eec-aws-br-do-eks-uat
+    aws:ec2:fleet-id: fleet-bbb7a21e-9da7-6e8f-ae18-0b2222fad5b0
+    eks:cluster-name: do-eks-01-uat
+    aws:ec2launchtemplate:version: 1
+    aws:eks:cluster-name: do-eks-01-uat
+    PCI: false
+    map-migrated: d-server-01riktnbfe0092
+    Name: EKS-do-eks-01-uat-infra
+    Worker: infra
+    CostString: 1800.BQ.100.502059
+    ClusterName: do-eks-01-uat
+    Instance-Scheduler: opt-out
+    ResourceCostCenter: 1800.BQ.100.502059
+    k8s.io/cluster-autoscaler/do-eks-01-uat: owned
+    ResourceBusinessUnit: BRASA1UAPUDO01
+    k8s.io/cluster-autoscaler/enabled: true
+    ResourceName: eec-aws-br-do-eks-uat
+    ManagedBy: Terraform
+    ResourceAppRole: app
+    adDomain: br.experian.local
+    kubernetes.io/cluster/do-eks-01-uat: owned
+    Application: EKS
+    aws:ec2launchtemplate:id: lt-0c1f1c08afdd5382c
+Details eks_nodes: instance_id=i-0308922761e6c0e30
+Instance Details:
+  Instance Type: c6a.xlarge
+  Private IP Address: 10.120.138.143
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-073ef4f3f0e3fa46e
+  OS: Amazon Linux 2
+  Tags:
+    Name: EKS-do-eks-01-uat-infra
+    k8s.io/cluster-autoscaler/enabled: true
+    eks:cluster-name: do-eks-01-uat
+    aws:autoscaling:groupName: eks-EKS-do-eks-01-uat-infra-20241203235255496700000002-a8c9c778-7902-8eb1-1645-b93b461c875f
+    PCI: false
+    AppID: 123456
+    aws:ec2:fleet-id: fleet-0797be8f-8027-66bc-ac92-2fa8fca473ee
+    kubernetes.io/cluster/do-eks-01-uat: owned
+    aws:ec2launchtemplate:id: lt-0c1f1c08afdd5382c
+    Application: EKS
+    Environment: uat
+    adDomain: br.experian.local
+    ResourceOwner: sredob@br.experian.com
+    Project: eec-aws-br-do-eks-uat
+    aws:eks:cluster-name: do-eks-01-uat
+    Worker: infra
+    eks:nodegroup-name: EKS-do-eks-01-uat-infra-20241203235255496700000002
+    CostString: 1800.BQ.100.502059
+    aws:ec2launchtemplate:version: 1
+    ManagedBy: Terraform
+    ResourceAppRole: app
+    k8s.io/cluster-autoscaler/do-eks-01-uat: owned
+    ResourceCostCenter: 1800.BQ.100.502059
+    ClusterName: do-eks-01-uat
+    Instance-Scheduler: opt-out
+    ResourceName: eec-aws-br-do-eks-uat
+    map-migrated: d-server-01riktnbfe0092
+    ResourceBusinessUnit: BRASA1UAPUDO01
+Details eks_nodes: instance_id=i-05554c5045165dca7
+Instance Details:
+  Instance Type: c6a.xlarge
+  Private IP Address: 10.120.138.77
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0fd3b15d4856b689c
+  OS: Amazon Linux 2
+  Tags:
+    map-migrated: d-server-01riktnbfe0092
+    Name: EKS-do-eks-01-uat-infra
+    kubernetes.io/cluster/do-eks-01-uat: owned
+    eks:cluster-name: do-eks-01-uat
+    k8s.io/cluster-autoscaler/enabled: true
+    Instance-Scheduler: opt-out
+    aws:ec2launchtemplate:id: lt-0c1f1c08afdd5382c
+    ClusterName: do-eks-01-uat
+    ResourceCostCenter: 1800.BQ.100.502059
+    ResourceBusinessUnit: BRASA1UAPUDO01
+    ResourceAppRole: app
+    k8s.io/cluster-autoscaler/do-eks-01-uat: owned
+    ResourceName: eec-aws-br-do-eks-uat
+    aws:ec2launchtemplate:version: 1
+    Application: EKS
+    Worker: infra
+    CostString: 1800.BQ.100.502059
+    eks:nodegroup-name: EKS-do-eks-01-uat-infra-20241203235255496700000002
+    ManagedBy: Terraform
+    PCI: false
+    Environment: uat
+    adDomain: br.experian.local
+    ResourceOwner: sredob@br.experian.com
+    aws:ec2:fleet-id: fleet-2515b68f-280f-4c1c-ac90-05aa38ae8cb5
+    Project: eec-aws-br-do-eks-uat
+    AppID: 123456
+    aws:eks:cluster-name: do-eks-01-uat
+    aws:autoscaling:groupName: eks-EKS-do-eks-01-uat-infra-20241203235255496700000002-a8c9c778-7902-8eb1-1645-b93b461c875f
+Details eks_nodegroups: nodegroup_id=EKS-do-eks-01-uat-large-20241203235531795300000008, autoscaling_group_name=eks-EKS-do-eks-01-uat-large-20241203235531795300000008-c0c9c779-aa45-8c33-7d58-5896d9df10b3, launch_template_id=lt-000c86a8a85d87575, launch_template_version=3
+Details eks_nodes: instance_id=i-0a1f2815f5ebd2260
+Instance Details:
+  Instance Type: t3.2xlarge
+  Private IP Address: 10.120.138.142
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0fbec936b3f603cd3
+  OS: Amazon Linux 2
+  Tags:
+    ResourceOwner: sredob@br.experian.com
+    aws:ec2launchtemplate:version: 1
+    Environment: uat
+    aws:autoscaling:groupName: eks-EKS-do-eks-01-uat-large-20241203235531795300000008-c0c9c779-aa45-8c33-7d58-5896d9df10b3
+    Project: eec-aws-br-do-eks-uat
+    aws:eks:cluster-name: do-eks-01-uat
+    AppID: 123456
+    kubernetes.io/cluster/do-eks-01-uat: owned
+    Application: EKS
+    adDomain: br.experian.local
+    Instance-Scheduler: opt-out
+    ResourceName: eec-aws-br-do-eks-uat
+    k8s.io/cluster-autoscaler/enabled: true
+    Name: EKS-do-eks-01-uat-large
+    k8s.io/cluster-autoscaler/do-eks-01-uat: owned
+    ResourceAppRole: app
+    ResourceBusinessUnit: BRASA1UAPUDO01
+    map-migrated: d-server-01riktnbfe0092
+    eks:cluster-name: do-eks-01-uat
+    ManagedBy: Terraform
+    aws:ec2launchtemplate:id: lt-046c3206fbf78e259
+    PCI: false
+    aws:ec2:fleet-id: fleet-87aebfaf-78be-cb9e-8438-8c8ac94745a2
+    eks:nodegroup-name: EKS-do-eks-01-uat-large-20241203235531795300000008
+    ClusterName: do-eks-01-uat
+    CostString: 1800.BQ.100.502059
+    ResourceCostCenter: 1800.BQ.100.502059
+Details eks_nodes: instance_id=i-0f2eee6edaaae4cfd
+Instance Details:
+  Instance Type: t3.2xlarge
+  Private IP Address: 10.120.138.73
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0e5e4bccb25ac0cff
+  OS: Amazon Linux 2
+  Tags:
+    kubernetes.io/cluster/do-eks-01-uat: owned
+    map-migrated: d-server-01riktnbfe0092
+    eks:cluster-name: do-eks-01-uat
+    AppID: 123456
+    PCI: false
+    aws:ec2launchtemplate:id: lt-046c3206fbf78e259
+    k8s.io/cluster-autoscaler/enabled: true
+    eks:nodegroup-name: EKS-do-eks-01-uat-large-20241203235531795300000008
+    ResourceCostCenter: 1800.BQ.100.502059
+    aws:ec2:fleet-id: fleet-2db59427-2aaf-ecb4-a61a-8f8052b17cf1
+    ResourceName: eec-aws-br-do-eks-uat
+    ClusterName: do-eks-01-uat
+    Name: EKS-do-eks-01-uat-large
+    ResourceBusinessUnit: BRASA1UAPUDO01
+    k8s.io/cluster-autoscaler/do-eks-01-uat: owned
+    Instance-Scheduler: opt-out
+    CostString: 1800.BQ.100.502059
+    aws:autoscaling:groupName: eks-EKS-do-eks-01-uat-large-20241203235531795300000008-c0c9c779-aa45-8c33-7d58-5896d9df10b3
+    aws:eks:cluster-name: do-eks-01-uat
+    ManagedBy: Terraform
+    Project: eec-aws-br-do-eks-uat
+    aws:ec2launchtemplate:version: 1
+    ResourceAppRole: app
+    ResourceOwner: sredob@br.experian.com
+    Environment: uat
+    adDomain: br.experian.local
+    Application: EKS
+Details eks_nodegroups: nodegroup_id=EKS-do-eks-01-uat-medium-2024120323553179740000000a, autoscaling_group_name=eks-EKS-do-eks-01-uat-medium-2024120323553179740000000a-6ec9c779-aa55-252e-00b4-a0f092e1e12f, launch_template_id=lt-08f921261e4e76666, launch_template_version=3
+Details eks_nodes: instance_id=i-08e2193808a3001fb
+Instance Details:
+  Instance Type: t3.xlarge
+  Private IP Address: 10.120.138.96
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-09e0f30a1e4739123
+  OS: Amazon Linux 2
+  Tags:
+    CostString: 1800.BQ.100.502059
+    Application: EKS
+    aws:ec2:fleet-id: fleet-afb5be8f-aa2f-c634-84b8-05028939c8a1
+    ManagedBy: Terraform
+    ResourceBusinessUnit: BRASA1UAPUDO01
+    aws:eks:cluster-name: do-eks-01-uat
+    ResourceAppRole: app
+    Project: eec-aws-br-do-eks-uat
+    Instance-Scheduler: opt-out
+    k8s.io/cluster-autoscaler/enabled: true
+    aws:autoscaling:groupName: eks-EKS-do-eks-01-uat-medium-2024120323553179740000000a-6ec9c779-aa55-252e-00b4-a0f092e1e12f
+    k8s.io/cluster-autoscaler/do-eks-01-uat: owned
+    ClusterName: do-eks-01-uat
+    Name: EKS-do-eks-01-uat-medium
+    ResourceCostCenter: 1800.BQ.100.502059
+    kubernetes.io/cluster/do-eks-01-uat: owned
+    eks:cluster-name: do-eks-01-uat
+    map-migrated: d-server-01riktnbfe0092
+    adDomain: br.experian.local
+    PCI: false
+    AppID: 123456
+    ResourceName: eec-aws-br-do-eks-uat
+    eks:nodegroup-name: EKS-do-eks-01-uat-medium-2024120323553179740000000a
+    ResourceOwner: sredob@br.experian.com
+    Environment: uat
+    aws:ec2launchtemplate:version: 1
+    aws:ec2launchtemplate:id: lt-00d40c6333a437b0b
+Details eks_nodes: instance_id=i-0a0f207625e592242
+Instance Details:
+  Instance Type: t3.xlarge
+  Private IP Address: 10.120.138.45
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0fcba761552c54fef
+  OS: Amazon Linux 2
+  Tags:
+    eks:nodegroup-name: EKS-do-eks-01-uat-medium-2024120323553179740000000a
+    aws:ec2launchtemplate:id: lt-00d40c6333a437b0b
+    aws:ec2:fleet-id: fleet-af1fb627-2805-c63c-a410-8d8037bf4d39
+    Name: EKS-do-eks-01-uat-medium
+    k8s.io/cluster-autoscaler/enabled: true
+    eks:cluster-name: do-eks-01-uat
+    PCI: false
+    AppID: 123456
+    kubernetes.io/cluster/do-eks-01-uat: owned
+    Application: EKS
+    Environment: uat
+    adDomain: br.experian.local
+    ResourceOwner: sredob@br.experian.com
+    Project: eec-aws-br-do-eks-uat
+    aws:eks:cluster-name: do-eks-01-uat
+    CostString: 1800.BQ.100.502059
+    aws:ec2launchtemplate:version: 1
+    ManagedBy: Terraform
+    ResourceBusinessUnit: BRASA1UAPUDO01
+    ResourceAppRole: app
+    k8s.io/cluster-autoscaler/do-eks-01-uat: owned
+    ResourceCostCenter: 1800.BQ.100.502059
+    ClusterName: do-eks-01-uat
+    Instance-Scheduler: opt-out
+    ResourceName: eec-aws-br-do-eks-uat
+    aws:autoscaling:groupName: eks-EKS-do-eks-01-uat-medium-2024120323553179740000000a-6ec9c779-aa55-252e-00b4-a0f092e1e12f
+    map-migrated: d-server-01riktnbfe0092
+Details eks_nodegroups: nodegroup_id=EKS-do-eks-01-uat-small-2024120323553180170000000c, autoscaling_group_name=eks-EKS-do-eks-01-uat-small-2024120323553180170000000c-04c9c779-aa4b-56ce-d65e-bc12b44b583c, launch_template_id=lt-0a02f3c4058fbe2af, launch_template_version=3
+Details eks_nodes: instance_id=i-0da20742b4ff88b3f
+Instance Details:
+  Instance Type: t3.large
+  Private IP Address: 10.120.138.18
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-032676e7d43276b67
+  OS: Amazon Linux 2
+  Tags:
+    aws:eks:cluster-name: do-eks-01-uat
+    Project: eec-aws-br-do-eks-uat
+    Name: EKS-do-eks-01-uat-small
+    CostString: 1800.BQ.100.502059
+    ManagedBy: Terraform
+    aws:ec2launchtemplate:version: 1
+    eks:nodegroup-name: EKS-do-eks-01-uat-small-2024120323553180170000000c
+    AppID: 123456
+    Application: EKS
+    ResourceOwner: sredob@br.experian.com
+    adDomain: br.experian.local
+    Environment: uat
+    kubernetes.io/cluster/do-eks-01-uat: owned
+    PCI: false
+    k8s.io/cluster-autoscaler/enabled: true
+    eks:cluster-name: do-eks-01-uat
+    ResourceAppRole: app
+    k8s.io/cluster-autoscaler/do-eks-01-uat: owned
+    ResourceCostCenter: 1800.BQ.100.502059
+    ClusterName: do-eks-01-uat
+    aws:ec2launchtemplate:id: lt-00517dd9f10850d27
+    aws:autoscaling:groupName: eks-EKS-do-eks-01-uat-small-2024120323553180170000000c-04c9c779-aa4b-56ce-d65e-bc12b44b583c
+    Instance-Scheduler: opt-out
+    ResourceName: eec-aws-br-do-eks-uat
+    aws:ec2:fleet-id: fleet-b1b58016-978d-6607-0e18-a38acae13958
+    map-migrated: d-server-01riktnbfe0092
+    ResourceBusinessUnit: BRASA1UAPUDO01
+Details eks_nodegroups: nodegroup_id=EKS-do-eks-01-uat-spot-2024120323553180480000000e, autoscaling_group_name=eks-EKS-do-eks-01-uat-spot-2024120323553180480000000e-38c9c779-aa51-a071-faa0-3ad8b9f35857, launch_template_id=lt-0115a4b6c127173e0, launch_template_version=3
+Details eks_nodes: instance_id=i-06fd5ebe3fd0e4871
+Instance Details:
+  Instance Type: t3.2xlarge
+  Private IP Address: 10.120.138.146
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-09805a69e8b6f5811
+  OS: Amazon Linux 2
+  Tags:
+    Application: EKS
+    CostString: 1800.BQ.100.502059
+    aws:eks:cluster-name: do-eks-01-uat
+    ManagedBy: Terraform
+    Project: eec-aws-br-do-eks-uat
+    aws:ec2launchtemplate:version: 1
+    ResourceAppRole: app
+    Name: EKS-do-eks-01-uat-spot
+    k8s.io/cluster-autoscaler/enabled: true
+    ResourceCostCenter: 1800.BQ.100.502059
+    ResourceName: eec-aws-br-do-eks-uat
+    ClusterName: do-eks-01-uat
+    ResourceBusinessUnit: BRASA1UAPUDO01
+    aws:autoscaling:groupName: eks-EKS-do-eks-01-uat-spot-2024120323553180480000000e-38c9c779-aa51-a071-faa0-3ad8b9f35857
+    k8s.io/cluster-autoscaler/do-eks-01-uat: owned
+    Instance-Scheduler: opt-out
+    eks:nodegroup-name: EKS-do-eks-01-uat-spot-2024120323553180480000000e
+    map-migrated: d-server-01riktnbfe0092
+    kubernetes.io/cluster/do-eks-01-uat: owned
+    eks:cluster-name: do-eks-01-uat
+    AppID: 123456
+    PCI: false
+    aws:ec2:fleet-id: fleet-2fbd3e2f-808f-ec94-ac32-2d8adf7c0843
+    aws:ec2launchtemplate:id: lt-04bfe061c406b1933
+    ResourceOwner: sredob@br.experian.com
+    Environment: uat
+    adDomain: br.experian.local
+Details eks_nodes: instance_id=i-0b9210a55c0b880d5
+Instance Details:
+  Instance Type: t3.2xlarge
+  Private IP Address: 10.120.138.62
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0dedb44c2a6ac11be
+  OS: Amazon Linux 2
+  Tags:
+    k8s.io/cluster-autoscaler/enabled: true
+    Instance-Scheduler: opt-out
+    ResourceCostCenter: 1800.BQ.100.502059
+    ResourceAppRole: app
+    ManagedBy: Terraform
+    eks:nodegroup-name: EKS-do-eks-01-uat-spot-2024120323553180480000000e
+    CostString: 1800.BQ.100.502059
+    ClusterName: do-eks-01-uat
+    ResourceName: eec-aws-br-do-eks-uat
+    aws:autoscaling:groupName: eks-EKS-do-eks-01-uat-spot-2024120323553180480000000e-38c9c779-aa51-a071-faa0-3ad8b9f35857
+    k8s.io/cluster-autoscaler/do-eks-01-uat: owned
+    map-migrated: d-server-01riktnbfe0092
+    ResourceBusinessUnit: BRASA1UAPUDO01
+    ResourceOwner: sredob@br.experian.com
+    Name: EKS-do-eks-01-uat-spot
+    PCI: false
+    aws:ec2:fleet-id: fleet-85379ea7-8227-6696-0430-0522520c9271
+    aws:ec2launchtemplate:version: 1
+    eks:cluster-name: do-eks-01-uat
+    aws:ec2launchtemplate:id: lt-04bfe061c406b1933
+    Application: EKS
+    AppID: 123456
+    aws:eks:cluster-name: do-eks-01-uat
+    Project: eec-aws-br-do-eks-uat
+    adDomain: br.experian.local
+    Environment: uat
+    kubernetes.io/cluster/do-eks-01-uat: owned
+Details eks_nodes: instance_id=i-0f32bde8715122de6
+Instance Details:
+  Instance Type: t3.2xlarge
+  Private IP Address: 10.120.138.30
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-03393ae5f9e111393
+  OS: Amazon Linux 2
+  Tags:
+    CostString: 1800.BQ.100.502059
+    aws:ec2:fleet-id: fleet-051d368f-aa0f-e696-0e90-0f20f4929519
+    ResourceBusinessUnit: BRASA1UAPUDO01
+    k8s.io/cluster-autoscaler/do-eks-01-uat: owned
+    Application: EKS
+    aws:autoscaling:groupName: eks-EKS-do-eks-01-uat-spot-2024120323553180480000000e-38c9c779-aa51-a071-faa0-3ad8b9f35857
+    ResourceOwner: sredob@br.experian.com
+    k8s.io/cluster-autoscaler/enabled: true
+    Instance-Scheduler: opt-out
+    Project: eec-aws-br-do-eks-uat
+    ResourceCostCenter: 1800.BQ.100.502059
+    Name: EKS-do-eks-01-uat-spot
+    aws:eks:cluster-name: do-eks-01-uat
+    ManagedBy: Terraform
+    aws:ec2launchtemplate:id: lt-04bfe061c406b1933
+    PCI: false
+    eks:nodegroup-name: EKS-do-eks-01-uat-spot-2024120323553180480000000e
+    kubernetes.io/cluster/do-eks-01-uat: owned
+    eks:cluster-name: do-eks-01-uat
+    map-migrated: d-server-01riktnbfe0092
+    AppID: 123456
+    adDomain: br.experian.local
+    ClusterName: do-eks-01-uat
+    Environment: uat
+    ResourceName: eec-aws-br-do-eks-uat
+    aws:ec2launchtemplate:version: 1
+    ResourceAppRole: app

@@ -1,0 +1,8 @@
+{
+    "Rules": [
+      {
+        "ObjectOwnership": "BucketOwnerEnforced"
+      }
+    ]
+}
+  

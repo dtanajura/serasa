@@ -1,0 +1,99 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowServerlessActions",
+            "Action": [
+                "emr-serverless:CreateApplication",
+                "emr-serverless:UpdateApplication",
+                "emr-serverless:DeleteApplication",
+                "emr-serverless:ListApplications",
+                "emr-serverless:GetApplication",
+                "emr-serverless:StartApplication",
+                "emr-serverless:StopApplication",
+                "emr-serverless:StartJobRun",
+                "emr-serverless:CancelJobRun",
+                "emr-serverless:ListJobRuns",
+                "emr-serverless:GetJobRun",
+                "emr-serverless:GetDashboardForJobRun",
+                "emr-serverless:AccessInteractiveEndpoints"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "AllowEMRBasicActions",
+            "Action": [
+                "elasticmapreduce:CreateEditor",
+                "elasticmapreduce:DescribeEditor",
+                "elasticmapreduce:ListEditors",
+                "elasticmapreduce:UpdateStudio",                
+                "elasticmapreduce:StartEditor",
+                "elasticmapreduce:StopEditor",
+                "elasticmapreduce:DeleteEditor",
+                "elasticmapreduce:OpenEditorInConsole",
+                "elasticmapreduce:AttachEditor",
+                "elasticmapreduce:DetachEditor",
+                "elasticmapreduce:CreateStudio",
+                "elasticmapreduce:DescribeStudio",
+                "elasticmapreduce:DeleteStudio",
+                "elasticmapreduce:ListStudios",
+                "elasticmapreduce:CreateStudioPresignedUrl"
+            ],
+            "Resource": "*",
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "AllowPassingRuntimeRoleForRunningEMRServerlessJob",
+            "Action": "iam:PassRole",
+            "Resource": "arn:aws:iam::*:role/serverless-runtime-role",
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "AllowPassingServiceRoleForWorkspaceCreation",
+            "Action": "iam:PassRole",
+            "Resource": "arn:aws:iam::*:role/emr-studio-service-role",
+            "Effect": "Allow"
+        },
+        {
+            "Sid": "AllowS3ListAndGetPermissions",
+            "Action": [
+                "s3:ListAllMyBuckets",
+                "s3:ListBucket",
+                "s3:GetBucketLocation",
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::*",
+            "Effect": "Allow"
+        },
+        {
+            "Sid":"DescribeNetwork",
+            "Effect":"Allow",
+            "Action":[
+                "ec2:DescribeVpcs",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeSecurityGroups"
+            ],
+            "Resource":"*"
+        },
+        {
+            "Sid": "ListIAMRoles",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListRoles"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kms:Decrypt",
+                "kms:GenerateDataKey",
+                "kms:ReEncryptFrom",
+                "kms:ReEncryptTo",
+                "kms:DescribeKey"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

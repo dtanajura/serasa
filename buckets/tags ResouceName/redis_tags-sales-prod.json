@@ -1,0 +1,422 @@
+{
+    "ssbl-prod-redis-001": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Cache"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12172"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "map-migrate",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Environment",
+            "Value": "uat"
+        },
+        {
+            "Key": "Name",
+            "Value": "ssbl-prod-redis"
+        }
+    ],
+    "ssbl-prod-redis-002": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Cache"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12172"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "map-migrate",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Environment",
+            "Value": "uat"
+        },
+        {
+            "Key": "Name",
+            "Value": "ssbl-prod-redis"
+        }
+    ],
+    "ssbl-prod-redis-003": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Cache"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12172"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "map-migrate",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Environment",
+            "Value": "uat"
+        },
+        {
+            "Key": "Name",
+            "Value": "ssbl-prod-redis"
+        }
+    ],
+    "ssbl-prod-v3-redis-001": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Cache"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12172"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Name",
+            "Value": "ssbl-prod-v3-redis"
+        }
+    ],
+    "ssbl-prod-v3-redis-002": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Cache"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12172"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Name",
+            "Value": "ssbl-prod-v3-redis"
+        }
+    ],
+    "ssbl-prod-v3-redis-003": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Cache"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12172"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Name",
+            "Value": "ssbl-prod-v3-redis"
+        }
+    ],
+    "ssbl-uat-redis-001": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Cache"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12172"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "map-migrate",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Aloia"
+        },
+        {
+            "Key": "Environment",
+            "Value": "uat"
+        },
+        {
+            "Key": "Name",
+            "Value": "ssbl-uat-redis"
+        }
+    ],
+    "ssbl-uat-redis-002": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Cache"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12172"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "map-migrate",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Aloia"
+        },
+        {
+            "Key": "Environment",
+            "Value": "uat"
+        },
+        {
+            "Key": "Name",
+            "Value": "ssbl-uat-redis"
+        }
+    ],
+    "ssbl-uat-v2-redis-001": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Cache"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12172"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "map-migrate",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Aloia"
+        },
+        {
+            "Key": "Environment",
+            "Value": "uat"
+        },
+        {
+            "Key": "Name",
+            "Value": "ssbl-uat-v2-redis"
+        }
+    ],
+    "ssbl-uat-v2-redis-002": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Cache"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "12172"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "map-migrate",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.124.602000"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Aloia"
+        },
+        {
+            "Key": "Environment",
+            "Value": "uat"
+        },
+        {
+            "Key": "Name",
+            "Value": "ssbl-uat-v2-redis"
+        }
+    ]
+}

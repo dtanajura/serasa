@@ -1,0 +1,29 @@
+{
+    "system_schema": [],
+    "system_schema_mcs": [],
+    "system": [],
+    "system_multiregion_info": [],
+    "ext": [],
+    "reports": [
+        {
+            "key": "Asset_Category",
+            "value": "Productive data"
+        },
+        {
+            "key": "Data_Category",
+            "value": "Financial_Negative_Registry"
+        },
+        {
+            "key": "Data_Type",
+            "value": "PP/LP"
+        },
+        {
+            "key": "map-migrated",
+            "value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "key": "project",
+            "value": "nike"
+        }
+    ]
+}

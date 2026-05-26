@@ -1,0 +1,85 @@
+{
+	"Version": "2012-10-17",
+	"Id": "key-consolepolicy-3",
+	"Statement": [
+		{
+			"Sid": "Enable IAM User Permissions",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::916546429908:root"
+			},
+			"Action": "kms:*",
+			"Resource": "*"
+		},
+		{
+			"Sid": "Allow access for Key Administrators",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::916546429908:user/BUUserForPositivoDev"
+			},
+			"Action": [
+				"kms:Create*",
+				"kms:Describe*",
+				"kms:Enable*",
+				"kms:List*",
+				"kms:Put*",
+				"kms:Update*",
+				"kms:Revoke*",
+				"kms:Disable*",
+				"kms:Get*",
+				"kms:Delete*",
+				"kms:TagResource",
+				"kms:UntagResource",
+				"kms:ScheduleKeyDeletion",
+				"kms:CancelKeyDeletion"
+			],
+			"Resource": "*"
+		},
+		{
+			"Sid": "Allow use of the key",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": [
+					"arn:aws:iam::916546429908:user/BUUserForPositivoDev",
+                    "arn:aws:iam::730335661246:role/BURoleForPositivoMercantil",
+					"arn:aws:iam::530914589075:role/BURoleForListasRestritivas",
+					"arn:aws:iam::730335661246:role/BURoleForListasRestritivas",
+					"arn:aws:iam::822130695371:role/BURoleForEMREC2DefaultRole",
+					"arn:aws:iam::730335661246:role/BURoleForContatos",
+					"arn:aws:iam::822130695371:root",
+					"arn:aws:iam::530914589075:role/BURoleForLambda",
+					"arn:aws:iam::530914589075:role/BURoleForOdinAccess"
+				]
+			},
+			"Action": [
+				"kms:Encrypt",
+				"kms:Decrypt",
+				"kms:ReEncrypt*",
+				"kms:GenerateDataKey*",
+				"kms:DescribeKey"
+			],
+			"Resource": "*"
+		},
+		{
+			"Sid": "Allow attachment of persistent resources",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": [
+					"arn:aws:iam::822130695371:root",
+					"arn:aws:iam::916546429908:user/BUUserForPositivoDev"
+				]
+			},
+			"Action": [
+				"kms:CreateGrant",
+				"kms:ListGrants",
+				"kms:RevokeGrant"
+			],
+			"Resource": "*",
+			"Condition": {
+				"Bool": {
+					"kms:GrantIsForAWSResource": "true"
+				}
+			}
+		}
+	]
+}

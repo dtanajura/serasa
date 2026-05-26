@@ -1,0 +1,2 @@
+Nome da conta eec-aws-br-nike-corporate-dev
+No EKS clusters found for account: eec-aws-br-nike-corporate-dev

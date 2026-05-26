@@ -1,0 +1,153 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::889013495121:role/BURoleForBucketS3DefaultRole",
+                    "arn:aws:iam::730335661246:role/BURoleForInfoNext",
+                    "arn:aws:iam::889013495121:role/BURoleForAwsGlueJobs",
+                    "arn:aws:iam::713881783816:role/BURoleForEmrEc2Nike",
+                    "arn:aws:iam::484240119361:role/BURoleForEc2JuntaComercial",
+                    "arn:aws:iam::713881783816:role/BURoleForNikeQAs",
+                    "arn:aws:iam::471112967268:role/BURoleForReaderAnalyses",
+                    "AROAW3MEFMRSGJVNBVQQV"
+                ]
+            },
+            "Action": [
+                "s3:GetObjectAcl",
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-bronze-uat/athena/*",
+                "arn:aws:s3:::experian-datahub-bronze-uat/warehouse/replicacao/*",
+                "arn:aws:s3:::experian-datahub-bronze-uat/warehouse/replicacao/rf_pessoa_juridica/data/*",
+                "arn:aws:s3:::experian-datahub-bronze-uat/warehouse/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::889013495121:role/BURoleForBucketS3DefaultRole",
+                    "arn:aws:iam::730335661246:role/BURoleForInfoNext",
+                    "arn:aws:iam::889013495121:role/BURoleForAwsGlueJobs",
+                    "arn:aws:iam::713881783816:role/BURoleForEmrEc2Nike",
+                    "arn:aws:iam::484240119361:role/BURoleForEc2JuntaComercial",
+                    "arn:aws:iam::713881783816:role/BURoleForNikeQAs",
+                    "arn:aws:iam::471112967268:role/BURoleForReaderAnalyses",
+                    "AROAW3MEFMRSGJVNBVQQV"
+                ]
+            },
+            "Action": "s3:ListBucket",
+            "Resource": "arn:aws:s3:::experian-datahub-bronze-uat"
+        },
+        {
+            "Sid": "InfoNextAcces",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::730335661246:role/BURoleForInfoNext"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-bronze-uat",
+                "arn:aws:s3:::experian-datahub-bronze-uat/warehouse/replicacao/rf_pessoa_fisica/*"
+            ]
+        },
+        {
+            "Sid": "ManagedByOdinDamProducerDoNotModify",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::980921747889:role/BURoleForLFServiceRole"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-bronze-uat",
+                "arn:aws:s3:::experian-datahub-bronze-uat/*"
+            ]
+        },
+        {
+            "Sid": "ManagedByOdinDamProducerDoNotModify",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-bronze-uat",
+                "arn:aws:s3:::experian-datahub-bronze-uat/*"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "s3:DataAccessPointAccount": "980921747889"
+                }
+            }
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::093785888205:role/dataops-databricks-default-role-dev"
+            },
+            "Action": "s3:ListBucket",
+            "Resource": "arn:aws:s3:::experian-datahub-bronze-uat"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::093785888205:role/dataops-databricks-default-role-dev"
+            },
+            "Action": [
+                "s3:GetObjectAcl",
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-bronze-uat/warehouse/replicacao/rs_bloqueio_docto/*",
+                "arn:aws:s3:::experian-datahub-bronze-uat/warehouse/replicacao/rs_bloqjudicial/*"
+            ]
+        },
+        {
+            "Sid": "ECSAccess",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::278332118946:role/BURoleFor-unity-catalog-dev"
+            },
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-bronze-uat/warehouse/replicacao/uc_tabela/*",
+                "arn:aws:s3:::experian-datahub-bronze-uat/warehouse/replicacao/rs_tvpartconvem/*",
+                "arn:aws:s3:::experian-datahub-bronze-uat"
+            ]
+        },
+        {
+            "Sid": "Acesso para a conta de Negativos Privados",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::300374333803:role/BURoleForNegativos"
+            },
+            "Action": [
+                "s3:Get",
+                "s3:List",
+                "s3:GetObjectAcl",
+                "s3:GetObject",
+                "s3:ListBucket"            
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-bronze-uat/*",
+                "arn:aws:s3:::experian-datahub-bronze-uat"
+            ]
+        }
+    ]
+}
