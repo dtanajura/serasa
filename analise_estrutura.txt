@@ -1,0 +1,54 @@
+ANÁLISE DA ESTRUTURA DO REPOSITÓRIO SERASA
+==========================================
+
+PROBLEMAS IDENTIFICADOS:
+
+1. PASTAS DUPLICADAS / SIMILARES:
+   - "Ambiente LAB" vs "ambiente lab - dev experience"
+   - "inventario datahub" vs "inventario datahub copy" (identicamente iguais)
+   - "Levantamento do ambiente" vs "levantamento volumes"
+
+2. ARQUIVOS DESNECESSÁRIOS:
+   - inventario/inventory - Copia.old (backup antigo)
+   - Ambiente LAB/teste.json (teste de script)
+   - Ambiente LAB/teste.py (teste de script)
+   - Hackaton/diagrama (arquivo vazio)
+   - Rotina Lambda/output.txt (vazio)
+   - Onboarding contas devhub/lixo.txt
+   - _outras tarefas/atualiza tags buckets.sh (tarefa solta)
+
+3. INCONSISTÊNCIA DE NOMES:
+   - Alguns nomes com CamelCase, outros com minúsculas
+   - Caracteres especiais e acentuação
+   - Prefixos "Onboarding", "Migração", "Listar", etc.
+
+4. ARQUIVOS NA RAIZ (sem pasta):
+   - arquitetura.png
+   - arquitetura.pptx
+   - teste.json (em Ambiente LAB)
+
+5. PASTAS ANINHADAS QUE MERECEM ATENÇÃO:
+   - Onboarding contas devhub/ (tem subpastas: Spike Portal DevHUB, dev, devhub-legado-prod, prod, sandbox, test)
+   - Solicitação de certificados/ (DEVHUB, Lab01)
+   - Tasks/ (Mercantil, Plataforma, Warriors)
+   - Tratamento Mongo/ (Migração Bancos - nova conta)
+   - inventario/ (automation, aws-inventory, produção)
+
+6. FALTA DE DOCUMENTAÇÃO:
+   - Nenhuma pasta tem README.md explicando propósito e como usar
+   - Muitas possuem roteiro.sh mas sem documentação em markdown
+
+AÇÕES RECOMENDADAS:
+
+1. Remover "inventario datahub copy" (duplicata)
+2. Consolidar "Ambiente LAB" e "ambiente lab - dev experience"
+3. Limpar arquivos desnecessários
+4. Padronizar nomes de pastas (CamelCase consistente)
+5. Mover arquivos soltos para pastas apropriadas
+6. Criar README.md em cada pasta com:
+   - Descrição do projeto/tarefa
+   - Objetivo
+   - Como usar (se houver scripts)
+   - Tecnologias/ferramentas envolvidas
+   - Status da tarefa
+   - Dependências

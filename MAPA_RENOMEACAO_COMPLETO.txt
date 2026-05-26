@@ -1,0 +1,263 @@
+MAPA COMPLETO DE RENOMEAÇÃO DE PASTAS
+=====================================
+
+Padrão Adotado: [NUMERO]-[Categoria]-[Descrição]
+
+MAPEAMENTO COMPLETO (39 pastas):
+
+01. "AWS CLI Diversos"
+    → "01-AWS-CLI-Diversos"
+    ✓ 1 arquivo: testes-sgs.sh
+
+02. "Ambiente LAB" + "ambiente lab - dev experience"
+    → "02-Ambiente-LAB-DEV-Experience"
+    ✓ Consolidar 2 pastas em 1
+
+03. "Hackaton"
+    → "03-Hackathon-Nike"
+    ✓ Arquivos: *.drawio, *.png
+
+04. "Levantamento do ambiente"
+    → "04-Levantamento-Ambiente"
+    ✓ Arquivo: Roteiro levantamento.docx
+
+05. "Lista certificados"
+    → "05-AWS-ACM-Certificados"
+    ✓ Arquivos: acm.py, *.xlsx
+
+06. "Listar Roles dos Node Groups"
+    → "06-EKS-Node-Groups-Roles"
+    ✓ Arquivos: lista.py, roteiro.sh
+
+07. "Migracao-mongo"
+    → "07-Migracao-MongoDB"
+    ✓ Subpasta: Terraform/, Imagens
+
+08. "Migração de contas DEV-HUB"
+    → "08-Onboarding-DevHub-Migracao"
+    ✓ Arquivos: *.sh, *.json, *.txt
+
+09. "Monitoramento eec-aws-br-nike-ss-sandbox"
+    → "09-Monitoramento-Sandbox"
+    ✓ Arquivo: roteiro.sh
+
+10. "Onboard contas positivo e negativo"
+    → "10-Onboarding-Positivo-Negativo"
+    ✓ Arquivos: roteiro.sh, *.json
+
+11. "Onboarding conta SRE DEV"
+    → "11-Onboarding-SRE-DEV"
+    ✓ Arquivos: roteiro.sh, *.pem, *.json
+
+12. "Onboarding contas devhub"
+    → "12-Onboarding-DevHub-Completo"
+    ✓ Subpastas: dev, prod, sandbox, test, devhub-legado-prod
+
+13. "Permissão BUUserForDevSecOpsPiaaS"
+    → "13-Permissoes-DevSecOps-PiaaS"
+    ✓ Arquivos: policy.json, roteiro.sh
+
+14. "Pinot"
+    → "14-Pinot-Analytics"
+    ✓ Arquivos: values.yaml, roteiro.sh
+
+15. "Remover cluster eks"
+    → "15-Remocao-EKS-Cluster"
+    ✓ Arquivos: roteiro.sh, *.json
+
+16. "Remover tudo"
+    → "16-Limpeza-Completa-Contas"
+    ✓ Arquivo: roteiro.sh
+
+17. "Rotina Lambda"
+    → "17-Lambda-Automation"
+    ✓ Arquivos: lambda.py, *.zip, *.sh
+
+18. "Solicitação de certificados"
+    → "18-Solicitacao-Certificados"
+    ✓ Subpastas: DEVHUB, Lab01
+
+19. "Tasks"
+    → "19-Tasks-Rastreamento"
+    ✓ Subpastas: Mercantil, Plataforma, Warriors
+
+20. "Tratamento Mongo"
+    → "20-Tratamento-MongoDB"
+    ✓ Subpasta: Migração Bancos - nova conta
+
+21. "Vulnerabilidades - 2"
+    → "21-Analise-Vulnerabilidades"
+    ✓ Arquivos: resultado.xlsx, queries.sql, roteiro.sh
+
+22. "_outras tarefas"
+    → "22-Tarefas-Diversas"
+    ✓ Arquivos: *.sh
+
+23. "atualização cliente zabbix"
+    → "23-Atualizacao-Zabbix-Client"
+    ✓ Arquivo: atualiza.txt
+
+24. "backup"
+    → "24-Backup-Configuration"
+    ✓ Arquivos: backup-plan.json, comandos.txt
+
+25. "inventario"
+    → "25-Inventario-Geral"
+    ✓ Arquivos: inventory.py, chave.pem, chave.ppk
+    ✓ Subpastas: automation, aws-inventory, produção
+
+26. "inventario datahub"
+    → "26-Inventario-DataHub-Tags"
+    ✓ Arquivos: *.py, *.xlsx, *.json, *.sh
+    ✓ Subpasta: 20.01.2026
+
+27. "lens"
+    → "27-Lens-Kubernetes-UI"
+    ✓ Configurações Lens
+
+28. "levantamento volumes"
+    → "28-Levantamento-Volumes-EBS"
+    ✓ Levantamento de volumes
+
+29. "ligar e desligar eks"
+    → "29-EKS-Start-Stop-Script"
+    ✓ Scripts de controle EKS
+
+30. "negativos-privados"
+    → "30-Contas-Negativo-Privadas"
+    ✓ Configuração contas negativo
+
+31. "permissões para deployments"
+    → "31-Permissoes-Deployment"
+    ✓ Permissões CI/CD
+
+32. "rev_labs"
+    → "32-Review-Laboratorios"
+    ✓ Review de labs
+
+33. "roteiros"
+    → "33-Roteiros-Centralizados"
+    ✓ Roteiros centralizados
+
+34. "sagemaker"
+    → "34-SageMaker-ML"
+    ✓ Machine Learning
+
+35. "system manager"
+    → "35-AWS-Systems-Manager"
+    ✓ Systems Manager config
+
+36. "terragrunt"
+    → "36-Terragrunt-IaC"
+    ✓ IaC com Terragrunt
+
+37. "usuario BUUserForPositivoMercantil"
+    → "37-Usuario-Positivo-Mercantil"
+    ✓ Usuário específico
+
+38. "vulnerabilidades"
+    → "38-Analise-Vulnerabilidades-v1"
+    ✓ Versão 1 análise
+
+39. "zabbix"
+    → "39-Zabbix-Monitoring"
+    ✓ Zabbix setup
+
+=====================================
+
+SCRIPT POWERSHELL PARA RENOMEAR TODAS:
+=====================================
+
+$pastas = @(
+    @{Atual="AWS CLI Diversos"; Novo="01-AWS-CLI-Diversos"},
+    @{Atual="Hackaton"; Novo="03-Hackathon-Nike"},
+    @{Atual="Levantamento do ambiente"; Novo="04-Levantamento-Ambiente"},
+    @{Atual="Lista certificados"; Novo="05-AWS-ACM-Certificados"},
+    @{Atual="Listar Roles dos Node Groups"; Novo="06-EKS-Node-Groups-Roles"},
+    @{Atual="Migracao-mongo"; Novo="07-Migracao-MongoDB"},
+    @{Atual="Migração de contas DEV-HUB"; Novo="08-Onboarding-DevHub-Migracao"},
+    @{Atual="Monitoramento eec-aws-br-nike-ss-sandbox"; Novo="09-Monitoramento-Sandbox"},
+    @{Atual="Onboard contas positivo e negativo"; Novo="10-Onboarding-Positivo-Negativo"},
+    @{Atual="Onboarding conta SRE DEV"; Novo="11-Onboarding-SRE-DEV"},
+    @{Atual="Onboarding contas devhub"; Novo="12-Onboarding-DevHub-Completo"},
+    @{Atual="Permissão BUUserForDevSecOpsPiaaS"; Novo="13-Permissoes-DevSecOps-PiaaS"},
+    @{Atual="Pinot"; Novo="14-Pinot-Analytics"},
+    @{Atual="Remover cluster eks"; Novo="15-Remocao-EKS-Cluster"},
+    @{Atual="Remover tudo"; Novo="16-Limpeza-Completa-Contas"},
+    @{Atual="Rotina Lambda"; Novo="17-Lambda-Automation"},
+    @{Atual="Solicitação de certificados"; Novo="18-Solicitacao-Certificados"},
+    @{Atual="Tasks"; Novo="19-Tasks-Rastreamento"},
+    @{Atual="Tratamento Mongo"; Novo="20-Tratamento-MongoDB"},
+    @{Atual="Vulnerabilidades - 2"; Novo="21-Analise-Vulnerabilidades"},
+    @{Atual="_outras tarefas"; Novo="22-Tarefas-Diversas"},
+    @{Atual="atualização cliente zabbix"; Novo="23-Atualizacao-Zabbix-Client"},
+    @{Atual="backup"; Novo="24-Backup-Configuration"},
+    @{Atual="inventario"; Novo="25-Inventario-Geral"},
+    @{Atual="inventario datahub"; Novo="26-Inventario-DataHub-Tags"},
+    @{Atual="lens"; Novo="27-Lens-Kubernetes-UI"},
+    @{Atual="levantamento volumes"; Novo="28-Levantamento-Volumes-EBS"},
+    @{Atual="ligar e desligar eks"; Novo="29-EKS-Start-Stop-Script"},
+    @{Atual="negativos-privados"; Novo="30-Contas-Negativo-Privadas"},
+    @{Atual="permissões para deployments"; Novo="31-Permissoes-Deployment"},
+    @{Atual="rev_labs"; Novo="32-Review-Laboratorios"},
+    @{Atual="roteiros"; Novo="33-Roteiros-Centralizados"},
+    @{Atual="sagemaker"; Novo="34-SageMaker-ML"},
+    @{Atual="system manager"; Novo="35-AWS-Systems-Manager"},
+    @{Atual="terragrunt"; Novo="36-Terragrunt-IaC"},
+    @{Atual="usuario BUUserForPositivoMercantil"; Novo="37-Usuario-Positivo-Mercantil"},
+    @{Atual="vulnerabilidades"; Novo="38-Analise-Vulnerabilidades-v1"},
+    @{Atual="zabbix"; Novo="39-Zabbix-Monitoring"}
+)
+
+$basePath = "C:\tmp\serasa"
+cd $basePath
+
+foreach ($pasta in $pastas) {
+    $caminhoAtual = Join-Path $basePath $pasta.Atual
+    $caminhoNovo = Join-Path $basePath $pasta.Novo
+
+    if (Test-Path $caminhoAtual) {
+        Rename-Item -Path $caminhoAtual -NewName $pasta.Novo
+        Write-Host "✅ Renomeado: $($pasta.Atual) → $($pasta.Novo)"
+    } else {
+        Write-Host "⚠️  Não encontrado: $($pasta.Atual)"
+    }
+}
+
+# Consolidar "Ambiente LAB" (após renomear)
+$ambienteLab = Join-Path $basePath "02-Ambiente-LAB-DEV-Experience"
+if ((Test-Path "ambiente lab - dev experience") -and (Test-Path $ambienteLab)) {
+    Write-Host ""
+    Write-Host "⚠️  AÇÃO MANUAL NECESSÁRIA:"
+    Write-Host "Consolidar 'ambiente lab - dev experience' com '02-Ambiente-LAB-DEV-Experience'"
+}
+
+Write-Host ""
+Write-Host "✅ Renomeação concluída! Validate as mudanças."
+
+=====================================
+
+OBSERVAÇÕES IMPORTANTES:
+=====================================
+
+1. ANTES DE EXECUTAR:
+   - Faça BACKUP do repositório
+   - Feche todos os arquivos abertos nessas pastas
+   - Use: git status para verificar estado atual
+
+2. CONSOLIDAÇÃO MANUAL:
+   - "Ambiente LAB" + "ambiente lab - dev experience"
+   - Copie arquivos únicos
+   - Delete pasta vazia
+
+3. APÓS RENOMEAR:
+   - Verifique com: git status
+   - Faça commit: git add -A && git commit -m "Padronizar nomes de pastas"
+   - Push: git push
+
+4. SEM RENOMEAR:
+   - O repositório funcionará perfeitamente
+   - README.md e scripts continuarão acessíveis
+   - É apenas uma padronização opcional
+
+=====================================
