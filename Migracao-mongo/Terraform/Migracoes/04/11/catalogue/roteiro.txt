@@ -1,0 +1,34 @@
+https://pages.experian.com/display/DDSE/Migrando+clusters+MongoDB+para+DocumentDB+com+AWS+DMS
+Criar servidores do cluster de destino - ok
+Criar usuário para migração no cluster  de origem
+db.createUser(
+{ 
+ user: "migracao-database",
+ pwd:  "123Troc@r",
+ roles: 
+ [
+    { role:"root",db:"admin"},
+ ] } );
+Testar acesso ao banco que vai ser migrado
+Criar endpoints de origem e destino no Terraform
+Testar os endpoints
+Criar cluster do Mongo de destino
+Criar usuário de migração no cluster de destino
+Criar endpoints de origem e destino no Terraform
+Testar os endpoints
+
+Criar instância do DMS para iniciar a migração dos dados
+
+aws dms describe-endpoints --no-verify-ssl --output text --query 'Endpoints[].EndpointArn' --filter Name='endpoint-id',Values='destination-migracao-mongodb-digital-persona-video-loan-sendgrid'
+aws dms describe-replication-instances --no-verify-ssl --output text --query 'ReplicationInstances[].ReplicationInstanceArn' --filter Name='replication-instance-id',Values='migracao-mongo-instance'
+aws dms test-connection --replication-instance-arn $(aws dms describe-replication-instances --no-verify-ssl --output text --query 'ReplicationInstances[].ReplicationInstanceArn' --filter Name='replication-instance-id',Values='migracao-mongo-instance') --endpoint-arn $(aws dms describe-endpoints --no-verify-ssl --output text --query 'Endpoints[].EndpointArn' --filter Name='endpoint-id',Values='destination-migracao-mongodb-digital-persona-video-loan-sendgrid') --no-verify-ssl
+
+01 Importar certificado
+Baixar o certificado (ver connect no DocumentDB)
+wget https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem
+
+Importar o certificado no DMS
+aws dms import-certificate  --certificate-identifier docdb-cert  --certificate-pem file://./rds-combined-ca-bundle.pem --no-verify-ssl --profile user1
+
+Listar o ARN do certificado
+aws dms describe-certificates --output text --profile user1 --no-verify-ssl --filters Name="certificate-id",Values="rds-combined-ca-bundle" --query 'Certificates[*].CertificateArn'

@@ -1,0 +1,8 @@
+[
+    {"Key":"RoleName","Value":"BURoleForLabUser"},
+    {"Key":"AccountOwnerLanId","Value":"SWJ6790"},
+    {"Key":"IdentityCentralRequestable","Value":"Yes"},
+    {"Key":"ADGroupDomain","Value":"serasa.intranet"},
+    {"Key":"IdentityCentralPrivileged","Value":"Yes"},
+    {"Key":"CreateRole","Value":"No"}
+]

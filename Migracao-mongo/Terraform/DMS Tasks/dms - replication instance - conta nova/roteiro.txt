@@ -1,0 +1,2 @@
+source_endpoint_arn = "arn:aws:dms:sa-east-1:328257591560:endpoint:XLWMLMF6E22UJWTMENMETTVC7TKIGUZESGP5EDA"
+target_endpoint_arn = "arn:aws:dms:sa-east-1:328257591560:endpoint:EUSO24L556XOFSFTLXXJL7BQ3VRBCAI3C2NMWXI"

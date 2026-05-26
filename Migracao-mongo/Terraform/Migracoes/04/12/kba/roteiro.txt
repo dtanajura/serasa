@@ -1,0 +1,51 @@
+https://pages.experian.com/display/DDSE/Migrando+clusters+MongoDB+para+DocumentDB+com+AWS+DMS
+Criar servidores do cluster de destino - ok
+Criar usuário para migração no cluster  de origem
+db.createUser(
+{ 
+ user: "migracao-database",
+ pwd:  "123Troc@r",
+ roles: 
+ [
+    { role:"root",db:"admin"},
+ ] } );
+Testar acesso ao banco que vai ser migrado
+Criar endpoints de origem e destino no Terraform
+Testar os endpoints
+Criar cluster do Mongo de destino
+Criar usuário de migração no cluster de destino
+Criar endpoints de origem e destino no Terraform
+Testar os endpoints
+
+Criar instância do DMS para iniciar a migração dos dados
+
+aws dms describe-endpoints --no-verify-ssl --output text --query 'Endpoints[].EndpointArn' --filter Name='endpoint-id',Values='destination-migracao-mongodb-digital-persona-video-loan-sendgrid'
+aws dms describe-replication-instances --no-verify-ssl --output text --query 'ReplicationInstances[].ReplicationInstanceArn' --filter Name='replication-instance-id',Values='migracao-mongo-instance'
+aws dms test-connection --replication-instance-arn $(aws dms describe-replication-instances --no-verify-ssl --output text --query 'ReplicationInstances[].ReplicationInstanceArn' --filter Name='replication-instance-id',Values='migracao-mongo-instance') --endpoint-arn $(aws dms describe-endpoints --no-verify-ssl --output text --query 'Endpoints[].EndpointArn' --filter Name='endpoint-id',Values='destination-migracao-mongodb-digital-persona-video-loan-sendgrid') --no-verify-ssl
+
+mongo --ssl --host docdb-digital-kyc-services.cluster-cxuqnyyb34lr.sa-east-1.docdb.amazonaws.com:27017 --sslCAFile rds-combined-ca-bundle.pem --username usr_migration --password 9tw2N2wEdU7wvgTH
+rs0:PRIMARY> show databases
+awsdms_control  0.000GB
+kba             0.045GB
+validation      0.011GB
+
+use kba
+show collections
+quizType
+quizzes
+settings
+db.quizType.find().count()
+db.quizzes.find().count()
+db.settings.find().count()
+rs0:PRIMARY> db.quizType.find().count()
+2
+rs0:PRIMARY> db.quizzes.find().count()
+102673
+rs0:PRIMARY> db.settings.find().count()
+9
+rs0:PRIMARY>
+
+rs0:PRIMARY> db.Validation.find().count()
+5832
+rs0:PRIMARY> db.Identity.find().count()
+5832

@@ -1,0 +1,76 @@
+{
+    "PolicyVersion": {
+        "Document": {
+            "Statement": [
+                {
+                    "Action": [
+                        "ecr:BatchCheckLayerAvailability",
+                        "ecr:BatchGetImage",
+                        "ecr:CompleteLayerUpload",
+                        "ecr:DescribeImages",
+                        "ecr:DescribeImageScanFindings",
+                        "ecr:DescribeRepositories",
+                        "ecr:GetAuthorizationToken",
+                        "ecr:GetDownloadUrlForLayer",
+                        "ecr:GetLifecyclePolicy",
+                        "ecr:GetLifecyclePolicyPreview",
+                        "ecr:GetRepositoryPolicy",
+                        "ecr:InitiateLayerUpload",
+                        "ecr:ListImages",
+                        "ecr:ListTagsForResource",
+                        "ecr:PutImage",
+                        "ecr:UploadLayerPart",
+                        "eks:AccessKubernetesApi",
+                        "eks:DescribeAddon",
+                        "eks:DescribeAddonConfiguration",
+                        "eks:DescribeAddonVersions",
+                        "eks:DescribeCluster",
+                        "eks:DescribeFargateProfile",
+                        "eks:DescribeIdentityProviderConfig",
+                        "eks:DescribeNodegroup",
+                        "eks:DescribeUpdate",
+                        "eks:ListAddons",
+                        "eks:ListClusters",
+                        "eks:ListFargateProfiles",
+                        "eks:ListIdentityProviderConfigs",
+                        "eks:ListNodegroups",
+                        "eks:ListTagsForResource",
+                        "eks:ListUpdates",
+                        "airflow:UpdateEnvironment",
+                        "airflow:GetEnvironment",
+                        "s3-object-lambda:*",
+                        "s3:*",
+                        "cloudformation:*",
+                        "logs:*",
+                        "cloudwatch:*",
+                        "kms:*",
+                        "glue:*",
+                        "lambda:*",
+                        "ec2:*"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "*",
+                    "Sid": "VisualEditor0"
+                },
+                {
+                    "Action": [
+                        "iam:PassRole"
+                    ],
+                    "Effect": "Allow",
+                    "Resource": "arn:aws:iam::527623259369:role/BURoleForFaturamento"
+                },
+                {
+                    "Effect": "Allow",
+                    "Action": "iam:PassRole",
+                    "Resource": "arn:aws:iam::527623259369:role/BURoleForPositivoMercantil"
+                }
+
+            ],
+            "Version": "2012-10-17"
+        },
+        "VersionId": "v7",
+        "IsDefaultVersion": true,
+        "CreateDate": "2025-12-15T14:41:26+00:00"
+    }
+}
+

@@ -1,0 +1,30 @@
+# Nike Sales Prod
+# # Account: eec-aws-br-nike-sales-prod (877001948254)
+[eec-aws-br-nike-sales-prod]
+name                    = eec-aws-br-nike-sales-prod
+app_id                  = 
+url                     = https://experian.okta.com/home/amazon_aws/0oals3mw7qW6Cr2je0x7/272
+username                = vinicius.silveira@br.experian.com
+provider                = Okta
+mfa                     = PUSH
+skip_verify             = false
+timeout                 = 0
+aws_urn                 = urn:amazon:webservices
+aws_session_duration    = 3600
+aws_profile             = ssrmprod
+resource_id             = 
+subdomain               = 
+role_arn                = arn:aws:iam::877001948254:role/BURoleForDevSustain
+region                  = sa-east-1
+http_attempts_count     = 
+http_retry_delay        = 
+credentials_file        = 
+saml_cache              = false
+saml_cache_file         = 
+target_url              = 
+disable_remember_device = false
+disable_sessions        = false
+prompter                = 
+mfa_ip_address          = 
+download_browser_driver = false
+headless                = false

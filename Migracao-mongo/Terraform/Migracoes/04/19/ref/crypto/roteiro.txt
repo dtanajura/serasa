@@ -1,0 +1,50 @@
+Bancos 
+    Origem: mongodb-digital-services-crypto
+    A - 10.97.55.126
+    B - 10.97.55.250
+    C - 10.97.55.149
+    Destino: mongodb-digital-security-services
+    A - 10.99.133.10
+    B - 10.99.133.106
+    C - 10.99.133.147
+
+aws ec2 describe-instances --query "Reservations[*].Instances[].PrivateIpAddress" --filters Name=tag:Name,Values=mongodb-digital-services-crypto-a --no-verify-ssl
+aws ec2 describe-instances --query "Reservations[*].Instances[].PrivateIpAddress" --filters Name=tag:Name,Values=mongodb-digital-services-crypto-b --no-verify-ssl
+aws ec2 describe-instances --query "Reservations[*].Instances[].PrivateIpAddress" --filters Name=tag:Name,Values=mongodb-digital-services-crypto-c --no-verify-ssl
+
+
+aws ec2 describe-instances --query "Reservations[*].Instances[].PrivateIpAddress" --filters Name=tag:Name,Values=mongodb-digital-security-services-a --no-verify-ssl --profile user1
+aws ec2 describe-instances --query "Reservations[*].Instances[].PrivateIpAddress" --filters Name=tag:Name,Values=mongodb-digital-security-services-b --no-verify-ssl --profile user1
+aws ec2 describe-instances --query "Reservations[*].Instances[].PrivateIpAddress" --filters Name=tag:Name,Values=mongodb-digital-security-services-c --no-verify-ssl --profile user1
+
+
+01 - conectar no banco de origem
+    acessar o servidor mongodb-digital-services-crypto-a
+    Fazer logon no banco:
+        mongo -u root -p Root#0018DB -authenticationDatabase admin
+    Verificar se o banco está no cluster:
+mongodb-digital-services-crypto:PRIMARY> show databases
+admin    0.000GB
+config   0.000GB
+crypto  16.665GB
+local    0.101GB
+    Criar usuário de migração:
+        mongodb-account-iam:PRIMARY> use admin
+            switched to db admin
+mongodb-customer-relationship:PRIMARY> db.createUser(
+ {
+  user: "migracao-database",
+  pwd:  "123Troc@r",
+  roles:
+  [
+     { role:"root",db:"admin"},
+  ] } );
+Successfully added user: {
+        "user" : "migracao-database",
+        "roles" : [
+                {
+                        "role" : "root",
+                        "db" : "admin"
+                }
+        ]
+}

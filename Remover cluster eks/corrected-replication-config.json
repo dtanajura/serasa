@@ -1,0 +1,29 @@
+{
+    "Role": "arn:aws:iam::492208500822:role/BURoleForDigitalDevops",
+    "Rules": [
+        {
+            "ID": "Copy serasaexperian-crypto-private-uat",
+            "Priority": 0,
+            "Filter": {},
+            "Status": "Disabled",
+            "SourceSelectionCriteria": {
+                "SseKmsEncryptedObjects": {
+                    "Status": "Enabled"
+                }
+            },
+            "Destination": {
+                "Bucket": "arn:aws:s3:::serasaexperian-crypto-private-uat-2",
+                "Account": "328257591560",
+                "AccessControlTranslation": {
+                    "Owner": "Destination"
+                },
+                "EncryptionConfiguration": {
+                    "ReplicaKmsKeyID": "arn:aws:kms:sa-east-1:328257591560:key/a50a635a-1479-434d-a513-42688ca5ff3c"
+                }
+            },
+            "DeleteMarkerReplication": {
+                "Status": "Disabled"
+            }
+        }
+    ]
+}

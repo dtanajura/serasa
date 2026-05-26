@@ -1,0 +1,1 @@
+{"errorMessage": "list index out of range", "errorType": "IndexError", "requestId": "035b047b-ff78-4071-8ee0-26f8e65991ad", "stackTrace": ["  File \"/var/task/coleta.py\", line 40, in lambda_handler\n    disk_usage = linhas[5]\n"]}

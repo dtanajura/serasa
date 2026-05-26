@@ -1,0 +1,128 @@
+vim /usr/lib/tmpfiles.d/mongodb.conf
+d /run/mongodb 0750 mongod mongod -
+cd /var/run
+mkdir mongodb
+chown -Rv mongod:mongod mongodb
+cd /var/lib
+chown -Rv mongod:mongod mongodb
+chown -v mongod:mongod /etc/mongod.conf
+vim /etc/mongod.conf
+campos:
+systemLog:
+  quiet: false
+  verbosity: 0
+  traceAllExceptions: false
+  syslogFacility: daemon
+  path: /var/log/mongodb/mongod.log
+  logAppend: true
+  destination: file
+  timeStampFormat: iso8601-utc
+  logRotate: reopen
+
+adicionar a sessão net
+#  ssl:
+#    mode: preferSSL
+  tls:
+    mode: preferTLS
+#    PEMKeyFile: /etc/mongodb/ssl/mongodb.pem
+    certificateKeyFile: /etc/mongodb/ssl/mongodb.pem
+#    weakCertificateValidation: false
+#    allowConnectionsWithoutCertificates: false
+#    allowInvalidCertificates: true
+
+Nome do cluster
+ replSetName: mongodb-digital-services
+
+[root@mongodb-digital-services-a ~]# cat /etc/mongodb/ssl/mongodb.pem
+-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDvrWLbGzdpeRlF
+J8lNvahNqKM9037O7Id2zEhhGkHyj047bBY4n5ZMk1aYAjFTUA9uMwVgk7CSDAKG
+hyfM+pOADFY381ZVxonU19lOBe06bUkU4D7Lk0abVG+oWOXNEz7FTowJWtJ8WzN0
+K8vV52E8IGLEivN9g0iIpJAZsBLRY9lHJFwEI3fSemui6GATWRxz1K/72C6YZp3H
+rY6NW9DJ7lPe+8qNMkXy5jK93Gh4ULDK8rXCnpfjXHVZtltaqOe7eFj+pDeHJKKc
+b+AfuTPmjxHQzbCGf7QVBxtQxyfytfRvTncwGNWCrYky1WIi/mnamdorxh9CAnvf
+2KAyTUnzAgMBAAECggEALIO7dI5dgE1pkBqPnMy40ZOcngMF7lCn6DyQxNgnn3FW
+SlsM1X9uXtKOprThjGO2OfVn7kP/62Anp+y6S6vOcV3ZNZMQWeYB+3ILfh5DrTJW
+/HWZtB2qY3cPNeks5SXJ5sNr5uDjbw1RRSZNOXE78frh3TchehJECnzl9p9pH1Jc
+KPMimhuUM6Mj8x7Dzg9JPBxYf3/BdvVnGJSCQ//1lJPmq52RhM4z6/5rDTfBBT3W
+0txdTZ+kmLRkSroaBdk6luaS0LCOulBFQXZCZT4QRZxWgJv7xLVzE/yaDQcmSC7y
+2oDXFVUILfFBzqUjlcse69mGUwt3trwbNLsGebMuAQKBgQD5PfKQC1odZgK1ZHdU
+qukqlcbDg5PxE+/8iL/RBm/rEDxtTN3DG7fCUsVbiHfZb9NcDw3L0ISy2FFnBkV5
+0RPr4hnCwtJowe/DbK4Zon8aupU/nMrcVKdb6rEfTS2DW1jGfvgH/0gDqWJjP8TW
+ALq0R/Z3+vNYoxoMTkdJN366MwKBgQD2LQwzgbNDY6XoFX+fCM2tfAM6CeLM5dKf
+ROj4JzjBtR7yGz14CkKN18V/jiwlbqT0JA+lrS5Kflx4beQJKZu0bBA6YcY12aur
+PlI5q5JQ9IXkGjc7fR0Uv8DIk/AOcAzxKxCoxbgN7/pOlcoV9Qf2tYqwP8KmRPq8
+G2fhsNLxQQKBgFBd1TT1NB1+oyjyODgo0/5TRUAN0UpO73cycQdpV/UnyxRDUM50
+xY/3OIQHQP3vvOtWP1CU7/TrI3Rg5U4eSJoq0bunLklxH2qYRJsndmyb9TwJxq+8
+7CoLRwmczSwp7Do0/q01d3cWyw7NpR6MJaez/Jk7ZfQSw3dsVjgZmNdZAoGBAInt
+XWuyXK0CNN9exD1nok10MR6gkVk53xNreZgn6Y3mm+sMRhlurjFo1ngMQUHLx1Ie
+rkGmUUxdlhPHhj9394xUC5eaVoKvbZapeUpkjbsb9bSC17VV+Sg585quAI8mSqoI
+9fGJrgDpFvZWyH4a5pZcytLLNpUQCue/9ykleFrBAoGAT6zbexB2D8TXVB/+jUfw
+2PIKN48BeZ/o1oXCKkVJyWyeH6X2+4/1GdB1Mju1OxIOkDzWjGcsqbyKXKBDh6in
+UU8vgQkbk5NaFQiLZ/vAup+D3DT7ZZiyAOZPBVUM/YdP6IqQxLyD0SWDDp6jYN7F
+4q6yQPvxYcPifXE1pn74OII=
+-----END PRIVATE KEY-----
+-----BEGIN CERTIFICATE-----
+MIIDTTCCAjWgAwIBAgIJAPPaccH/UR/KMA0GCSqGSIb3DQEBCwUAMD0xCzAJBgNV
+BAYTAkJSMQswCQYDVQQIDAJTUDEhMB8GA1UECgwYSW50ZXJuZXQgV2lkZ2l0cyBQ
+dHkgTHRkMB4XDTE5MDUxNjIwMzYzMVoXDTI5MDUxMzIwMzYzMVowPTELMAkGA1UE
+BhMCQlIxCzAJBgNVBAgMAlNQMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0
+eSBMdGQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDvrWLbGzdpeRlF
+J8lNvahNqKM9037O7Id2zEhhGkHyj047bBY4n5ZMk1aYAjFTUA9uMwVgk7CSDAKG
+hyfM+pOADFY381ZVxonU19lOBe06bUkU4D7Lk0abVG+oWOXNEz7FTowJWtJ8WzN0
+K8vV52E8IGLEivN9g0iIpJAZsBLRY9lHJFwEI3fSemui6GATWRxz1K/72C6YZp3H
+rY6NW9DJ7lPe+8qNMkXy5jK93Gh4ULDK8rXCnpfjXHVZtltaqOe7eFj+pDeHJKKc
+b+AfuTPmjxHQzbCGf7QVBxtQxyfytfRvTncwGNWCrYky1WIi/mnamdorxh9CAnvf
+2KAyTUnzAgMBAAGjUDBOMB0GA1UdDgQWBBSJTmV03oe0T2Iv5BecKV1M8ReeJTAf
+BgNVHSMEGDAWgBSJTmV03oe0T2Iv5BecKV1M8ReeJTAMBgNVHRMEBTADAQH/MA0G
+CSqGSIb3DQEBCwUAA4IBAQBH56zkoJ8wbwzhTkXZxrRDrZV8WKE8ZVJWzJV2/Fds
+JYIJsBime0HkDyY4U1NwIFUe/GqjPsJunI8Opn3UKHf/+aXgmYRUj8gjbQ1y0Vwv
+4MEpJSoV+74RJEkHRcvgaffwwYwGbOQYFzm+d8LZ1Ew+5tCEHb4fbkdS0qtQbL/t
+1ubWPvIaTyxff3WV1RzR9pMqb4ByLcEs+q+RYHWLy5IvQyPWV95rIVz8t0eJm+M+
+giV35wcJEl883gQzH1gKCu7K3GVhe7Smg3bHT/fj68O479YRshx4bAOYmPV38fk3
+52QYj7xElYDrFSEt8qD0H3krTxF/e2w2vUkCnI3epM6V
+-----END CERTIFICATE-----
+
+
+# ll /etc/mongodb/ssl/mongodb.pem
+-rw-r----- 1 mongod mongod 2909 Mar 23 01:09 /etc/mongodb/ssl/mongodb.pem
+
+openssl rand -base64 756 > /etc/mongodb/ssl/clusterdigital-services.key
+chmod 400 /etc/mongodb/ssl/clusterdigital-services.key
+chown -v mongod:mongod /etc/mongodb/ssl/clusterdigital-services.key
+
+systemctl start mongod
+systemctl enable mongod
+systemctl status mongod
+
+yum install -y mongodb-mongosh
+
+
+rs.initiate( {
+   _id : "mongodb-digital-commerce-services",
+   members: [
+      { _id: 0, host: "10.99.133.26:27017" },
+      { _id: 1, host: "10.99.133.84:27017" },
+      { _id: 2, host: "10.99.133.163:27017" }
+   ]
+})
+
+db.createUser({"user" : "admin","pwd": "123Tr0c@r","roles" : [{"role" : "root", "db" : "admin"}]})
+
+Parar o serviço MOngo e alterar o mongod.conf
+security:
+ authorization: enabled
+ javascriptEnabled: true 
+ keyFile: /etc/mongodb/ssl/clusterdigital-services.key 
+ clusterAuthMode: keyFile
+
+
+mongo -u admin -p nU6_rH9&oI9_bJ7_ -authenticationDatabase admin
+
+cfg = rs.conf()
+cfg.members[0].priority = 10
+cfg.members[1].priority = 9
+cfg.members[2].priority = 8
+rs.reconfig(cfg)
+
+mongosh "mongodb://127.0.0.1:27017" --username admin --authenticationDatabase admin

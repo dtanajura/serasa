@@ -1,0 +1,25 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": [
+          "ec2.amazonaws.com",
+          "ecs-tasks.amazonaws.com"
+        ]
+      },
+      "Action": "sts:AssumeRole"
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::564593125549:role/BURoleForSREAutomation",
+          "arn:aws:iam::504195663072:user/BUUserForSREAutomation"
+        ]
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}

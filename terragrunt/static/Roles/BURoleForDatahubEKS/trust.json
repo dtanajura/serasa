@@ -1,0 +1,13 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Federated": "arn:aws:iam::730335661246:oidc-provider/oidc.eks.sa-east-1.amazonaws.com/id/2949646C7205AAC9110D98AB7414D363"
+        
+      },
+      "Action": "sts:AssumeRoleWithWebIdentity"
+    }
+  ]
+}

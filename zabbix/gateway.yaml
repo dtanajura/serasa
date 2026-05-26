@@ -1,0 +1,23 @@
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: zabbix-gateway
+  namespace: zabbix
+spec:
+  selector:
+    istio: ingress
+  servers:
+  - hosts:
+    - zabbix.uat-ds.br.experian.eeca
+    port:
+      name: http
+      number: 80
+      protocol: HTTP
+    tls:
+      httpsRedirect: true
+  - hosts:
+    - zabbix.uat-ds.br.experian.eeca
+    port:
+      name: https
+      number: 8080
+      protocol: HTTP

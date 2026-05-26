@@ -1,0 +1,45 @@
+{
+    "Statement": [
+        {
+            "Action": [
+                "glue:*",
+                "secretsmanager:GetResourcePolicy",
+                "secretsmanager:GetSecretValue",
+                "secretsmanager:DescribeSecret",
+                "secretsmanager:ListSecretVersionIds",
+                "sqs:SendMessage",
+                "sqs:ReceiveMessage",
+                "sqs:DeleteMessage",
+                "sqs:GetQueueAttributes",
+                "sqs:PurgeQueue",
+                "sqs:ListQueues",
+                "elasticmapreduce:ListClusters",
+                "elasticmapreduce:AddJobFlowSteps",
+                "elasticmapreduce:TerminateJobFlows",
+                "elasticmapreduce:DescribeCluster",
+                "elasticmapreduce:AddTags",
+                "elasticmapreduce:DescribeStep"
+            ],
+            "Effect": "Allow",
+            "Resource": "*",
+            "Sid": "VisualEditor02"
+        },
+        {
+            "Action": [
+                "s3:*"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:s3:::eec-aws-br-eits-datahub-watchlist-raw-dev-bucket/*",
+                "arn:aws:s3:::eec-aws-br-eits-datahub-watchlist-bronze-dev-bucket/*",
+                "arn:aws:s3:::eec-aws-br-eits-datahub-watchlist-silver-dev-bucket/*"
+            ]
+        },
+        {
+            "Action": "elasticmapreduce:RunJobFlow",
+            "Effect": "Allow",
+            "Resource": "arn:aws:elasticmapreduce:sa-east-1:730335661246:cluster/*"
+        }
+    ],
+    "Version": "2012-10-17"
+}

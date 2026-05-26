@@ -1,0 +1,120 @@
+import streamlit as st
+import pandas as pd
+from sqlalchemy import create_engine
+import calendar
+
+@st.cache_data(show_spinner=False, ttl=3600)
+def load_data(query):
+    """Carrega os dados do banco de dados PostgreSQL."""
+    db_config = {
+        'host': 'dev-hub-portal-qa.cbjrpisgumc2.sa-east-1.rds.amazonaws.com',
+        'user': 'app-user',
+        'password': '123Trocar$',
+        'dbname': 'custos_nike'
+    }
+    DATABASE_URL = f"postgresql://{db_config['user']}:{db_config['password']}@{db_config['host']}/{db_config['dbname']}"
+    engine = create_engine(DATABASE_URL)
+
+    with engine.connect() as conn:
+        return pd.read_sql(query, conn)
+
+def show_graph(selected_graph,df):
+    st.sidebar.title("Filtros")
+    if selected_graph == "mensal-contas":
+        query = """
+        SELECT r.account_id, a.account_name, r.service, r.unblended_cost, r.date_register
+        FROM resource_costs r
+        JOIN accounts a ON r.account_id = a.account_id
+        ORDER BY a.account_profile, r.date_register, r.unblended_cost DESC;
+        """
+        df=load_data(query)
+        selected_accounts = create_select_box(df)
+        # Filtragem de dados com base na seleção
+        if selected_accounts:
+            filtered_df = filter_data(df, selected_accounts)
+            plot_data(filtered_df)
+            st.dataframe(filtered_df, use_container_width=True)
+
+
+    elif selected_graph[1] == "mensal-contas-servicos":
+
+    selected_account = create_account_selector(df)
+
+    if selected_account:
+        filtered_df = filter_data_by_account(df, selected_account)
+        plot_bar_chart(filtered_df)
+        st.dataframe(filtered_df, use_container_width=True)
+
+def filter_data(df, selected_accounts):
+    """Filtra o DataFrame baseado nos perfis de conta selecionados."""
+    return df[df["account_profile"].isin(selected_accounts)]
+
+def create_select_box(df):
+    """Cria uma caixa de seleção múltipla no sidebar para filtrar por perfis de conta."""
+    account_profiles = df["account_profile"].unique()
+    selected_accounts = st.sidebar.multiselect("Selecione suas contas", account_profiles, default=None)
+    return selected_accounts
+
+def plot_data(df):
+    """Plota um gráfico de linhas com múltiplas séries baseado nos dados filtrados."""
+    st.subheader("Custos mensais das contas")
+    if not df.empty:
+        st.line_chart(df.pivot_table(values='unblended_cost', index='date_register', columns='account_name', aggfunc='sum'))
+    else:
+        st.error("Não há dados para mostrar com os filtros selecionados.")
+
+def create_graph_selector():
+    graph_names=[
+        ["Custos mensais das contas","mensal-contas"],
+        ["Custos mensais das contas (serviços relevantes)","mensal-contas-servicos"]
+    ]
+
+    opts = [item[0] for item in graph_names]
+
+    selected_graph = st.sidebar.selectbox("Selecione o gráfico", opts)
+    return selected_graph
+
+def create_account_selector(df):
+    """Cria um dropdown no sidebar para selecionar uma única conta."""
+    account_names = df["account_name"].dropna().unique()
+    selected_account = st.sidebar.selectbox("Selecione a conta", account_names)
+    return selected_account
+
+def filter_data_by_account(df, selected_account):
+    """Filtra o DataFrame baseado na conta selecionada."""
+    return df[df["account_name"] == selected_account]
+
+def plot_bar_chart(df):
+    """Plota um gráfico de barras empilhadas com destaque para os 3 principais serviços e agrupando os demais como 'Outros Serviços'."""
+    st.subheader("Custos mensais das contas (serviços relevantes)")
+    service_totals = df.groupby('service')['unblended_cost'].sum().sort_values(ascending=False)
+    top_services = service_totals.head(5).index
+    df['service'] = df['service'].apply(lambda x: x if x in top_services else 'Outros Serviços')
+    
+    df['month'] = pd.to_datetime(df['date_register']).dt.month
+    df['month'] = df['month'].apply(lambda x: calendar.month_abbr[x])
+    
+    pivot_df = df.pivot_table(values='unblended_cost', index='month', columns='service', aggfunc='sum', fill_value=0)
+    st.bar_chart(pivot_df)
+
+def main():
+    st.set_page_config(layout="wide", page_title="Dashboard Custos Nike")
+    st.title('Dashboard Custos Contas Nike')
+
+    df = load_data()
+
+    with st.sidebar:
+        st.title("Selecione Gráfico")
+        selected_graph = create_graph_selector()
+
+        if selected_graph[0] != None:
+            show_graph(selected_graph[1],df)
+
+    if selected_account:
+        filtered_df = filter_data_by_account(df, selected_account)
+        plot_bar_chart(filtered_df)
+        st.dataframe(filtered_df, use_container_width=True)
+
+if __name__ == "__main__":
+    main()
+

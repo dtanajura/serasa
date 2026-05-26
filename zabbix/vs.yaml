@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: zabbix
+  namespace: zabbix
+spec:
+  hosts:
+  - zabbix.uat-ds.br.experian.eeca
+  gateways:
+  - zabbix-gateway
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: zabbix-sre-zabbix-web
+        port:
+          number: 80

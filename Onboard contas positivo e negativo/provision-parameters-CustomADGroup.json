@@ -1,0 +1,8 @@
+[
+    {"Key":"RoleName","Value":"BURoleForNegativo"},
+    {"Key":"AccountOwnerLanId","Value":"STK6255"},
+    {"Key":"IdentityCentralRequestable","Value":"Yes"},
+    {"Key":"ADGroupDomain","Value":"serasa.intranet"},
+    {"Key":"IdentityCentralPrivileged","Value":"Yes"},
+    {"Key":"CreateRole","Value":"Yes"}
+]

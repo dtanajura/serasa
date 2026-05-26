@@ -1,0 +1,34 @@
+locals {
+  policy = jsonencode({
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "EnforcedTLS",
+      "Effect": "Deny",
+      "Principal": "*",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::tfstate-713881783816-sa-east-1-uat",
+        "arn:aws:s3:::tfstate-713881783816-sa-east-1-uat/*"
+      ],
+      "Condition": {
+        "Bool": {
+          "aws:SecureTransport": "false"
+        }
+      }
+    },
+    {
+      "Sid": "RootAccess",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::713881783816:root"
+      },
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::tfstate-713881783816-sa-east-1-uat",
+        "arn:aws:s3:::tfstate-713881783816-sa-east-1-uat/*"
+      ]
+    }
+  ]
+})
+}

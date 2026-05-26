@@ -1,0 +1,56 @@
+[
+  {
+    "ResourceType": "instance",
+    "Tags": [
+      {
+        "Key": "BU",
+        "Value": "digital"
+      },
+      {
+        "Key": "CWRetentionDays",
+        "Value": "30"
+      },
+      {
+        "Key": "Name",
+        "Value": "BRASA1UDBUES01"
+      },
+      {
+        "Key": "ResourceBusinessUnit",
+        "Value": "Brazil Digital Paas"
+      },
+      {
+        "Key": "ResourceAppRole",
+        "Value": "db"
+      },
+      {
+        "Key": "Description",
+        "Value": "Banco MONGO UAT A"
+      },
+      {
+        "Key": "CWAgentInstall",
+        "Value": "true"
+      },
+      {
+        "Key": "Backup",
+        "Value": "True"
+      },
+      {
+        "Key": "ResourceCostCenter",
+        "Value": "1800.BR.134.502527"
+      },
+      {
+        "Key": "ResourceName", {Key=,Value=},
+        "Value": "brasa1udbues01.br.experian.eeca"
+      },
+      {
+        "Key": "ResourceOwner", 
+        "Value": "devsecopsdigitalpaas@br.experian.com"
+      },
+      {
+        "Key": "Ambiente",
+        "Value": "UAT"
+      }
+    ]
+  }
+]
+

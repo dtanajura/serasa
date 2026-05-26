@@ -1,0 +1,35 @@
+Bancos 
+    Origem: mongodb-account-iam	10.97.55.13	10.97.55.59	10.97.55.178
+
+    Destino: mongodb-account-iam	10.99.133.35	10.99.133.111	10.99.133.161
+
+01 - conectar no banco de origem
+    acessar o servidor mongodb-account-iam-a
+    Fazer logon no banco:
+    mongo -u admin -p AccV#952b
+    Verificar se o banco está no cluster:
+mongodb-account-iam:PRIMARY> show databases
+=======================================
+account                      76.144GB
+=======================================
+adChanges                     2.780GB
+admin                         0.000GB
+config                        0.001GB
+digitalCertificateWebhook     0.000GB
+iam                        2065.243GB
+iamSaml                       0.001GB
+idcdb                         0.000GB
+local                         1.605GB
+otp                           1.022GB
+partner                       0.000GB
+sms                           0.000GB
+verifyId                      0.000GB
+
+Testar os endpoints
+
+Criar instância do DMS para iniciar a migração dos dados
+
+aws dms describe-endpoints --no-verify-ssl --output text --query 'Endpoints[].EndpointArn' --filter Name='endpoint-id',Values='destination-migracao-mongodb-digital-persona-video-loan-sendgrid'
+aws dms describe-replication-instances --no-verify-ssl --output text --query 'ReplicationInstances[].ReplicationInstanceArn' --filter Name='replication-instance-id',Values='migracao-mongo-instance'
+aws dms test-connection --replication-instance-arn $(aws dms describe-replication-instances --no-verify-ssl --output text --query 'ReplicationInstances[].ReplicationInstanceArn' --filter Name='replication-instance-id',Values='migracao-mongo-instance') --endpoint-arn $(aws dms describe-endpoints --no-verify-ssl --output text --query 'Endpoints[].EndpointArn' --filter Name='endpoint-id',Values='destination-migracao-mongodb-digital-persona-video-loan-sendgrid') --no-verify-ssl
+
