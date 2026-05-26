@@ -1,0 +1,8 @@
+[
+    {"Key":"RoleName","Value":"BURoleForDatahubOperation"},
+    {"Key":"AccountOwnerLanId","Value":"C93681A"},
+    {"Key":"IdentityCentralRequestable","Value":"Yes"},
+    {"Key":"ADGroupDomain","Value":"serasa.intranet"},
+    {"Key":"IdentityCentralPrivileged","Value":"Yes"},
+    {"Key":"CreateRole","Value":"Yes"}
+]

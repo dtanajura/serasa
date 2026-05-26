@@ -1,0 +1,62 @@
+scrape_configs:
+  - job_name: 'federate_cluster_dsprod'
+    honor_labels: true
+    scrape_interval: 15s
+    metrics_path: '/federate_dsprod'
+    params:
+      'match[]':
+        - '{job="emr-consumo-endereco"}'
+        - '{job="emr-contatos-positivo-email"}'
+        - '{job="emr-contatos-positivo-endereco"}'
+        - '{job="emr-contatos-positivo-telefone"}'
+        - '{job="emr-mvp-diario"}'
+        - '{job="experian_dhub_batimento_fraude"}'
+        - '{job="experian_dhub_batimento_fraude_ingestion_aurora"}'
+        - '{job="experian_dhub_batimento_fraude_ingestion_aurora_test"}'
+        - '{job="experian_dhub_contacts_mainframe"}'
+        - '{job="experian_dhub_contacts_pj"}'
+        - '{job="experian_veloso_batimento_fraude"}'
+        - '{job="experian-replication_silver_microbatch_cadastral"}'
+        - '{job="experian-replication-batch"}'
+        - '{job="experian-replication-batch_depara_hash"}'
+        - '{job="experian-replication-cadastrais-pf-gold-batch"}'
+        - '{job="experian-replication-cadastrais-pf-microbatch"}'
+        - '{job="experian-replication-consumer_bronze_streaming"}'
+        - '{job="experian-replication-consumer_bronze_streaming_qsa"}'
+        - '{job="experian-replication-consumer-streaming-bronze_cadastrais"}'
+        - '{job="experian-replication-consumer-streaming-bronze-passagem"}'
+        - '{job="experian-replication-integration_silver_streaming"}'
+        - '{job="experian-replication-maintenance-negativos-gold"}'
+        - '{job="experian-replication-negativos-orquestrator"}'
+        - '{job="experian-replication-negativos-silver-batch-integration"}'
+        - '{job="experian-replication-producer_silver_streaming"}'
+        - '{job="experian-replication-producer_silver_streaming_passagem"}'
+        - '{job="experian-replication-producer-dataset-batch"}'
+        - '{job="experian-replication-producer-dataset-microbatch-integration"}'
+        - '{job="experian-replication-qsa"}'
+        - '{job="experian-replication-streaming-producer"}'
+        - '{job="experian-replication-streaming-producer-passagem"}'
+        - '{job="experian-replication-streaming-producer-s3-as-is"}'
+        - '{job="experian-replication-streaming-producer-s3-as-is-passagem"}'
+        - '{job="experian-reports-batch-ingestion-pf"}'
+        - '{job="experian-reports-batch-ingestion-pj"}'
+        - '{job="experian-reports-micro-batch-ingestion-gold-pj-passagem"}'
+        - '{job="experian-reports-streaming-ingestion-gold-pf-passagem"}'
+        - '{job="experian-reports-streaming-ingestion-gold-pj-passagem"}'
+        - '{job="experian-reports-streaming-ingestion-pf"}'
+        - '{job="experian-reports-streaming-ingestion-pj"}'
+        - '{job="experian-reports-summary-pf"}'
+        - '{job="experian-reports-summary-pj"}'
+    static_configs:
+      - targets:
+        - 'https://prometheus.prod-ds.br.experian.eeca'
+
+scrape_configs:
+  - job_name: 'federate_cluster_dsdev'
+    honor_labels: true
+    scrape_interval: 15s
+    metrics_path: '/federate_dsdev'
+    params:
+      'match[]':
+        - '{job="experian-replication-streaming-producer-s3-as-is"}'
+        - '{job="EMR - CREATE CLUSTER - DEV DS"}'

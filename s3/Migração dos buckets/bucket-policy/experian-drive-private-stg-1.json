@@ -1,0 +1,31 @@
+{
+    "Version": "2012-10-17",
+    "Id": "PolicyForDestinationBucket",
+    "Statement": [
+        {
+            "Sid": "Permissions on objects",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::492208500822:role/BURoleForDigitalDevops"
+            },
+            "Action": [
+                "s3:ReplicateDelete",
+                "s3:ReplicateObject"
+            ],
+            "Resource": "arn:aws:s3:::experian-drive-private-stg-1/*"
+        },
+        {
+            "Sid": "Permissions on bucket",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::492208500822:role/BURoleForDigitalDevops"
+            },
+            "Action": [
+                "s3:List*",
+                "s3:GetBucketVersioning",
+                "s3:PutBucketVersioning"
+            ],
+            "Resource": "arn:aws:s3:::experian-drive-private-stg-1"
+        }
+    ]
+}

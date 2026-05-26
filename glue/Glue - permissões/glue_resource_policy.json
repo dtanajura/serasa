@@ -1,0 +1,68 @@
+{
+  "Version" : "2012-10-17",
+  "Statement" : [ {
+    "Sid" : "AllowGlueGetAccess",
+    "Effect" : "Allow",
+    "Principal" : {
+      "AWS" : [ "arn:aws:iam::331365656181:root", "arn:aws:iam::730335661246:root", "arn:aws:iam::713881783816:root", "arn:aws:iam::093785888205:root" ]
+    },
+    "Action" : [ "glue:GetDatabases", "glue:GetDatabase", "glue:GetTables", "glue:GetTable", "glue:GetTableVersion", "glue:GetTableVersions", "glue:GetPartitions", "glue:GetPartition" ],
+    "Resource" : [ "arn:aws:glue:sa-east-1:146737708860:catalog", "arn:aws:glue:sa-east-1:146737708860:database", "arn:aws:glue:sa-east-1:146737708860:database/reports", "arn:aws:glue:sa-east-1:146737708860:database/replicacao", "arn:aws:glue:sa-east-1:146737708860:table/reports/*", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/*" ]
+  }, {
+    "Sid" : "ECSAccess",
+    "Effect" : "Allow",
+    "Principal" : {
+      "AWS" : [ "arn:aws:iam::278332118946:role/BURoleFor-unity-catalog-dev", "arn:aws:iam::093785888205:role/dataops-databricks-default-role-dev" ]
+    },
+    "Action" : [ "glue:GetDatabase", "glue:GetTables", "glue:GetDatabases", "glue:GetTable", "glue:GetPartitions" ],
+    "Resource" : [ "arn:aws:glue:sa-east-1:146737708860:database", "arn:aws:glue:sa-east-1:146737708860:database/replicacao", "arn:aws:glue:sa-east-1:146737708860:catalog", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_negativos_acoes_pj", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_negativos_acoes_pf", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_negativos_ccf_pj", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_negativos_ccf_pf", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_negativos_facon_pj", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_negativos_pie_pf", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_negativos_protestos_pj", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_negativos_protestos_pf", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_negativos_spc" ]
+  }, {
+    "Sid" : "ManagedByOdinProducerDoNotModifyCentralReadOnly",
+    "Effect" : "Allow",
+    "Principal" : {
+      "AWS" : "arn:aws:iam::980921747889:root"
+    },
+    "Action" : "glue:*",
+    "Resource" : "arn:aws:glue:sa-east-1:146737708860:*"
+  }, {
+    "Sid" : "ECSAccess",
+    "Effect" : "Allow",
+    "Principal" : {
+      "AWS" : [ "arn:aws:iam::278332118946:role/BURoleFor-unity-catalog-dev", "arn:aws:iam::093785888205:role/dataops-databricks-default-role-dev" ]
+    },
+    "Action" : [ "glue:GetDatabase", "glue:GetTables", "glue:GetDatabases", "glue:GetTable", "glue:GetPartitions" ],
+    "Resource" : [ "arn:aws:glue:sa-east-1:146737708860:database/replicacao", "arn:aws:glue:sa-east-1:146737708860:database/reports", "arn:aws:glue:sa-east-1:146737708860:catalog", "arn:aws:glue:sa-east-1:146737708860:database/default", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_emails_pf", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/uc_tabela", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_cadastrais_pf", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_enderecos_pf", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_telefones_pf", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/rs_tvpartconvem", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/rs_tvremessa", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/rs_email", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/rs_msg_digital", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/in_capa_comunica", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/in_comun_tribureau", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/rs_h_msg_digital", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/rs_convemparticip", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/rs_h_email", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_cadastrais_pj", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/rs_tvnatureza", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/uc_localidade", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/uc_tvbanco", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/rs_tvpartconvem", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_cadastrais_pj", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_cadastrais_cnae_pj", "arn:aws:glue:sa-east-1:146737708860:table/reports/depara_hash", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_qsa", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/rs_bloqjudicial", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/rs_bloqueio_docto" ]
+  }, {
+    "Sid" : "DOAccess",
+    "Effect" : "Allow",
+    "Principal" : {
+      "AWS" : "arn:aws:iam::471112967268:role/BURoleForReaderAnalyses"
+    },
+    "Action" : [ "glue:GetDatabase", "glue:GetTables", "glue:GetDatabases", "glue:GetTable" ],
+    "Resource" : [ "arn:aws:glue:sa-east-1:146737708860:database/replicacao", "arn:aws:glue:sa-east-1:146737708860:catalog", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_passagem" ]
+  }, {
+    "Sid" : "DataLab Access",
+    "Effect" : "Allow",
+    "Principal" : {
+      "AWS" : "arn:aws:iam::443370688264:role/BURoleForEMRCustomRole"
+    },
+    "Action" : "glue:Get*",
+    "Resource" : [ "arn:aws:glue:sa-east-1:146737708860:database/replicacao", "arn:aws:glue:sa-east-1:146737708860:catalog", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_negativos_facon_pj", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_cadastrais_pf", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_cadastrais_pj", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_cadastrais_cnae_pj", "arn:aws:glue:sa-east-1:146737708860:table/replicacao/bt_qsa" ]
+  }, {
+    "Sid" : "ManagedByOdinProducerDoNotModifyRAMShareResource",
+    "Effect" : "Allow",
+    "Principal" : {
+      "Service" : "ram.amazonaws.com"
+    },
+    "Action" : "glue:ShareResource",
+    "Resource" : "arn:aws:glue:sa-east-1:146737708860:*"
+  }, {
+    "Sid" : "ManagedByOdinProducerDoNotModifyCentralReadOnly",
+    "Effect" : "Allow",
+    "Principal" : {
+      "AWS" : "arn:aws:iam::816069132622:root"
+    },
+    "Action" : "glue:*",
+    "Resource" : "arn:aws:glue:sa-east-1:146737708860:*"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "BackupPlanId": "42b69383-b29a-48b1-8092-4d0e4fbfb42b",
+  "BackupSelection": {
+      "SelectionName": "backup-selection-corporateprod",
+      "IamRoleArn": "arn:aws:iam::564593125549:role/BURoleForAWSBackup",
+      "Resources": [
+          "arn:aws:ec2:sa-east-1:564593125549:instance/i-09d72d2f1b3e62466",
+          "arn:aws:rds:sa-east-1:564593125549:db:observabilidade-0"
+      ],
+      "ListOfTags": [],
+      "NotResources": [],
+      "Conditions": {
+          "StringEquals": []
+      }
+  }
+}

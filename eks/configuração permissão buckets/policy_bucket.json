@@ -1,0 +1,88 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Statement1",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::530914589075:role/BURoleForLambda",
+          "arn:aws:iam::730335661246:role/BURoleForListasRestritivas",
+          "arn:aws:iam::530914589075:role/BURoleForOdinAccess",
+          "arn:aws:iam::164921038622:role/eec-aws-standard-emr-defaultrole",
+          "arn:aws:iam::730335661246:role/BURoleForContatos",
+          "arn:aws:iam::758276150522:role/BURoleForEMREC2DefaultRole",
+          "arn:aws:iam::530914589075:role/BURoleForListasRestritivas"
+        ]
+      },
+      "Action": [
+        "s3:ListBucket",
+        "s3:Get*"
+      ],
+      "Resource": [
+        "arn:aws:s3:::eec-aws-br-do-positivo-table-dev-bucket",
+        "arn:aws:s3:::eec-aws-br-do-positivo-table-dev-bucket/*"
+      ]
+    },
+    {
+      "Sid": "Datamasque bucket policy",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::484240119361:role/BuRoleForDatamasqueUAT"
+      },
+      "Action": [
+        "s3:ListBucket*",
+        "s3:GetBucketAcl",
+        "s3:GetBucketPolicyStatus",
+        "s3:GetBucketPublicAccessBlock",
+        "s3:GetBucketObjectLockConfiguration",
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:GetEncryptionConfiguration",
+        "s3:DeleteObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::eec-aws-br-do-positivo-table-dev-bucket",
+        "arn:aws:s3:::eec-aws-br-do-positivo-table-dev-bucket/*"
+      ]
+    },
+    {
+      "Sid": "AllowSSLRequestsOnly",
+      "Effect": "Deny",
+      "Principal": "*",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::eec-aws-br-do-positivo-table-dev-bucket",
+        "arn:aws:s3:::eec-aws-br-do-positivo-table-dev-bucket/*"
+      ],
+      "Condition": {
+        "Bool": {
+          "aws:SecureTransport": "false"
+        }
+      }
+    },
+    {
+      "Sid": "AllowListBucketForPositivoMercantil",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::730335661246:role/BURoleForPositivoMercantil"
+      },
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::eec-aws-br-do-positivo-table-dev-bucket",
+      "Condition": {
+        "StringLike": {
+          "s3:prefix": "hive/reloads/positivo.reload_ds_optinout/*"
+        }
+      }
+    },
+    {
+      "Sid": "AllowGetObjectForPositivoMercantil",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::730335661246:role/BURoleForPositivoMercantil"
+      },
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::eec-aws-br-do-positivo-table-dev-bucket/hive/reloads/positivo.reload_ds_optinout/*"
+    }
+  ]
+}

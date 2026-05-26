@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  namespace: monitoring-system
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  nodeName: ip-10-99-151-179.sa-east-1.compute.internal
+  nodeSelector:
+    Worker: infra

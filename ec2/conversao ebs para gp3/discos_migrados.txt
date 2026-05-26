@@ -1,0 +1,123 @@
+python3 migrar_gp2_para_gp3.py --profile sremanagementdev --wait --no-preserve-perf --snapshot-before
+Usando profile='sremanagementdev', região='sa-east-1'.
+Nenhum volume GP2 encontrado.
+
+python3 migrar_gp2_para_gp3.py --profile negativodev --wait --no-preserve-perf --snapshot-before
+Usando profile='negativodev', região='us-east-1'.
+Nenhum volume GP2 encontrado.
+
+python3 migrar_gp2_para_gp3.py --profile dataofficedev --wait --no-preserve-perf    
+Usando profile='dataofficedev', região='sa-east-1'.
+
+Volumes GP2 encontrados:
+
+VolumeId             Tamanho(GiB) AZ             Estado     Anexado a            Cript. 
+----------------------------------------------------------------------------------------
+vol-07f9d68508008a6cb           15 sa-east-1c     in-use     i-0999d53b5bd1b661d  True   
+vol-0722bd864e1011425           50 sa-east-1b     in-use     i-0c07db8082840638f  True   
+vol-0be47656290b3eb91           15 sa-east-1c     in-use     i-026055cf289348a9a  True   
+vol-03f5926b4114172b4           32 sa-east-1b     in-use     i-0dff08f6ac2b3b7d8  True   
+vol-097bdb702b6648341            8 sa-east-1b     in-use     i-0317cf86edd96b549  True   
+vol-01d0b89193e2f7de9           15 sa-east-1c     in-use     i-0472ab75e2e44e001  True   
+vol-06edc7072a8588184           15 sa-east-1c     in-use     i-0c23799aed55c7148  True   
+vol-02ee905affda7ca70           32 sa-east-1b     in-use     i-0ff9d0bd20b50c1dc  True   
+vol-09231d4b670793c50           32 sa-east-1c     in-use     i-0999d53b5bd1b661d  True   
+vol-0da3d7fadb48472ad            8 sa-east-1a     available  -                    True   
+vol-0a777b8b398e77ef8           15 sa-east-1b     in-use     i-0dff08f6ac2b3b7d8  True   
+vol-065db50094b013267           10 sa-east-1a     in-use     i-09f7e6e974157e6d0  True   
+vol-04f5dfbd779e859e9           32 sa-east-1c     in-use     i-0c23799aed55c7148  True   
+vol-0e9184c3b1f72df56           15 sa-east-1b     in-use     i-0ff9d0bd20b50c1dc  True   
+vol-0ad218af1d481c121           10 sa-east-1a     in-use     i-0b5b80d67ce6751dc  True   
+vol-09af73cd50d2c3ae3            2 sa-east-1c     available  -                    True   
+vol-0c576b557bfdb3811          100 sa-east-1c     available  -                    True   
+
+python3 migrar_gp2_para_gp3.py --profile datahubdev --wait --no-preserve-perf       
+Usando profile='datahubdev', região='sa-east-1'.
+
+Volumes GP2 encontrados:
+
+VolumeId             Tamanho(GiB) AZ             Estado     Anexado a            Cript. 
+----------------------------------------------------------------------------------------
+vol-00ad3d64ee283f201           64 sa-east-1c     in-use     i-05942c7f155766b63  True   
+vol-0e7e039064a6bfa8f           32 sa-east-1c     in-use     i-020230ececea874a6  True   
+vol-098d0ee6a90af719b           32 sa-east-1c     in-use     i-020230ececea874a6  True   
+vol-0f282334d6c2f0958           32 sa-east-1c     in-use     i-0854dff5c3fae6fef  True   
+vol-05588c1fc3d6c8898           32 sa-east-1a     in-use     i-0ead43b98d18a0f0b  True   
+vol-01088174dcd2bf115           32 sa-east-1a     in-use     i-0fab687b69bb201e5  True   
+vol-0dc61d9a2728a948f           32 sa-east-1c     in-use     i-0450888b2442da492  True   
+vol-00af7d56320997209           32 sa-east-1c     in-use     i-0854dff5c3fae6fef  True   
+vol-0ea237b7afa59fbf9           32 sa-east-1a     in-use     i-0c58c49ed1691a6a4  True   
+vol-028d0934757ecae9b           50 sa-east-1a     in-use     i-0efb00b6d198d0351  True   
+vol-06c92c5ea87fbd7b3           32 sa-east-1c     in-use     i-06bff70954111a2a1  True   
+vol-0f35d7b0dba172b32           32 sa-east-1c     in-use     i-00865a24653e6392b  True   
+vol-0e16c8d07330dea15           32 sa-east-1c     in-use     i-0338e1cc2c12c6406  True   
+vol-05e97b37e74af797c           32 sa-east-1c     in-use     i-07cfe623b6c6bead9  True   
+vol-087367464e611a462           32 sa-east-1a     in-use     i-06a749e296b3f7146  True   
+vol-07f56acdf89b08057           32 sa-east-1c     in-use     i-00865a24653e6392b  True   
+vol-05cfba76a894af1f3           32 sa-east-1a     in-use     i-05c707d77e76d4560  True   
+vol-0dc724cc81da78371           32 sa-east-1b     in-use     i-05b67619fba34985c  True   
+vol-0f35e4f64e47b5f98           32 sa-east-1a     in-use     i-065458fc305621ca7  True   
+vol-0c93ee222fe245907           32 sa-east-1b     in-use     i-05b67619fba34985c  True   
+vol-03253e0674aa1b9ac           64 sa-east-1c     in-use     i-05942c7f155766b63  True   
+vol-08de9b81828beb192           50 sa-east-1c     in-use     i-02e2e6c95283dabde  True   
+vol-074355cebbba25ad4           32 sa-east-1a     in-use     i-05c707d77e76d4560  True   
+vol-08a1512b4fd33dbcd           32 sa-east-1c     in-use     i-0b05031b09cfccd2d  True   
+vol-068f554c053ea345f           32 sa-east-1a     in-use     i-065458fc305621ca7  True   
+vol-08a2e09ed5f01b682           32 sa-east-1a     in-use     i-0ead43b98d18a0f0b  True   
+vol-0d1fdd4036cab71cb           64 sa-east-1c     in-use     i-05942c7f155766b63  True   
+vol-0032e5723585146c3           32 sa-east-1b     in-use     i-097aabcb31c1ec409  True   
+vol-06cef532236d54ee6           32 sa-east-1b     in-use     i-0317f555d8166c492  True   
+vol-013b642ff202fc818           32 sa-east-1b     in-use     i-097aabcb31c1ec409  True   
+vol-00b01f5f6afcbe95b           32 sa-east-1c     in-use     i-07cfe623b6c6bead9  True   
+vol-0d4101c187015faf4           32 sa-east-1a     in-use     i-0c58c49ed1691a6a4  True   
+vol-0b885f6fa48cd9e32           32 sa-east-1c     in-use     i-0450888b2442da492  True   
+vol-04d550c63469e2eb1           64 sa-east-1c     in-use     i-05942c7f155766b63  True   
+vol-0d5116458590cbcaf           32 sa-east-1c     in-use     i-0b05031b09cfccd2d  True   
+vol-0498504be68dd5aed           32 sa-east-1a     in-use     i-0fab687b69bb201e5  True   
+vol-01e8cd31c37414d93           32 sa-east-1c     in-use     i-0338e1cc2c12c6406  True   
+vol-0d6d4216a21daa62e           50 sa-east-1a     in-use     i-07e0066b1004b4562  True   
+vol-0a2158ad1bb962e17           50 sa-east-1a     in-use     i-02639070622cf558b  True   
+vol-0b6f1f738ec6fee02           32 sa-east-1a     in-use     i-06a749e296b3f7146  True   
+vol-0db3b9f104aa17204           32 sa-east-1a     in-use     i-0b977cb46399c2788  True   
+vol-03d914e0af0b23172           32 sa-east-1a     in-use     i-0b977cb46399c2788  True   
+vol-09d6bca40f8d0fd32           32 sa-east-1a     in-use     i-0b255109f7293b034  True   
+vol-01d5211a7c05f6869           32 sa-east-1b     in-use     i-0317f555d8166c492  True   
+vol-0d437cbaf11556677           32 sa-east-1c     in-use     i-06bff70954111a2a1  True   
+vol-0876c43a5187f6a95           32 sa-east-1a     in-use     i-05c707d77e76d4560  True   
+vol-0d760e37b026f0c37           32 sa-east-1a     in-use     i-05c707d77e76d4560  True   
+vol-000d0a5cc7c4b5e15           32 sa-east-1a     in-use     i-0c58c49ed1691a6a4  True   
+vol-0ae88ba3a11d4eed6           32 sa-east-1a     in-use     i-0b977cb46399c2788  True   
+vol-08ea014848c9064a9           32 sa-east-1a     in-use     i-0b255109f7293b034  True   
+vol-054b01062fdbf4a62           32 sa-east-1a     in-use     i-0b977cb46399c2788  True   
+vol-0c333c8cb774329fa           32 sa-east-1a     in-use     i-0c58c49ed1691a6a4  True   
+
+python3 migrar_gp2_para_gp3.py --profile sremanagementdev --wait --no-preserve-perf
+Usando profile='sremanagementdev', região='sa-east-1'.
+Nenhum volume GP2 encontrado.
+
+python3 migrar_gp2_para_gp3.py --profile nikedataservicedev --wait --no-preserve-perf
+Usando profile='nikedataservicedev', região='sa-east-1'.
+
+Volumes GP2 encontrados:
+
+VolumeId             Tamanho(GiB) AZ             Estado     Anexado a            Cript. 
+----------------------------------------------------------------------------------------
+vol-0b6a8ba650583edc4           50 sa-east-1a     in-use     i-09115a028e420790e  True   
+
+python3 migrar_gp2_para_gp3.py --profile ssrmdev --wait --no-preserve-perf
+Usando profile='ssrmdev', região='sa-east-1'.
+
+Volumes GP2 encontrados:
+
+VolumeId             Tamanho(GiB) AZ             Estado     Anexado a            Cript. 
+----------------------------------------------------------------------------------------
+vol-00603a92078c93f55           50 sa-east-1a     in-use     i-09d370bc298763ca4  True   
+
+python3 migrar_gp2_para_gp3.py --profile negativodev --wait --no-preserve-perf
+Usando profile='negativodev', região='us-east-1'.
+Nenhum volume GP2 encontrado.
+
+💰 Total consolidado (estimativa)
+
+Mensal: ~$86,41/mês
+Anual: ~$1.036,92/ano

@@ -1,0 +1,10 @@
+{
+    "applicationConfiguration":[
+       {
+          "classification":"hive-site",
+          "properties":{
+             "spark.hadoop.hive.metastore.glue.catalogid":"lake"
+          }
+       }
+    ]
+ }

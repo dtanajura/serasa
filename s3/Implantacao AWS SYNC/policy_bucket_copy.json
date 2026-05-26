@@ -1,0 +1,23 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DataSyncCreateS3LocationAndTaskAccess",
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "arn:aws:iam::713881783816:role/BURoleForDataSyncService"
+        },
+        "Action": [
+          "s3:Get*",
+          "s3:List*",
+          "s3:DeleteObject",
+          "s3:Put*"
+        ],
+        "Resource": [
+          "arn:aws:s3:::teste-aws-sync-3",
+          "arn:aws:s3:::teste-aws-sync-3/*"
+        ]
+      }
+    ]
+  }
+  

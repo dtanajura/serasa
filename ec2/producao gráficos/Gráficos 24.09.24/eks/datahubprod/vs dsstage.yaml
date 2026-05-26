@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: prometheus-virtual-service
+  namespace: monitoring-system
+spec:
+  gateways:
+  - prometheus-gateway
+  hosts:
+  - "prometheus.datahub-prod.br.experian.eeca"
+  http:
+  - route:
+    - destination:
+        host: kube-prometheus-stack-prometheus
+        port:
+          number: 9090

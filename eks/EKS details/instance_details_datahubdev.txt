@@ -1,0 +1,226 @@
+Nome da conta eec-aws-br-eits-datahub-dev
+EKS clusters for account: eec-aws-br-eits-datahub-dev
+eks_clusters: account_id=730335661246, cluster_id=datahub-dev, cluster_name=datahub-dev, kubernetes_version=1.30
+Details eks_nodegroups: nodegroup_id=EKS-datahub-dev-NG-infra-20240626184642173200000001, autoscaling_group_name=eks-EKS-datahub-dev-NG-infra-20240626184642173200000001-c4c82aef-8bb1-abe7-81b9-23d9e38e3f8b, launch_template_id=lt-0ae4700123e7f6390, launch_template_version=10
+Details eks_nodes: instance_id=i-03cbbbc7ec9a0d979
+Instance Details:
+  Instance Type: c6i.2xlarge
+  Private IP Address: 10.121.13.32
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-08b1d89ea81600a84
+  OS: Amazon Linux 2
+  Tags:
+    Worker: infra
+    kubernetes.io/cluster/datahub-dev: owned
+    Environment: dev
+    ManagedBy: Terraform
+    ResourceCostCenter: 1800.BR.134.602018
+    eks:nodegroup-name: EKS-datahub-dev-NG-infra-20240626184642173200000001
+    aws:ec2launchtemplate:version: 7
+    CostString: 1800.BR.100.502500
+    ResourceBusinessUnit: EITS
+    aws:ec2:fleet-id: fleet-2f061f0d-fa94-c114-0e30-ac005025670b
+    ResourceName: eks_datahub_dev
+    ResourceOwner: nikesre@br.experian.com
+    adDomain: br.experian.local
+    Application: EKS
+    aws:eks:cluster-name: datahub-dev
+    map-migrated: d-server-01riktnbfe0092
+    k8s.io/cluster-autoscaler/datahub-dev: owned
+    aws:autoscaling:groupName: eks-EKS-datahub-dev-NG-infra-20240626184642173200000001-c4c82aef-8bb1-abe7-81b9-23d9e38e3f8b
+    Name: EKS-datahub-dev-NG-infra
+    PCI: false
+    ResourceAppRole: app
+    ClusterName: datahub-dev
+    k8s.io/cluster-autoscaler/enabled: true
+    aws:ec2launchtemplate:id: lt-0c22d8460e08117a7
+    Project: datahub-consentimento
+    eks:cluster-name: datahub-dev
+    Instance-Scheduler: opt-out
+    AppID: 23008
+Details eks_nodegroups: nodegroup_id=EKS-datahub-dev-NG-large-2024062523245244970000003c, autoscaling_group_name=eks-EKS-datahub-dev-NG-large-2024062523245244970000003c-18c828db-b3d0-361f-5c01-6324fad87f81, launch_template_id=lt-024079076b2d35d23, launch_template_version=7
+Details eks_nodes: instance_id=i-01ac676879bea9f91
+Instance Details:
+  Instance Type: t3.large
+  Private IP Address: 10.121.13.176
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0c19448185d2641de
+  OS: Amazon Linux 2
+  Tags:
+    AppID: 23008
+    map-migrated: d-server-01riktnbfe0092
+    ClusterName: datahub-dev
+    ResourceAppRole: app
+    k8s.io/cluster-autoscaler/datahub-dev: owned
+    aws:ec2launchtemplate:id: lt-03964e04a93a3d388
+    ResourceBusinessUnit: EITS
+    ResourceOwner: nikesre@br.experian.com
+    ResourceName: eks_datahub_dev
+    kubernetes.io/cluster/datahub-dev: owned
+    Name: EKS-datahub-dev-NG-large
+    adDomain: br.experian.local
+    Application: EKS
+    aws:ec2launchtemplate:version: 6
+    aws:autoscaling:groupName: eks-EKS-datahub-dev-NG-large-2024062523245244970000003c-18c828db-b3d0-361f-5c01-6324fad87f81
+    eks:nodegroup-name: EKS-datahub-dev-NG-large-2024062523245244970000003c
+    Environment: dev
+    CostString: 1800.BR.100.502500
+    ManagedBy: Terraform
+    ResourceCostCenter: 1800.BR.134.602018
+    Project: datahub-consentimento
+    aws:ec2:fleet-id: fleet-2fae9d27-fa34-4996-2418-0480f8edba1e
+    PCI: false
+    eks:cluster-name: datahub-dev
+    k8s.io/cluster-autoscaler/enabled: true
+    Instance-Scheduler: opt-out
+    aws:eks:cluster-name: datahub-dev
+Details eks_nodes: instance_id=i-0376eaf98a40c5ecd
+Instance Details:
+  Instance Type: t3.large
+  Private IP Address: 10.121.13.124
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-06771ffb9c4a8e738
+  OS: Amazon Linux 2
+  Tags:
+    kubernetes.io/cluster/datahub-dev: owned
+    ResourceBusinessUnit: EITS
+    Name: EKS-datahub-dev-NG-large
+    eks:cluster-name: datahub-dev
+    aws:autoscaling:groupName: eks-EKS-datahub-dev-NG-large-2024062523245244970000003c-18c828db-b3d0-361f-5c01-6324fad87f81
+    aws:ec2:fleet-id: fleet-a53d162d-a20d-4694-a6ba-870a5e425ac8
+    Application: EKS
+    CostString: 1800.BR.100.502500
+    eks:nodegroup-name: EKS-datahub-dev-NG-large-2024062523245244970000003c
+    k8s.io/cluster-autoscaler/enabled: true
+    aws:ec2launchtemplate:id: lt-03964e04a93a3d388
+    PCI: false
+    ManagedBy: Terraform
+    ResourceCostCenter: 1800.BR.134.602018
+    k8s.io/cluster-autoscaler/datahub-dev: owned
+    aws:eks:cluster-name: datahub-dev
+    map-migrated: d-server-01riktnbfe0092
+    Project: datahub-consentimento
+    ResourceName: eks_datahub_dev
+    ResourceOwner: nikesre@br.experian.com
+    adDomain: br.experian.local
+    AppID: 23008
+    Instance-Scheduler: opt-out
+    aws:ec2launchtemplate:version: 6
+    ClusterName: datahub-dev
+    ResourceAppRole: app
+    Environment: dev
+Details eks_nodes: instance_id=i-0c588f0cc12b34af0
+Instance Details:
+  Instance Type: t3.large
+  Private IP Address: 10.121.13.35
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0f28dd1841424ddf2
+  OS: Amazon Linux 2
+  Tags:
+    Application: EKS
+    kubernetes.io/cluster/datahub-dev: owned
+    aws:autoscaling:groupName: eks-EKS-datahub-dev-NG-large-2024062523245244970000003c-18c828db-b3d0-361f-5c01-6324fad87f81
+    aws:ec2launchtemplate:version: 6
+    aws:ec2:fleet-id: fleet-af8e378d-f296-e994-a4b8-2e222d5505d0
+    Name: EKS-datahub-dev-NG-large
+    k8s.io/cluster-autoscaler/enabled: true
+    adDomain: br.experian.local
+    ResourceName: eks_datahub_dev
+    aws:ec2launchtemplate:id: lt-03964e04a93a3d388
+    CostString: 1800.BR.100.502500
+    ManagedBy: Terraform
+    ResourceBusinessUnit: EITS
+    ResourceCostCenter: 1800.BR.134.602018
+    PCI: false
+    k8s.io/cluster-autoscaler/datahub-dev: owned
+    eks:nodegroup-name: EKS-datahub-dev-NG-large-2024062523245244970000003c
+    aws:eks:cluster-name: datahub-dev
+    map-migrated: d-server-01riktnbfe0092
+    AppID: 23008
+    Instance-Scheduler: opt-out
+    ResourceOwner: nikesre@br.experian.com
+    ResourceAppRole: app
+    eks:cluster-name: datahub-dev
+    Project: datahub-consentimento
+    Environment: dev
+    ClusterName: datahub-dev
+Details eks_nodegroups: nodegroup_id=EKS-datahub-dev-NG-medium-2024062523245245430000003e, autoscaling_group_name=eks-EKS-datahub-dev-NG-medium-2024062523245245430000003e-42c828db-b3d3-752c-6fc3-8e04f38b8c2f, launch_template_id=lt-09abc570af0eead3a, launch_template_version=6
+Details eks_nodes: instance_id=i-0148d4330b6817da9
+Instance Details:
+  Instance Type: t3.large
+  Private IP Address: 10.121.13.140
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-06f40c80990e8fd08
+  OS: Amazon Linux 2
+  Tags:
+    aws:eks:cluster-name: datahub-dev
+    map-migrated: d-server-01riktnbfe0092
+    Project: datahub-consentimento
+    PCI: false
+    k8s.io/cluster-autoscaler/datahub-dev: owned
+    aws:ec2launchtemplate:version: 5
+    Name: EKS-datahub-dev-NG-medium
+    ResourceName: eks_datahub_dev
+    adDomain: br.experian.local
+    ResourceOwner: nikesre@br.experian.com
+    Application: EKS
+    kubernetes.io/cluster/datahub-dev: owned
+    CostString: 1800.BR.100.502500
+    ManagedBy: Terraform
+    ResourceBusinessUnit: EITS
+    eks:nodegroup-name: EKS-datahub-dev-NG-medium-2024062523245245430000003e
+    ResourceCostCenter: 1800.BR.134.602018
+    Environment: dev
+    ResourceAppRole: app
+    ClusterName: datahub-dev
+    eks:cluster-name: datahub-dev
+    k8s.io/cluster-autoscaler/enabled: true
+    aws:autoscaling:groupName: eks-EKS-datahub-dev-NG-medium-2024062523245245430000003e-42c828db-b3d3-752c-6fc3-8e04f38b8c2f
+    AppID: 23008
+    aws:ec2launchtemplate:id: lt-096f2f8dff408139a
+    Instance-Scheduler: opt-out
+    aws:ec2:fleet-id: fleet-b19da836-bd2f-c605-a49a-a388bd5e1798
+Details eks_nodegroups: nodegroup_id=EKS-datahub-dev-NG-small-20240625232452457500000040, autoscaling_group_name=eks-EKS-datahub-dev-NG-small-20240625232452457500000040-66c828db-b3d3-744a-8f7a-ab065b607d7e, launch_template_id=lt-0085219ae2fff49c9, launch_template_version=7
+Details eks_nodes: instance_id=i-02fb958c7fda48479
+Instance Details:
+  Instance Type: t3.large
+  Private IP Address: 10.121.13.180
+  State: running
+  Architecture: x86_64
+  Volume ID: vol-0dabb1fd41534c2e9
+  OS: Amazon Linux 2
+  Tags:
+    aws:ec2:fleet-id: fleet-8fae3f0d-f836-e13e-ac18-ae2a792a4e16
+    CostString: 1800.BR.100.502500
+    aws:ec2launchtemplate:version: 6
+    Application: EKS
+    aws:ec2launchtemplate:id: lt-0dd83af8c6ff8009e
+    eks:cluster-name: datahub-dev
+    ResourceOwner: nikesre@br.experian.com
+    Name: EKS-datahub-dev-NG-small
+    Project: datahub-consentimento
+    Environment: dev
+    kubernetes.io/cluster/datahub-dev: owned
+    ClusterName: datahub-dev
+    ResourceAppRole: app
+    aws:eks:cluster-name: datahub-dev
+    Instance-Scheduler: opt-out
+    map-migrated: d-server-01riktnbfe0092
+    adDomain: br.experian.local
+    AppID: 23008
+    eks:nodegroup-name: EKS-datahub-dev-NG-small-20240625232452457500000040
+    ResourceName: eks_datahub_dev
+    ResourceBusinessUnit: EITS
+    k8s.io/cluster-autoscaler/datahub-dev: owned
+    aws:autoscaling:groupName: eks-EKS-datahub-dev-NG-small-20240625232452457500000040-66c828db-b3d3-744a-8f7a-ab065b607d7e
+    k8s.io/cluster-autoscaler/enabled: true
+    ManagedBy: Terraform
+    PCI: false
+    ResourceCostCenter: 1800.BR.134.602018
+Details eks_nodegroups: nodegroup_id=EKS-datahub-dev-NG-spot-2024062523245244660000003a, autoscaling_group_name=eks-EKS-datahub-dev-NG-spot-2024062523245244660000003a-d2c828db-b3d3-3eb7-f6ab-ca5bbf392223, launch_template_id=lt-05c7ad57033dd0870, launch_template_version=4
+No instances

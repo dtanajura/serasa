@@ -1,0 +1,35 @@
+Liberar o acesso  da tabela replicacao.sc_empresas_doctos do nike para a conta de dev do databricks
+
+Conta de origem: eec-aws-br-ds-dataservices-stage (146737708860)
+
+Arn de destino: arn:aws:iam::278332118946:role/BURoleFor-unity-catalog-dev
+
+Já existe um conjunto de configurações na policy do glue para ecs: ECSAccess
+
+
+Buscar tabela do Glue sc_empresas_doctos
+Usar como exemplo tabela bt_cadastrais_cnae_pj - s3://experian-datahub-silver-uat/warehouse/replicacao/bt_cadastrais_cnae_pj
+
+Número da conta de ECS - arn:aws:iam::278332118946:role/BURoleFor-unity-catalog-dev
+
+Glue da conta de origem
+Banco: replicacao
+Tabela: sc_empresas_doctos
+Bucket: s3://experian-datahub-bronze-uat/warehouse/replicacao/sc_empresas_doctos
+
+Permissões na tabela de exemplo
+
+
+
+aws glue put-resource-policy \
+  --policy-in-json file://gluedatacatalog_policy.json \
+  --enable-hybrid TRUE \
+  --region sa-east-1 \
+  --profile dataservicesstage
+
+▪ Nome da aplicação - experian-reports-lambda-schedule-process
+▪ Gearr da aplicação - 25961
+▪ Execução do pipeline (Execution ID) - 653106
+▪ Data e horário da execução - 2026-01-16 16:32:35 (GMT-03)
+▪ Jenkins agent / host onde a esteira rodou - EC2 (prod) – devsecops_piaas_agent_amz_lnx
+▪ Instance ID: i-0cf907b98fd29f868

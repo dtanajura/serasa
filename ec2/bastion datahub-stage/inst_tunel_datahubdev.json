@@ -1,0 +1,193 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-03f025ac89b9251f3",
+                    "InstanceId": "i-0ac719ef3306c1cab",
+                    "InstanceType": "t3.small",
+                    "KeyName": "sre-support",
+                    "LaunchTime": "2026-02-05T11:00:48+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "sa-east-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-121-13-20.sa-east-1.compute.internal",
+                    "PrivateIpAddress": "10.121.13.20",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-09457eb844099e03a",
+                    "VpcId": "vpc-0e87239604bd7ce1d",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2024-08-05T15:14:09+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0f53f74bb8308ecb9"
+                            }
+                        }
+                    ],
+                    "ClientToken": "6b003802-51ed-43ca-a737-74141c275a00",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::730335661246:instance-profile/BURoleForEC2",
+                        "Id": "AIPA2UC3FZS7GZDBC2UBY"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2024-08-05T15:14:08+00:00",
+                                "AttachmentId": "eni-attach-09681c67e8e54d9bc",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "ec2",
+                                    "GroupId": "sg-0081b7edb68f16fe5"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:b0:32:76:45:d5",
+                            "NetworkInterfaceId": "eni-0abc244589f2683c5",
+                            "OwnerId": "730335661246",
+                            "PrivateDnsName": "ip-10-121-13-20.sa-east-1.compute.internal",
+                            "PrivateIpAddress": "10.121.13.20",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-121-13-20.sa-east-1.compute.internal",
+                                    "PrivateIpAddress": "10.121.13.20"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-09457eb844099e03a",
+                            "VpcId": "vpc-0e87239604bd7ce1d",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "ec2",
+                            "GroupId": "sg-0081b7edb68f16fe5"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "AppID",
+                            "Value": "23008"
+                        },
+                        {
+                            "Key": "Squad",
+                            "Value": "datahub"
+                        },
+                        {
+                            "Key": "CostString",
+                            "Value": "1800.BR.134.602018"
+                        },
+                        {
+                            "Key": "Instance-Scheduler-Status",
+                            "Value": "Instance started on 2026/02/05 at 11:00 UTC"
+                        },
+                        {
+                            "Key": "Asset_Category",
+                            "Value": "Development"
+                        },
+                        {
+                            "Key": "BU",
+                            "Value": "EITS"
+                        },
+                        {
+                            "Key": "Project",
+                            "Value": "datahub"
+                        },
+                        {
+                            "Key": "Environment",
+                            "Value": "dev"
+                        },
+                        {
+                            "Key": "Data_Category",
+                            "Value": "N/A"
+                        },
+                        {
+                            "Key": "Data_Type",
+                            "Value": "N/A"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "tunel-datahubdev"
+                        },
+                        {
+                            "Key": "BusinessServices",
+                            "Value": "datahub"
+                        },
+                        {
+                            "Key": "Instance-Scheduler",
+                            "Value": "br-saopaulo-office-hours"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "required",
+                        "HttpPutResponseHopLimit": 2,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "BootMode": "uefi-preferred",
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2024-08-05T15:14:08+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    },
+                    "CurrentInstanceBootMode": "uefi"
+                }
+            ],
+            "OwnerId": "730335661246",
+            "ReservationId": "r-0683fbe3af9b56ca5"
+        }
+    ]
+}

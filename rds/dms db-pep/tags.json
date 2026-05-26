@@ -1,0 +1,67 @@
+[
+    {
+        "ResourceType": "security-group",
+        "Tags": [
+            {
+                "Key": "Asset_Category",
+                "Value": "Production"
+            },
+            {
+                "Key": "AppID",
+                "Value": "25250"
+            },
+            {
+                "Key": "CostString",
+                "Value": "1800.BR.134.602018"
+            },
+            {
+                "Key": "CreateBy",
+                "Value": "Terraform"
+            },
+            {
+                "Key": "Data_Category",
+                "Value": "N/A"
+            },
+            {
+                "Key": "Data_Type",
+                "Value": "N/A"
+            },
+            {
+                "Key": "Environment",
+                "Value": "prod"
+            },
+            {
+                "Key": "map-migrated",
+                "Value": "d-server-02n52mmgua5hr6"
+            },
+            {
+                "Key": "Squad",
+                "Value": "cadastral"
+            },
+            {
+                "Key": "Project",
+                "Value": "datahub"
+            },
+            {
+                "Key": "Solution",
+                "Value": "pep"
+            },
+            {
+                "Key": "Flow",
+                "Value": "controlador"
+            },
+            {
+                "Key": "Sustain",
+                "Value": "false"
+            },
+            {
+                "Key": "Name",
+                "Value": "replication-subnet-group-db-pep"
+            },
+            {
+                "Key": "wiz_cig",
+                "Value": "true"
+            }
+        ]
+    }
+]

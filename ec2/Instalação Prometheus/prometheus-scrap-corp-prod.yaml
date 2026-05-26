@@ -1,0 +1,11 @@
+scrape_configs:
+  - job_name: 'federate_cluster_dsprod'
+    honor_labels: true
+    scrape_interval: 15s
+    metrics_path: '/federate_dsprod'
+    params:
+      'match[]':
+        - '{job="experian-replication-maintenance-negativos-gold"}'
+    static_configs:
+      - targets:
+        - '10.99.27.210:9090'

@@ -1,0 +1,8 @@
+{
+    "S3Config": {
+      "BucketAccessRoleArn": "arn:aws:iam::713881783816:role/BURoleForDataSyncService"
+    },
+    "Subdirectory": "/",
+    "S3BucketArn": "arn:aws:s3:::teste-aws-sync"
+  }
+  

@@ -1,0 +1,24 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "ec2.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
+          "Federated": "arn:aws:iam::564593125549:oidc-provider/oidc.eks.sa-east-1.amazonaws.com/id/AF67F2E13B5143963F12C5C2F09F0C1F"
+      },
+      "Action": "sts:AssumeRoleWithWebIdentity",
+      "Condition": {
+          "StringEquals": {
+              "oidc.eks.sa-east-1.amazonaws.com/id/AF67F2E13B5143963F12C5C2F09F0C1F:sub": "system:serviceaccount:monitoring-system:kube-prometheus-stack-grafana"
+          }
+      }
+  }
+]
+}

@@ -1,0 +1,43 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "glue:GetDatabase",
+                "glue:GetDatabases",
+                "glue:GetTable",
+                "glue:GetTables",
+                "glue:GetTableVersion",
+                "glue:GetTableVersions",
+                "glue:GetPartition",
+                "glue:GetPartitions"
+            ],
+            "Resource": [
+                "arn:aws:glue:sa-east-1:146737708860:catalog",
+                "arn:aws:glue:sa-east-1:146737708860:database/reports",
+                "arn:aws:glue:sa-east-1:146737708860:table/reports/depara_hash"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:PutObject",
+                "s3:DeleteObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::experian-datahub-gold-reports-uat",
+                "arn:aws:s3:::experian-datahub-gold-reports-uat/warehouse/reports/depara_hash/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "lakeformation:GetDataAccess"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

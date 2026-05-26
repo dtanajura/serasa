@@ -1,0 +1,87 @@
+{
+    "Version": "2012-10-17",
+    "Id": "SSLBucketAcessPolicy",
+    "Statement": [
+        {
+            "Sid": "itselfaccount",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::221992887590:role/BURoleForEMRDefaultRole",
+                    "arn:aws:iam::221992887590:role/BURoleForEMREC2DefaultRole",
+                    "arn:aws:iam::221992887590:role/BURoleForEMREC2Role"
+                ]
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::serasaexperian-coe-data-platform-prod-landing/*"
+        },
+        {
+            "Sid": "nikedataservice",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::225989352496:role/BURoleForDataSyncService"
+            },
+            "Action": [
+                "s3:GetBucketLocation",
+                "s3:ListBucket",
+                "s3:ListBucketMultipartUploads",
+                "s3:AbortMultipartUpload",
+                "s3:DeleteObject",
+                "s3:GetObject",
+                "s3:ListMultipartUploadParts",
+                "s3:PutObject",
+                "s3:GetObjectTagging",
+                "s3:PutObjectTagging"
+            ],
+            "Resource": [
+                "arn:aws:s3:::serasaexperian-coe-data-platform-prod-landing",
+                "arn:aws:s3:::serasaexperian-coe-data-platform-prod-landing/*"
+            ]
+        },
+        {
+            "Sid": "DenyWithoutSSL",
+            "Effect": "Deny",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::serasaexperian-coe-data-platform-prod-landing/*",
+            "Condition": {
+                "Bool": {
+                    "aws:SecureTransport": "false"
+                }
+            }
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::221992887590:root"
+            },
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::serasaexperian-coe-data-platform-prod-landing/*"
+        },
+        {
+            "Sid": "itselfaccountList",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::221992887590:role/BURoleForEMRDefaultRole",
+                    "arn:aws:iam::221992887590:role/BURoleForEMREC2DefaultRole",
+                    "arn:aws:iam::221992887590:role/BURoleForEMREC2Role"
+                ]
+            },
+            "Action": "s3:ListBucket",
+            "Resource": "arn:aws:s3:::serasaexperian-coe-data-platform-prod-landing"
+        },
+        {
+            "Sid": "nikedataserviceList",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::225989352496:role/BURoleForDataSyncService"
+            },
+            "Action": "s3:ListBucket",
+            "Resource": "arn:aws:s3:::serasaexperian-coe-data-platform-prod-landing"
+        }
+    ]
+}
+ 

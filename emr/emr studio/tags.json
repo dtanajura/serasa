@@ -1,0 +1,31 @@
+[
+    {
+        "ResourceType": "security-group",
+        "Tags": [
+            {
+                "Key": "Asset_Category",
+                "Value": "Develpment"
+            },
+            {
+                "Key": "AppID",
+                "Value": "23008"
+            },
+            {
+                "Key": "CostString",
+                "Value": "1800.BR.134.602018"
+            },
+            {
+                "Key": "Data_Category",
+                "Value": "N/A"
+            },
+            {
+                "Key": "Data_Type",
+                "Value": "N/A"
+            },
+            {
+                "Key": "Environment",
+                "Value": "dev"
+            }
+        ]
+    }
+]

@@ -1,0 +1,75 @@
+Conta: sredev
+************************************
+Conta: dsstage
+Cluster ID: j-3K9775SP03UL3
+Bootstrap Actions for Cluster experian-replication-streaming-producer-passagem
+Name: SRE-Observability/Monitoring
+
+Cluster ID: j-16P4XBEPPDL3D
+Bootstrap Actions for Cluster experian-replication-streaming-producer-s3-as-is
+Name: SRE-Observability/Monitoring
+
+Cluster ID: j-L9ELW93LOUJA
+Bootstrap Actions for Cluster experian-replication-producer_silver_streaming_passagem
+Name: SRE-Observability/Monitoring
+
+Cluster ID: j-MR6L280H9CBQ
+Bootstrap Actions for Cluster experian-replication-streaming-producer
+Name: SRE-Observability/Monitoring
+
+
+
+************************************
+Conta: dsprod
+Cluster ID: j-JZDS5FGD1GN4
+Bootstrap Actions for Cluster experian-reports-streaming-ingestion-pf
+Name: SRE-Observability/Monitoring
+
+Cluster ID: j-3CCTYKDZCJRO0
+Bootstrap Actions for Cluster experian-reports-streaming-ingestion-pj
+Name: SRE-Observability/Monitoring
+
+Cluster ID: j-2P7D4R80VAI7Q
+Bootstrap Actions for Cluster experian-replication-integration_silver_streaming
+Name: SRE-Observability/Monitoring
+
+Cluster ID: j-11BRQYHX8WG0V
+Bootstrap Actions for Cluster experian-replication-negativos-orquestrator
+Name: SRE-Observability/Monitoring
+
+Cluster ID: j-13CCQDK3YWB0R
+Bootstrap Actions for Cluster experian-replication-streaming-producer-s3-as-is
+Name: SRE-Observability/Monitoring
+
+Cluster ID: j-3DFH47416S66W
+Bootstrap Actions for Cluster experian-replication-streaming-producer-s3-as-is-passagem
+Name: SRE-Observability/Monitoring
+
+Cluster ID: j-3P5C93RKAPXZ2
+Bootstrap Actions for Cluster experian-replication-maintenance-negativos-gold
+Name: SRE-Observability/Monitoring
+
+Cluster ID: j-37OUTZQ2W0ML4
+Bootstrap Actions for Cluster experian-replication-streaming-producer
+Name: SRE-Observability/Monitoring
+
+Cluster ID: j-2W49UD46VELQW
+Bootstrap Actions for Cluster experian-replication-streaming-producer-passagem
+Name: SRE-Observability/Monitoring
+
+Cluster ID: j-3FJHNDY0QOPD9
+Bootstrap Actions for Cluster EMR - CREATE CLUSTER - DEV DS
+Name: Import Node Explorer
+
+Cluster ID: j-Y7WL1RRRBAY5
+Bootstrap Actions for Cluster EMR - CREATE CLUSTER - DEV DS
+Name: Import Node Explorer
+
+************************************
+Conta: dsdev
+Cluster ID: j-3R4GIM203W1MM
+No Bootstrap Actions for Cluster j-3R4GIM203W1MM
+
+Cluster ID: j-2MFXWLSROAA7U
+Bootstrap Actions for Cluster experian-replication-streaming-producer-s3-as-is
+Name: SRE-Observability/Monitoring

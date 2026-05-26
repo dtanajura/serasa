@@ -1,0 +1,3576 @@
+{
+    "airflow-datahub": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "airflow-datahub"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "airflow-mwaa-nike-dcf-prod-2-662860092544-sa-east-1-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "airflow-mwaa-nike-dcf-prod-2-662860092544-sa-east-1-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.134.602018"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "Name",
+            "Value": "airflow-mwaa-nike-dcf-prod-2-662860092544-sa-east-1-prod"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "nikedataservice"
+        },
+        {
+            "Key": "AppID",
+            "Value": "17902"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prod"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        }
+    ],
+    "airflow-mwaa1ca644f3321ab45f-prod-662860092544": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Dados_produtivos"
+        },
+        {
+            "Key": "Project",
+            "Value": "airflow-mwaa-2.5.1"
+        },
+        {
+            "Key": "BU",
+            "Value": "EITS_Enterprise"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "airflow-mwaa1ca644f3321ab45f-prod-662860092544"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "NA"
+        },
+        {
+            "Key": "Terraform-managed",
+            "Value": "true"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "cost-map-nike-without-layer",
+            "Value": "s3_DcF_nike_buckets_util"
+        },
+        {
+            "Key": "Name",
+            "Value": "airflow-mwaa-nike-prod"
+        }
+    ],
+    "athena-log-update": [
+        {
+            "Key": "Dataset",
+            "Value": "Commons"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negatives_Registry"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Layer",
+            "Value": "Commons"
+        },
+        {
+            "Key": "cost-map-nike-without-layer",
+            "Value": "s3_DcF_nike_buckets_util"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "Nike reports"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_athena-log-update"
+        },
+        {
+            "Key": "BU",
+            "Value": "EITS"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "athenalogprod": [
+        {
+            "Key": "ResourceName",
+            "Value": "athenalogprod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negatives_Registry"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-without-layer",
+            "Value": "s3_DcF_nike_buckets_util"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_athenalogprod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "aws-athena-query-results-662860092544-sa-east-1": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "aws-athena-query-results-662860092544-sa-east-1"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "aws-cloudtrail-logs-662860092544": [
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "aws-cloudtrail-logs-662860092544"
+        },
+        {
+            "Key": "Name",
+            "Value": "AuditLogs"
+        }
+    ],
+    "aws-cloudtrail-logs-662860092544-33178313": [
+        {
+            "Key": "ResourceName",
+            "Value": "aws-cloudtrail-logs-662860092544-33178313"
+        }
+    ],
+    "aws-cloudtrail-logs-662860092544-618e86ef": [
+        {
+            "Key": "ResourceName",
+            "Value": "aws-cloudtrail-logs-662860092544-618e86ef"
+        }
+    ],
+    "aws-logs-662860092544-sa-east-1": [
+        {
+            "Key": "ResourceName",
+            "Value": "aws-logs-662860092544-sa-east-1"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negatives_Registry"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-without-layer",
+            "Value": "s3_DcF_nike_buckets_util"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_aws-logs-662860092544-sa-east-1"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "brscan-hashed-stage-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "brscan-hashed-stage-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "cf-templates-kap5i1dveqpl-sa-east-1": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "cf-templates-kap5i1dveqpl-sa-east-1"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "cf-templates-kap5i1dveqpl-us-east-1": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "cf-templates-kap5i1dveqpl-us-east-1"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        }
+    ],
+    "cockpit-devsecops-states-662860092544": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "cockpit-devsecops-states-662860092544"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "dados-contatos-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "dados-contatos-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-aws-query-athena": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-aws-query-athena"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        }
+    ],
+    "datahub-bank-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "comportamental"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-bank-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-basebin-depara-prod": [
+        {
+            "Key": "CreatedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "ManagedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-basebin-depara-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Jose Peroto"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive Data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "basebin"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "basebin"
+        }
+    ],
+    "datahub-cadastral-input-prod": [
+        {
+            "Key": "CreatedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "ManagedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-cadastral-input-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Jose Peroto"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive Data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "basebin"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "basebin"
+        }
+    ],
+    "datahub-cadastral-output-prod": [
+        {
+            "Key": "CreatedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "ManagedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-cadastral-output-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Jose Peroto"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive Data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "basebin"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "basebin"
+        }
+    ],
+    "datahub-cafir": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "comportamental"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-cafir"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-cafir-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "comportamental"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-cafir-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-cduid-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive Data"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "CreatedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "ManagedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-cduid-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Heber Santos"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "datahub"
+        }
+    ],
+    "datahub-comportamental-input-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive Data"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "CreatedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "ManagedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-comportamental-input-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Heber Santos"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "datahub"
+        }
+    ],
+    "datahub-dados-contatos-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-dados-contatos-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-ecs-contatos-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-ecs-contatos-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-ecs-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-ecs-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        }
+    ],
+    "datahub-fpv-contatos-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-fpv-contatos-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-log-lgpd-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-log-lgpd-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-logs-knar-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-logs-knar-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "Name",
+            "Value": "datahub-logs-knar-prod"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prod"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cross"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        }
+    ],
+    "datahub-mf-contatos-stage-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-mf-contatos-stage-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-newinfo": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive Data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "dados_cadastrais",
+            "Value": "replicacao"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-newinfo"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        }
+    ],
+    "datahub-newinfo-conf": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive Data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-newinfo-conf"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        }
+    ],
+    "datahub-newinfo-confs": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive Data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-newinfo-confs"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        }
+    ],
+    "datahub-opb2c-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "comportamental"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-opb2c-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-pep-aux-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-pep-aux-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-pep-conf-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-pep-conf-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-pep-glacier-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-pep-glacier-prod"
+        }
+    ],
+    "datahub-pep-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-pep-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-pep-rechaco-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-pep-rechaco-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-positivo-contatos-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-positivo-contatos-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-replication-iceberg-prod": [
+        {
+            "Key": "CreatedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "ManagedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-replication-iceberg-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry_Negative_Financial"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Rodrigo Moreira"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive Data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Dados com Farinha"
+        }
+    ],
+    "datahub-score-life-risk-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "comportamental"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-score-life-risk-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "datahub-utilities-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "datahub-utilities-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "Name",
+            "Value": "datahub-utilities-prod"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prod"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cross"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        }
+    ],
+    "dataservices-airflow-dags-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "dataservices-airflow-dags-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negatives_Registry"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-without-layer",
+            "Value": "s3_DcF_nike_buckets_util"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_dataservices-airflow-dags-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "dataservices-airflow-logs-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_dataservices-airflow-logs-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "dataservices-airflow-logs-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-without-layer",
+            "Value": "s3_DcF_nike_buckets_util"
+        }
+    ],
+    "destination-snapshot-v3-ops": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "destination-snapshot-v3-ops"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "eec-aws-br-ds-dataservices-magellan-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "eec-aws-br-ds-dataservices-magellan-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        }
+    ],
+    "eec-aws-br-ds-lock-unlock-prod-bucket": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "comportamental"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "eec-aws-br-ds-lock-unlock-prod-bucket"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "eec-aws-lgpd-nao-processados-prod-bucket": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "eec-aws-lgpd-nao-processados-prod-bucket"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "experian-athena-nike-dataoffice-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-006xnmxbx5zl6f"
+        },
+        {
+            "Key": "Project",
+            "Value": "Nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "experian-athena-nike-dataoffice-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        }
+    ],
+    "experian-datahub-bronze-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-bronze-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "Name",
+            "Value": "experian-datahub-bronze-prod"
+        }
+    ],
+    "experian-datahub-cadastrais-silver-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-cadastrais-silver-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Behavioral"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_silver_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_cadastrais"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "s3_DcF_cadastrais"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "Name",
+            "Value": "experian-datahub-cadastrais-silver-prod"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "s3_DcF_silver"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-datahub-cadastrais-silver-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "cost_map_segregated_layer_dataset",
+            "Value": "s3_DcF_silver_cadastrais"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "experian-datahub-cadastral-listas-restritivas-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-cadastral-listas-restritivas-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "Name",
+            "Value": "experian-datahub-cadastral-listas-restritivas-prod"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Development"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cadastral"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        }
+    ],
+    "experian-datahub-cfc-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-cfc-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "experian-datahub-checkpoint-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-checkpoint-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negatives_Registry"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-without-layer",
+            "Value": "s3_DcF_nike_buckets_util"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-datahub-checkpoint-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "experian-datahub-config-files-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-config-files-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negatives_Registry"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-without-layer",
+            "Value": "s3_DcF_nike_buckets_util"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Embbeded"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-datahub-config-files-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "experian-datahub-gold-reports-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-gold-reports-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_gold_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_negativos"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "s3_DcF_negativos"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "s3_DcF_gold"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-datahub-gold-reports-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "cost_map_segregated_layer_dataset",
+            "Value": "s3_DcF_gold_negativos"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "experian-datahub-kafkalog-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-kafkalog-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_bronze_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_negativos"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "s3_DcF_negativos"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "s3_DcF_bronze"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-datahub-kafkalog-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "cost_map_segregated_layer_dataset",
+            "Value": "s3_DcF_bronze_negativos"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "experian-datahub-kafkalog-v2-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-kafkalog-v2-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        },
+        {
+            "Key": "Name",
+            "Value": "experian-datahub-kafkalog-v2-prod"
+        }
+    ],
+    "experian-datahub-landing-zone-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-landing-zone-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_bronze_by_type"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "s3_DcF_bronze"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-datahub-landing-zone-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "experian-datahub-negativos-silver-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-negativos-silver-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_silver_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_negativos"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "s3_DcF_negativos"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "Name",
+            "Value": "experian-datahub-negativos-silver-prod"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "s3_DcF_silver"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-datahub-negativos-silver-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "cost_map_segregated_layer_dataset",
+            "Value": "s3_DcF_silver_negativos"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "experian-datahub-passagem-bronze-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-passagem-bronze-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Behavioral"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "Name",
+            "Value": "experian-datahub-passagem-bronze-prod"
+        }
+    ],
+    "experian-datahub-passagem-gold-reports-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-passagem-gold-reports-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Behavioral"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_passagem"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "s3_DcF_gold"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-datahub-passagem-gold-reports-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "AppId",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "Enviroment",
+            "Value": "prd"
+        },
+        {
+            "Key": "cost-map-nike-by-layer",
+            "Value": "DcF_layer_gold_by_type"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        },
+        {
+            "Key": "map_segregated_dataset",
+            "Value": "s3_DcF_passagem"
+        }
+    ],
+    "experian-datahub-passagem-kafkalog-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-passagem-kafkalog-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Behavioral"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_bronze_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_passagem"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "s3_DcF_passagem"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "s3_DcF_bronze"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-datahub-passagem-kafkalog-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "cost_map_segregated_layer_dataset",
+            "Value": "s3_DcF_bronze_passagem"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "experian-datahub-passagem-silver-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-passagem-silver-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Behavioral"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_silver_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_passagem"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "s3_DcF_passagem"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "s3_DcF_silver"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-datahub-passagem-silver-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "cost_map_segregated_layer_dataset",
+            "Value": "s3_DcF_silver_passagem"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "experian-datahub-silver-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-silver-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_silver_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_negativos"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "s3_DcF_negativos"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "s3_DcF_silver"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-datahub-silver-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "cost_map_segregated_layer_dataset",
+            "Value": "s3_DcF_silver_negativos"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "experian-datahub-validation": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-datahub-validation"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negatives_Registry"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-without-layer",
+            "Value": "s3_DcF_nike_buckets_util"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-datahub-validation"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "experian-dataservices-reports-artifacts-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-dataservices-reports-artifacts-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negativos"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_gold_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_negativos"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "s3_DcF_negativos"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "s3_DcF_gold"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-dataservices-reports-artifacts-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "cost_map_segregated_layer_dataset",
+            "Value": "s3_DcF_gold_negativos"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "experian-nike-emr-workspace": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "experian-nike-emr-workspace"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        }
+    ],
+    "experian-replication-deleteds-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "experian-replication-deleteds-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "experian-replication-kafka-connector-ds-msk-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "experian-replication-kafka-connector-ds-msk-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "experian-replication-kafka-connector-passagem-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-replication-kafka-connector-passagem-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.208.604514"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Behavioral"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "ECS_layer_bronze_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "ECS_passagem"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "s3_ECS_passagem"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "paid_by_team",
+            "Value": "ECS"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "s3_ECS_bronze"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_ECS_experian-replication-kafka-connector-passagem-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "cost_map_segregated_layer_dataset",
+            "Value": "s3_ECS_bronze_passagem"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "ECS"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "ECS"
+        }
+    ],
+    "experian-replication-lambda-external-notification-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-replication-lambda-external-notification-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negatives_Registry"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-without-layer",
+            "Value": "s3_DcF_nike_buckets_util"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_experian-replication-lambda-external-notification-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "experian-replication-load-ext-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "experian-replication-load-ext-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "experian-serasajud-web-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive Data"
+        },
+        {
+            "Key": "CreatedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "ManagedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "experian-serasajud-web-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry_Negative_Financial"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Rodrigo Moreira"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Turma da kombi"
+        }
+    ],
+    "experian-sre-emr-bootstrap-662860092544": [
+        {
+            "Key": "ResourceName",
+            "Value": "experian-sre-emr-bootstrap-662860092544"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "Name",
+            "Value": "experian-sre-emr-bootstrap-662860092544"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prod"
+        },
+        {
+            "Key": "Squad",
+            "Value": "cross"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        }
+    ],
+    "grafana-athena-nike": [
+        {
+            "Key": "ResourceName",
+            "Value": "grafana-athena-nike"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negatives_Registry"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-without-layer",
+            "Value": "s3_DcF_nike_buckets_util"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_grafana-athena-nike"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "iaas-tfstates-terraform-662860092544": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "Repository",
+            "Value": "https://code.experian.local/projects/SREDSBR/repos/infraestrutura-live/browse"
+        },
+        {
+            "Key": "CreatedBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "iaas-tfstates-terraform-662860092544"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        }
+    ],
+    "iceberg-connector-with-glue-icebergdatas3bucket-1td7vbg16gpvv": [
+        {
+            "Key": "aws:cloudformation:stack-name",
+            "Value": "iceberg-connector-with-glue"
+        },
+        {
+            "Key": "CreatedBy",
+            "Value": "GlueIcebergConnectorBlog"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "aws:cloudformation:stack-id",
+            "Value": "arn:aws:cloudformation:sa-east-1:662860092544:stack/iceberg-connector-with-glue/eac06420-0fad-11ee-841e-06ac93c4c886"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "iceberg-connector-with-glue-icebergdatas3bucket-1td7vbg16gpvv"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "aws:cloudformation:logical-id",
+            "Value": "IcebergDataS3Bucket"
+        }
+    ],
+    "odin-comportamental-output-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Project",
+            "Value": "datahub"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Squad",
+            "Value": "comportamental"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "odin-comportamental-output-prod"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ],
+    "replication-lambda-exclude-versions-glue-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "replication-lambda-exclude-versions-glue-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negatives_Registry"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-without-layer",
+            "Value": "s3_DcF_nike_buckets_util"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_replication-lambda-exclude-versions-glue-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "replication-lambda-nike-monitoring-checkpoint-prod": [
+        {
+            "Key": "ResourceName",
+            "Value": "replication-lambda-nike-monitoring-checkpoint-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negatives_Registry"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-without-layer",
+            "Value": "s3_DcF_nike_buckets_util"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "cost-map-nike-unit",
+            "Value": "s3_DcF_replication-lambda-nike-monitoring-checkpoint-prod"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "DcF"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "se-64308a3b5b9fe7f8-ds-eks-01-prod-access-logs": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "se-64308a3b5b9fe7f8-ds-eks-01-prod-access-logs"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "BucketType",
+            "Value": "Log"
+        }
+    ],
+    "se-64308a3b5b9fe7f8-ds-eks-01-prod-backup": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Backup"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "se-64308a3b5b9fe7f8-ds-eks-01-prod-backup"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "BucketType",
+            "Value": "Backup"
+        }
+    ],
+    "se-64308a3b5b9fe7f8-ds-eks-01-prod-helm-charts": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "se-64308a3b5b9fe7f8-ds-eks-01-prod-helm-charts"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "BucketType",
+            "Value": "Helm"
+        }
+    ],
+    "se-64308a3b5b9fe7f8-ds-eks-01-prod-metrics-logs": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Logs"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "se-64308a3b5b9fe7f8-ds-eks-01-prod-metrics-logs"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "BucketType",
+            "Value": "Log"
+        }
+    ],
+    "terraform-eks-ds-prod": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Metadata"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "terraform-eks-ds-prod"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        }
+    ],
+    "tfstate-662860092544-sa-east-1-prd": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "ResourceName",
+            "Value": "tfstate-662860092544-sa-east-1-prd"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "Destination": {
+      "S3BucketDestination": {
+        "AccountId": "492208500822",
+        "Bucket": "arn:aws:s3:::inventory-results-230530",
+        "Format": "CSV"
+      }
+    },
+    "IsEnabled": true,
+    "Id": "inventory-uat-serasaexperian-drive-public",
+    "IncludedObjectVersions": "Current",
+    "Schedule": {
+      "Frequency": "Weekly"
+    }
+  }

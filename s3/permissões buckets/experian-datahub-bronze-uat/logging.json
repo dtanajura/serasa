@@ -1,0 +1,6 @@
+{
+  "LoggingEnabled": {
+    "TargetBucket": "aws-logs-146737708860-sa-east-1",
+    "TargetPrefix": "experian-datahub-silver-uat"
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "DeliveryStreamName": "consentimento-pf-firehose",
+    "DeliveryStreamType": "KinesisStreamAsSource",
+    "KinesisStreamSourceConfiguration": {
+      "KinesisStreamARN": "arn:aws:kinesis:sa-east-1:730335661246:stream/consentimento-datastream",
+      "RoleARN": "arn:aws:iam::730335661246:role/BURoleForFirehose"
+    },
+    "ExtendedS3DestinationConfiguration": {
+      "RoleARN": "arn:aws:iam::730335661246:role/BURoleForFirehose",
+      "BucketARN": "arn:aws:s3:::eec-aws-br-eits-datahub-consent-dev-bucket",
+      "DataFormatConversionConfiguration": {
+        "SchemaConfiguration": {
+          "RoleARN": "arn:aws:iam::730335661246:role/BURoleForFirehose",
+          "DatabaseName": "consentimento-glue-db",
+          "TableName": "consent_pf",
+          "Region": "sa-east-1"
+        },
+        "InputFormatConfiguration": {
+          "Deserializer": {
+            "OpenXJsonSerDe": {}
+          }
+        },
+        "OutputFormatConfiguration": {
+          "Serializer": {
+            "ParquetSerDe": {}
+          }
+        },
+        "Enabled": true
+      },
+      "CloudWatchLoggingOptions": {
+        "Enabled": true,
+        "LogGroupName": "/aws/kinesisfirehose/consentimento-pf-firehose",
+        "LogStreamName": "S3Delivery"
+      }
+    }
+  }

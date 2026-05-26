@@ -1,0 +1,2 @@
+Nome da conta eec-aws-br-cs-bi-bns-uat
+No EKS clusters found for account: eec-aws-br-cs-bi-bns-uat

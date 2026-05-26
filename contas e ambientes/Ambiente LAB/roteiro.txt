@@ -1,0 +1,20 @@
+# para provisionamento do ambiente EKS, ver os seguintes links:
+https://pages.experian.com/pages/viewpage.action?pageId=1081626313
+Ver pre-reqs para provisinameto do ambiente EKS:
+https://pages.experian.com/pages/viewpage.action?pageId=1081223498
+
+Raissa - ultima requisição do Cristiano para criação das contas AWS
+
+Para atvidade de Maturidade de Cloud:
+Contas:
+    eec-aws-br-eits-devhub-dev
+    eec-aws-br-eits-devhub-prod
+    eec-aws-br-eits-devhub-sandbox
+    eec-aws-br-eits-devhub-test
+
+Link do portal:
+https://app.powerbi.com/groups/me/apps/782b0433-4239-4b7e-afd1-d2af40b765e2/reports/a8f8a919-90d4-4a61-9568-7744246ce8e0/ReportSection5c55b2d5381a302e1460?ctid=be67623c-1932-42a6-9d24-6c359fe5ea71&experience=power-bi
+
+Documentação do portal:
+https://pages.experian.com/display/SC/Cloud+Maturity+Score
+

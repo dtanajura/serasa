@@ -1,0 +1,42 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "SourceUserRolePermissions",
+            "Effect": "Allow",
+            "Action": [
+                "datasync:CreateLocationS3",
+                "datasync:CreateTask",
+                "datasync:DescribeLocation*",
+                "datasync:DescribeTaskExecution",
+                "datasync:ListLocations",
+                "datasync:ListTaskExecutions",
+                "datasync:DescribeTask",
+                "datasync:CancelTaskExecution",
+                "datasync:ListTasks",
+                "datasync:StartTaskExecution",
+                "iam:CreateRole",
+                "iam:CreatePolicy",
+                "iam:AttachRolePolicy",
+                "iam:ListRoles",
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:PassRole"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "iam:PassedToService": [
+                        "datasync.amazonaws.com"
+                    ]
+                }
+            }
+        }
+    ]
+}

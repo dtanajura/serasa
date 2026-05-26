@@ -1,0 +1,1094 @@
+{
+    "airflow-datahub-prod-001": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "Datahub"
+        },
+        {
+            "Key": "AppID",
+            "Value": "16997"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "service",
+            "Value": "redis"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.502535"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Name",
+            "Value": "airflow-datahub-prod"
+        }
+    ],
+    "airflow-datahub-prod-002": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "Datahub"
+        },
+        {
+            "Key": "AppID",
+            "Value": "16997"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "service",
+            "Value": "redis"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.502535"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Name",
+            "Value": "airflow-datahub-prod"
+        }
+    ],
+    "ds-elasticache-redis-prod-redis-001": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive Data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "LP"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Rodrigo Moreira"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Dados com Farinha"
+        },
+        {
+            "Key": "Name",
+            "Value": "ds-elasticache-redis-prod-redis"
+        }
+    ],
+    "ds-elasticache-redis-prod-redis-002": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive Data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "LP"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Rodrigo Moreira"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Dados com Farinha"
+        },
+        {
+            "Key": "Name",
+            "Value": "ds-elasticache-redis-prod-redis"
+        }
+    ],
+    "ds-innovation-elasticache-redis-prod-001": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "Datahub"
+        },
+        {
+            "Key": "AppID",
+            "Value": "16997"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "service",
+            "Value": "redis"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.502535"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "project innovation",
+            "Value": ""
+        },
+        {
+            "Key": "Name",
+            "Value": "ds-innovation-elasticache-redis-prod"
+        }
+    ],
+    "ds-innovation-elasticache-redis-prod-002": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "Datahub"
+        },
+        {
+            "Key": "AppID",
+            "Value": "16997"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "service",
+            "Value": "redis"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.502535"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "project innovation",
+            "Value": ""
+        },
+        {
+            "Key": "Name",
+            "Value": "ds-innovation-elasticache-redis-prod"
+        }
+    ],
+    "ds-innovation-elasticache-redis-prod-003": [
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "Datahub"
+        },
+        {
+            "Key": "AppID",
+            "Value": "16997"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "service",
+            "Value": "redis"
+        },
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.502535"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Registry"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "project innovation",
+            "Value": ""
+        },
+        {
+            "Key": "Name",
+            "Value": "ds-innovation-elasticache-redis-prod"
+        }
+    ],
+    "negativescache-pf-redis-001": [
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_gold_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_negativos"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Rodrigo Moreira"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "Redis_DcF_negativos"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "layer",
+            "Value": "gold"
+        },
+        {
+            "Key": "Name",
+            "Value": "negativescache-pf-redis"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "Nike"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "Redis_DcF_gold"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "service",
+            "Value": "redis"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Kratos"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "negativescache-pf-redis-002": [
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_gold_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_negativos"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Rodrigo Moreira"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "Redis_DcF_negativos"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "layer",
+            "Value": "gold"
+        },
+        {
+            "Key": "Name",
+            "Value": "negativescache-pf-redis"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "Nike"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "Redis_DcF_gold"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "service",
+            "Value": "redis"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Kratos"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "negativescache-pj-redis-001": [
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_gold_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_negativos"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Rodrigo Moreira"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "Redis_DcF_negativos"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "layer",
+            "Value": "gold"
+        },
+        {
+            "Key": "Name",
+            "Value": "negativescache-pj-redis"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "Nike"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "Redis_DcF_gold"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "service",
+            "Value": "redis"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Kratos"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "negativescache-pj-redis-002": [
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_gold_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_negativos"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Rodrigo Moreira"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "Redis_DcF_negativos"
+        },
+        {
+            "Key": "project",
+            "Value": "nike"
+        },
+        {
+            "Key": "layer",
+            "Value": "gold"
+        },
+        {
+            "Key": "Name",
+            "Value": "negativescache-pj-redis"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "Nike"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "Redis_DcF_gold"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "service",
+            "Value": "redis"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Kratos"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "positivo-opt-mongo-redis-001": [
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "Name",
+            "Value": "positivo-opt-mongo-redis"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "Positivo"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Positivo"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        }
+    ],
+    "positivo-opt-mongo-redis-002": [
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "Name",
+            "Value": "positivo-opt-mongo-redis"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "Positivo"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Positivo"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        }
+    ],
+    "summarycache-pf-v2-redis-001": [
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_gold_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_negativos"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "Redis_DcF_negativos"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "layer",
+            "Value": "gold"
+        },
+        {
+            "Key": "Name",
+            "Value": "summarycache-pf-v2-redis"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "Redis_DcF_gold"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "service",
+            "Value": "redis"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prod"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Kratos"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "summarycache-pf-v2-redis-002": [
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_gold_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_negativos"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "Redis_DcF_negativos"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "layer",
+            "Value": "gold"
+        },
+        {
+            "Key": "Name",
+            "Value": "summarycache-pf-v2-redis"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "Redis_DcF_gold"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "service",
+            "Value": "redis"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prod"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Kratos"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "summarycache-pj-v2-redis-001": [
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_gold_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_negativos"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "Redis_DcF_negativos"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "layer",
+            "Value": "gold"
+        },
+        {
+            "Key": "Name",
+            "Value": "summarycache-pj-v2-redis"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "Redis_DcF_gold"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "service",
+            "Value": "redis"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prod"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Kratos"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "summarycache-pj-v2-redis-002": [
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "Negative"
+        },
+        {
+            "Key": "cost-map-by-layer",
+            "Value": "DcF_layer_gold_by_type"
+        },
+        {
+            "Key": "cost_map_segregated_dataset_all_services",
+            "Value": "DcF_negativos"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "cost_map_segregated_dataset",
+            "Value": "Redis_DcF_negativos"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "layer",
+            "Value": "gold"
+        },
+        {
+            "Key": "Name",
+            "Value": "summarycache-pj-v2-redis"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Productive data"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "nike"
+        },
+        {
+            "Key": "cost-map-nike-layer",
+            "Value": "Redis_DcF_gold"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "PP/LP"
+        },
+        {
+            "Key": "service",
+            "Value": "redis"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prod"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Kratos"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        },
+        {
+            "Key": "cost-map-nike-team",
+            "Value": "DcF"
+        }
+    ],
+    "v3-apis-001": [
+        {
+            "Key": "CostString",
+            "Value": "1800.BR.100.404506"
+        },
+        {
+            "Key": "Data_Category",
+            "Value": "N/A"
+        },
+        {
+            "Key": "CreateBy",
+            "Value": "Terraform"
+        },
+        {
+            "Key": "Service",
+            "Value": "latam_nike"
+        },
+        {
+            "Key": "Name",
+            "Value": "v3-apis"
+        },
+        {
+            "Key": "Asset_Category",
+            "Value": "Production"
+        },
+        {
+            "Key": "map-migrated",
+            "Value": "d-server-02n52mmgua5hr6"
+        },
+        {
+            "Key": "Project",
+            "Value": "V3"
+        },
+        {
+            "Key": "AppID",
+            "Value": "19558"
+        },
+        {
+            "Key": "Data_Type",
+            "Value": "N/A"
+        },
+        {
+            "Key": "Environment",
+            "Value": "prd"
+        },
+        {
+            "Key": "Squad",
+            "Value": "Dados Com Farinha"
+        },
+        {
+            "Key": "wiz_cig",
+            "Value": "true"
+        }
+    ]
+}

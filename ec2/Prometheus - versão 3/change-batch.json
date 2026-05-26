@@ -1,0 +1,15 @@
+{
+    "Changes": [{
+        "Action": "UPSERT",
+        "ResourceRecordSet": {
+            "Name": "observabilidade.nike-corporate-prod.br.experian.eeca",
+            "Type": "CNAME",
+            "TTL": 300,
+            "ResourceRecords": [
+              {
+                "Value": "internal-alb-observabilidade-248148230.sa-east-1.elb.amazonaws.com"
+              }
+            ]
+        }
+    }]
+}

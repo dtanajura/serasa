@@ -1,0 +1,273 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "grafana",
+            "uid": "-- Grafana --"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 6,
+    "links": [],
+    "panels": [
+      {
+        "datasource": {
+          "default": false,
+          "type": "grafana-postgresql-datasource",
+          "uid": "bdx3zd9s0jbb4d"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "fixedColor": "red",
+              "mode": "continuous-RdYlGr"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "fillOpacity": 47,
+              "gradientMode": "scheme",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "lineWidth": 1,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "decimals": 0,
+            "mappings": [
+              {
+                "options": {
+                  "arcsandbox": {
+                    "color": "dark-purple",
+                    "index": 6
+                  },
+                  "corporateprod": {
+                    "color": "orange",
+                    "index": 2
+                  },
+                  "datahubprod": {
+                    "color": "#808080",
+                    "index": 7
+                  },
+                  "dsdev": {
+                    "color": "dark-yellow",
+                    "index": 4
+                  },
+                  "dsprod": {
+                    "color": "super-light-green",
+                    "index": 0
+                  },
+                  "dsstage": {
+                    "color": "dark-orange",
+                    "index": 1
+                  },
+                  "sredev": {
+                    "color": "dark-green",
+                    "index": 3
+                  },
+                  "ssrmprod": {
+                    "color": "light-blue",
+                    "index": 5
+                  }
+                },
+                "type": "value"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "currencyUSD"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 23,
+          "x": 0,
+          "y": 0
+        },
+        "id": 7,
+        "options": {
+          "barRadius": 0,
+          "barWidth": 0.97,
+          "colorByField": "account_profile",
+          "fullHighlight": false,
+          "groupWidth": 0.7,
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": false
+          },
+          "orientation": "auto",
+          "showValue": "auto",
+          "stacking": "none",
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          },
+          "xField": "account_profile",
+          "xTickLabelRotation": 0,
+          "xTickLabelSpacing": 0
+        },
+        "pluginVersion": "11.1.0",
+        "repeat": "var_meses",
+        "repeatDirection": "v",
+        "targets": [
+          {
+            "datasource": {
+              "type": "grafana-postgresql-datasource",
+              "uid": "bdx3zd9s0jbb4d"
+            },
+            "editorMode": "code",
+            "format": "table",
+            "rawQuery": true,
+            "rawSql": "SELECT a.account_profile, ac.unblended_cost AS total_cost\r\nFROM account_costs as ac\r\nJOIN accounts a ON ac.account_id = a.account_id\r\nWHERE TO_CHAR(ac.date_register, 'YYYY-MM') = ${var_meses} AND a.account_name IN ( $var_contas  )\r\nGROUP BY a.account_profile, ac.unblended_cost\r\nORDER BY total_cost DESC;\r\n",
+            "refId": "A",
+            "sql": {
+              "columns": [
+                {
+                  "parameters": [],
+                  "type": "function"
+                }
+              ],
+              "groupBy": [
+                {
+                  "property": {
+                    "type": "string"
+                  },
+                  "type": "groupBy"
+                }
+              ],
+              "limit": 50
+            }
+          }
+        ],
+        "title": "Distribuição dos custos  no mês $var_meses",
+        "type": "barchart"
+      }
+    ],
+    "refresh": "",
+    "schemaVersion": 39,
+    "tags": [],
+    "templating": {
+      "list": [
+        {
+          "current": {
+            "selected": true,
+            "text": [
+              "All"
+            ],
+            "value": [
+              "$__all"
+            ]
+          },
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "bdx3zd9s0jbb4d"
+          },
+          "definition": "SELECT DISTINCT account_name FROM accounts ORDER BY account_name;",
+          "hide": 0,
+          "includeAll": true,
+          "label": "Contas",
+          "multi": true,
+          "name": "var_contas",
+          "options": [],
+          "query": "SELECT DISTINCT account_name FROM accounts ORDER BY account_name;",
+          "refresh": 1,
+          "regex": "",
+          "skipUrlSync": false,
+          "sort": 0,
+          "type": "query"
+        },
+        {
+          "current": {
+            "selected": false,
+            "text": "2024-07",
+            "value": "2024-07"
+          },
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "bdx3zd9s0jbb4d"
+          },
+          "definition": "SELECT DISTINCT TO_CHAR(date_register, 'YYYY-MM') as month FROM resource_costs ORDER BY month DESC;\n",
+          "hide": 0,
+          "includeAll": true,
+          "label": "Meses",
+          "multi": true,
+          "name": "var_meses",
+          "options": [],
+          "query": "SELECT DISTINCT TO_CHAR(date_register, 'YYYY-MM') as month FROM resource_costs ORDER BY month DESC;\n",
+          "refresh": 1,
+          "regex": "",
+          "skipUrlSync": false,
+          "sort": 0,
+          "type": "query"
+        },
+        {
+          "current": {
+            "selected": false,
+            "text": "2024-09",
+            "value": "2024-09"
+          },
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "bdx3zd9s0jbb4d"
+          },
+          "definition": "SELECT TO_CHAR(MAX(date_register), 'YYYY-MM') as month FROM resource_costs;",
+          "hide": 2,
+          "includeAll": false,
+          "multi": false,
+          "name": "var_ultimo_mes",
+          "options": [],
+          "query": "SELECT TO_CHAR(MAX(date_register), 'YYYY-MM') as month FROM resource_costs;",
+          "refresh": 1,
+          "regex": "",
+          "skipUrlSync": false,
+          "sort": 0,
+          "type": "query"
+        }
+      ]
+    },
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "browser",
+    "title": "Custos - Contas por período",
+    "uid": "fdpd70cp96osgf",
+    "version": 8,
+    "weekStart": ""
+  }
