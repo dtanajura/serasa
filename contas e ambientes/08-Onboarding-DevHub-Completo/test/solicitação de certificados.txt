@@ -1,0 +1,92 @@
+# Logar no bastion
+ aws ssm start-session --target  i-01498b537887e5910 --profile devhub-test --no-verify-ssl 
+
+openssl req -newkey rsa:2048 -nodes -keyout qa-devhub.br.experian.eeca.key -out qa-devhub.br.experian.eeca.csr
+Generating a 2048 bit RSA private key
+..........................................+++
+..................................................................+++
+writing new private key to 'qa-devhub.br.experian.eeca.key'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [XX]:BR
+State or Province Name (full name) []:Sao Paulo
+Locality Name (eg, city) [Default City]:Sao Paulo
+Organization Name (eg, company) [Default Company Ltd]:Serasa Experian
+Organizational Unit Name (eg, section) []:Devhub
+Common Name (eg, your name or your server's hostname) []:qa-devhub.br.experian.eeca
+Email Address []:devhub_team@br.experian.com
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:94cxP*E/9Z
+An optional company name []:SERASA
+
+[root@bastion-test ~]# ls
+qa-devhub.br.experian.eeca.csr  qa-devhub.br.experian.eeca.key
+[root@bastion-test ~]# cat qa-devhub.br.experian.eeca.csr
+-----BEGIN CERTIFICATE REQUEST-----
+MIIDKTCCAhECAQAwgbExCzAJBgNVBAYTAkJSMRIwEAYDVQQIDAlTYW8gUGF1bG8x
+EjAQBgNVBAcMCVNhbyBQYXVsbzEYMBYGA1UECgwPU2VyYXNhIEV4cGVyaWFuMQ8w
+DQYDVQQLDAZEZXZodWIxIzAhBgNVBAMMGnFhLWRldmh1Yi5ici5leHBlcmlhbi5l
+ZWNhMSowKAYJKoZIhvcNAQkBFhtkZXZodWJfdGVhbUBici5leHBlcmlhbi5jb20w
+ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDAjmbtojbPr98I7sQvYonC
+W5jNVKQbKCequWIxVwCaHCgL/LyWTpjwHJQN1d6lw3GMJ2yGTCjvizmfygibInvL
+GCq+UVoMRYm25w69tuoPsr6/Bmpwiq/uv15sBO8tAEAKXnnqUngWi3psurNDGNnZ
+RyXZ520QEg7uCep7k8xhSOpsn03jIC1Ld+c/hQjxTlFs77PxWB4er2VtQKspWC63
+gPgAUZWeRyVFQ3WMkjo3kHOCnn6+MigCK185W3FGWZ9HS2LcZT6ELEtjBz3Zjp0J
+NlQP1lR189qa4oZSHDhUUPdNzH+pe3hVJSao01emvWU7zWtjIuNXgtWzS8GqHoeJ
+AgMBAAGgMjAVBgkqhkiG9w0BCQIxCAwGU0VSQVNBMBkGCSqGSIb3DQEJBzEMDAo5
+NGN4UCpFLzlaMA0GCSqGSIb3DQEBCwUAA4IBAQCKgzOgKi4Wlnv1Yt1lf2FMILSR
+vUM1DCICwzusjlopYgMVE3NeM3AUowGfPIy4Wvn+myH2Ko+HF750rgaY/bqjn2Jc
+MHJbM0HhhcN2/t9kH6/jcjgn7SeI2eIftHbuZw8GtrLOxiwpLk7AaVnB63q8cnQL
++xlDdjNkeE5hOMo96hl69lnkatb1dxDAsLGLn+n1ruT5ev7wRQEK+maEpPfZYtqp
++r9uKiASwGckHefw0/RscTigjL25Y1GvAljwi0mWaVUXYzG9Z8qxEHdEo9YqulaO
+efvx7Yqr+l4c+3jwSqcZLlilagNULZQq2wCpUZWZGfTH+TrgUokIKGkuoDud
+-----END CERTIFICATE REQUEST-----
+[root@bastion-test ~]# cat qa-devhub.br.experian.eeca.key
+-----BEGIN PRIVATE KEY-----
+MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDAjmbtojbPr98I
+7sQvYonCW5jNVKQbKCequWIxVwCaHCgL/LyWTpjwHJQN1d6lw3GMJ2yGTCjvizmf
+ygibInvLGCq+UVoMRYm25w69tuoPsr6/Bmpwiq/uv15sBO8tAEAKXnnqUngWi3ps
+urNDGNnZRyXZ520QEg7uCep7k8xhSOpsn03jIC1Ld+c/hQjxTlFs77PxWB4er2Vt
+QKspWC63gPgAUZWeRyVFQ3WMkjo3kHOCnn6+MigCK185W3FGWZ9HS2LcZT6ELEtj
+Bz3Zjp0JNlQP1lR189qa4oZSHDhUUPdNzH+pe3hVJSao01emvWU7zWtjIuNXgtWz
+S8GqHoeJAgMBAAECggEAZFEMAJt1EMhgWwgBf2pHuND9j2OcR2WpHMGODYR1FNS8
+bFpUab4y4U0SOQ8F+rgSzOCxIlpFLV8MO1oHF8NkWQ+THSnGzwPfVkGUJXRJBrqp
+s12FUHKAa9KZP49mh7xMoNpNi61BUQWDV2gBAmDNBeySJK7z2958lrjlx1HdtYRe
+4EQPqVC9HhrfO/08b9TWKlcHebL1vrmo1LY6LLpQStY0hXM2i9G/lpWfGoFfwBH6
+u/up3ffnfaiE9QgSJ4kbQI6brYM9VG1838piQLz9892Ngxj/Sr5wYxZqEbyiy6z/
+DVTwvH4jI7VchqiMPhoQVz59075j2YOhes06JJj7fQKBgQDlLSGeoffIJHJwOFMZ
+9IdIfx9i2HWRdO7AA2ZnwiGVS7GH31FWx2j7Gmw+2ZPDz3RezjEdpDT8iEwd8F11
+l4cAIlAGNVSUUOTXRUPao0v41LTwc9KL+6ztBOM5x06yBsuLAmgVsTTinIVCbqAw
++cYX25wyOli4MdfLFo/OKSCQMwKBgQDXGAPd/GghnscK5vsLv67HfmD7cYldy9W3
+8B3bhTsqVNsG69m6mVphBPHg4pJqjJisr+Fs0OLoqIQsd4YTYQ9wQ0RQgzu9x55U
+RzeRGwTJSH2wl76igLotTIbtSb0MPCwzSSKsC50bCNsIcw4/TSIkTNGreF7cqubc
+DBRxCN4dUwKBgER8nTxryMF96tkQa/0orzkCDF4cs925JRQqr/K3+BNGoJIrMYKO
+axgHSGvr15W/rFYcpl7mUJNbI+wahcN7efOXTXTdgR4loo2WfHWdMTn2TvBAnJ4K
+ox3dxQ3iOulG0JMFMBezckt6XPSCXMrmCcXdcissdpDtDED7yBPjBIEzAoGARHWt
+TWs3zXOW0H6B6tRgkbhEr+MMIKFu7XNsXWFDWo7Vg5dvnjePD5AeWEBk76q+MUBt
+lE/L2NdB8lE8iFB9NHMEfEe4rQeq+hIMuo+J73K2Jo21rE0idKaFz2KH3CwOuWgO
+tAmiQGeKJ19PapBnTHxyw4u1TbDLd8AUhYGYCGcCgYAEyuZBILDBItzJZnDCojdb
+x3MljV4Ynbq+WjxKyz5RfW+1tFzeIBa+nAY6lIBbvQ/kLqJ5m+XvztY6SDbTWVkP
+WJx8CoLo/amR6UDGyiTo2shozg/M74N83E1lYvdaZhRpVh7LCQksTgUJUFT2gdcv
+dbbVRGnf/u88GwPFp9Ut2g==
+-----END PRIVATE KEY-----
+
+Formulário de solicitação para Certificados Digitais de Hospedagem WEB.
+Solicitante Davi Tanajura
+Esta solicitação é para você ? Sim
+Área Demandante EITS Architecture and Engineering
+Domínio ou Site qa-devhub.br.experian.eeca
+Comum Name (CN) qa-devhub.br.experian.eeca
+Exposição do Certificado Interno
+Tipo de Autoridade Certificadora CA Interna
+Selecione o tipo WebServer
+Porta associada ao Certificado HTTPS = 443
+Hospedagem AWS

@@ -1,0 +1,46 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "eks:DescribeFargateProfile",
+                "eks:ListTagsForResource",
+                "eks:ListAddons",
+                "ecr:ListTagsForResource",
+                "ecr:UploadLayerPart",
+                "ecr:ListImages",
+                "eks:DescribeAddon",
+                "eks:DescribeNodegroup",
+                "eks:ListUpdates",
+                "ecr:CompleteLayerUpload",
+                "ecr:DescribeRepositories",
+                "eks:DescribeAddonVersions",
+                "eks:ListIdentityProviderConfigs",
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:GetLifecyclePolicy",
+                "eks:ListNodegroups",
+                "ecr:DescribeImageScanFindings",
+                "eks:DescribeAddonConfiguration",
+                "s3:*",
+                "ecr:GetLifecyclePolicyPreview",
+                "ecr:GetDownloadUrlForLayer",
+                "ecr:GetAuthorizationToken",
+                "s3-object-lambda:*",
+                "ecr:PutImage",
+                "eks:ListFargateProfiles",
+                "eks:DescribeIdentityProviderConfig",
+                "eks:DescribeUpdate",
+                "eks:AccessKubernetesApi",
+                "ecr:BatchGetImage",
+                "ecr:DescribeImages",
+                "eks:DescribeCluster",
+                "eks:ListClusters",
+                "ecr:InitiateLayerUpload",
+                "ecr:GetRepositoryPolicy"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "BackupPlanId":"2fea05c4-d951-4afc-8ab8-ee5f4f7bb6c7",
+    "BackupSelection":{
+      "SelectionName":"resources-list-selection", 
+      "IamRoleArn":"arn:aws:iam::306298826605:role/AWSBackupDefaultServiceRole",
+      "Resources":[
+        "arn:aws:ec2:*:*:instance/*"
+      ],
+      "ListOfTags": [],
+      "Conditions": {
+        "StringEquals": [
+            {
+                "ConditionKey": "aws:ResourceTag/Backup",
+                "ConditionValue": "True"
+            }
+        ]
+    }
+  }
+}
+  

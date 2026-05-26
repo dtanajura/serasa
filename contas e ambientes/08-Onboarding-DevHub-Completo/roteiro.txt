@@ -1,0 +1,161 @@
+atividades:
+solicitação de criação das contas AWS - em andamento
+Solicitação de acesso às contas no IDC
+
+********
+Conta sandbox:
+********
+configuração do acesso SAML
+Validações iniciais
+Solicitações:
+	REQ-Solicitação de configuração Firewall: porta 443 - Nexus
+	REQ-Solicitação de configuração Firewall: porta 22 – Ansible
+	REQ-Solicitação para habilitar acesso ao proxy
+
+Enquanto as solicitações não são atendidas:
+	Configuração do Systems Manager
+	Configuração do AWS Backup
+	Configuração do Bastion da Conta
+	Criação do bucket para salvar o tfstate
+	Configurações de policy do usuário BUPolicyForDevSecOpsPiaaS
+	REQ-Abrir uma request para criação do usuário BUPolicyForDevSecOpsPiaaS  
+	REQ-Solicitação de acesso ao cofre de senhas BUUserForDevSecOpsPiaaS e validação da accesskey no CyberArk
+
+Depois que as solicitações forem atendidas:
+	Execução do CloudFormation para criação do usuário BURoleForDevSecOpsCockpitService
+	Execução da automação de Onboarding
+	Executa a automação de teste do onboarding
+
+Configuração dos endpoints:
+	REQ-Abrir uma solicitação para uma REQ para o EEC, solicitando “desvincular os Endpoints da Sharedservices”
+	Após a solicitação atendida, fazer configuração dos endpoints
+
+Configurações do ECR
+REQ-Solicitar criação do domínio no route 53 - revisar essa configuração
+REQ-Solicitação do certificado - não é necessário (já temos!)
+Instalação do certificado
+REQ-Abrir uma solicitação para DevSecOps para execução da automação do EKS
+Executar automação do EKS-Serasa
+REQ-Abrir uma solicitação para DevSecOps para execução da automação do RDS
+Execução da automação do RDS
+
+
+********
+Conta DEV
+********
+configuração do acesso SAML
+Validações iniciais
+Solicitações:
+	REQ-Solicitação de configuração Firewall: porta 443 - Nexus
+	REQ-Solicitação de configuração Firewall: porta 22 – Ansible
+	REQ-Solicitação para habilitar acesso ao proxy
+
+Enquanto as solicitações não são atendidas:
+	Configuração do Systems Manager
+	Configuração do AWS Backup
+	Configuração do Bastion da Conta
+	Criação do bucket para salvar o tfstate
+	Configurações de policy do usuário BUPolicyForDevSecOpsPiaaS
+	REQ-Abrir uma request para criação do usuário BUPolicyForDevSecOpsPiaaS  
+	REQ-Solicitação de acesso ao cofre de senhas BUUserForDevSecOpsPiaaS e validação da accesskey no CyberArk
+
+Depois que as solicitações forem atendidas:
+	Execução do CloudFormation para criação do usuário BURoleForDevSecOpsCockpitService
+	Execução da automação de Onboarding
+	Executa a automação de teste do onboarding
+
+Configuração dos endpoints:
+	REQ-Abrir uma solicitação para uma REQ para o EEC, solicitando “desvincular os Endpoints da Sharedservices”
+	Após a solicitação atendida, fazer configuração dos endpoints
+
+Configurações do ECR
+REQ-Solicitar criação do domínio no route 53 - revisar essa configuração
+REQ-Solicitação do certificado - não é necessário (já temos!)
+Instalação do certificado
+REQ-Abrir uma solicitação para DevSecOps para execução da automação do EKS
+Executar automação do EKS-Serasa
+REQ-Abrir uma solicitação para DevSecOps para execução da automação do RDS
+Execução da automação do RDS
+
+
+********
+Conta UAT
+********
+configuração do acesso SAML
+Validações iniciais
+Solicitações:
+	REQ-Solicitação de configuração Firewall: porta 443 - Nexus
+	REQ-Solicitação de configuração Firewall: porta 22 – Ansible
+	REQ-Solicitação para habilitar acesso ao proxy
+
+Enquanto as solicitações não são atendidas:
+	Configuração do Systems Manager
+	Configuração do AWS Backup
+	Configuração do Bastion da Conta
+	Criação do bucket para salvar o tfstate
+	Configurações de policy do usuário BUPolicyForDevSecOpsPiaaS
+	REQ-Abrir uma request para criação do usuário BUPolicyForDevSecOpsPiaaS  
+	REQ-Solicitação de acesso ao cofre de senhas BUUserForDevSecOpsPiaaS e validação da accesskey no CyberArk
+
+Depois que as solicitações forem atendidas:
+	Execução do CloudFormation para criação do usuário BURoleForDevSecOpsCockpitService
+	Execução da automação de Onboarding
+	Executa a automação de teste do onboarding
+
+Configuração dos endpoints:
+	REQ-Abrir uma solicitação para uma REQ para o EEC, solicitando “desvincular os Endpoints da Sharedservices”
+	Após a solicitação atendida, fazer configuração dos endpoints
+
+Configurações do ECR
+REQ-Solicitar criação do domínio no route 53 - revisar essa configuração
+REQ-Solicitação do certificado - não é necessário (já temos!)
+Instalação do certificado
+REQ-Abrir uma solicitação para DevSecOps para execução da automação do EKS
+Executar automação do EKS-Serasa
+REQ-Abrir uma solicitação para DevSecOps para execução da automação do RDS
+Execução da automação do RDS
+
+********
+Conta Prod
+********
+configuração do acesso SAML
+Validações iniciais
+Solicitações:
+	REQ-Solicitação de configuração Firewall: porta 443 - Nexus
+	REQ-Solicitação de configuração Firewall: porta 22 – Ansible
+	REQ-Solicitação para habilitar acesso ao proxy
+
+Enquanto as solicitações não são atendidas:
+	Configuração do Systems Manager
+	Configuração do AWS Backup
+	Configuração do Bastion da Conta
+	Criação do bucket para salvar o tfstate
+	Configurações de policy do usuário BUPolicyForDevSecOpsPiaaS
+	REQ-Abrir uma request para criação do usuário BUPolicyForDevSecOpsPiaaS  
+	REQ-Solicitação de acesso ao cofre de senhas BUUserForDevSecOpsPiaaS e validação da accesskey no CyberArk
+
+Depois que as solicitações forem atendidas:
+	Execução do CloudFormation para criação do usuário BURoleForDevSecOpsCockpitService
+	Execução da automação de Onboarding
+	Executa a automação de teste do onboarding
+
+Configuração dos endpoints:
+	REQ-Abrir uma solicitação para uma REQ para o EEC, solicitando “desvincular os Endpoints da Sharedservices”
+	Após a solicitação atendida, fazer configuração dos endpoints
+
+Configurações do ECR
+REQ-Solicitar criação do domínio no route 53 - revisar essa configuração
+REQ-Solicitação do certificado - não é necessário (já temos!)
+Instalação do certificado
+REQ-Abrir uma solicitação para DevSecOps para execução da automação do EKS
+Executar automação do EKS-Serasa
+REQ-Abrir uma solicitação para DevSecOps para execução da automação do RDS
+Execução da automação do RDS
+
+
+
+
+
+
+
+
